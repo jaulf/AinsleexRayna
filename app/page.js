@@ -170,16 +170,16 @@ export default function Home() {
                 Collins, simply answer the questions below, then hit Generate! 
               </span>
               <span>
-                Based on what you share, we'll make some new, creative, possibly
+                Based on what you share, we&apos;ll make some new, creative, possibly
                 crazy and potentially very lucrative Profitable Product Idea
                 suggestions for you.  
               </span>
               <span>
-                Don't get hung up on any one question (in fact, some can be left
+                Don&apos;t get hung up on any one question (in fact, some can be left
                 blank!). Work your way through the process and click Generate as
                 quickly as possible to get the ideas and clarity flowing.You can
                 run as many searches as you like during your 12 weeks of EPM, so
-                don't "save them up." Let’s go! ✨ 
+                don&apos;t "save them up." Let’s go! ✨ 
               </span>
             </p>
           </article>
@@ -192,7 +192,7 @@ export default function Home() {
             <p className="text-[14px] leading-5">
               I highly recommend watching each Training (or reading the
               Transcripts) BEFORE using this Generator so you understand what
-              we're working on!The alert & notifications component
+              we&apos;re working on!The alert & notifications component
             </p>
           </article>
 
@@ -252,7 +252,7 @@ export default function Home() {
 
             <article className="rps2">
               <h6 className="label-semibold">
-                Are there any particular kinds of people you'd like to generate
+                Are there any particular kinds of people you&apos;d like to generate
                 micro-niche ideas around?
               </h6>
               <p className="helper-text">
@@ -264,7 +264,7 @@ export default function Home() {
                 <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
-                👇Leave blank if you're open to serving anybody.
+                👇Leave blank if you&apos;re open to serving anybody.
               </p>
               <div className="Input-cont">
                 <input
@@ -334,12 +334,12 @@ export default function Home() {
               <p className="helper-text">
                 <i className="font-medium">For example</i>, the problems I solve
                 are: people not knowing how to design or launch a course, having
-                a course that's not getting enough sales, having a course with
+                a course that&apos;s not getting enough sales, having a course with
                 insufficient student engagement and success. The problem is not
-                people who don't have an Experience Product.
+                people who don&apos;t have an Experience Product.
                 <span className="block">&nbsp;</span>
               </p>
-              <p className="helper-text">👇Leave blank if you're not sure.</p>
+              <p className="helper-text">👇Leave blank if you&apos;re not sure.</p>
               <div className="Input-cont">
                 <input type="text" />
               </div>
@@ -373,14 +373,18 @@ export default function Home() {
                 will help you land your Profitable Product Idea.
                 <span className="block">&nbsp;</span>
               </p>
-              <p className="helper-text">👇Leave blank if you're not sure.</p>
 
-             <div>
-              <p></p>
-              <div>
-                
-              </div>
-             </div>
+              <article>
+                <p className="helper-text">👇Choose one option below.</p>
+                <div>
+                  <input class="radio" type="radio" id="samp1" name="samp" />
+                  <label>Tribe-based audience statement</label>
+                </div>
+                <div>
+                  <input class="radio" type="radio" id="samp1" name="samp" />
+                  <label>Tribe-based audience statement</label>
+                </div>
+              </article>
             </article>
           </section>
         </section>

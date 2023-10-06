@@ -351,3 +351,8 @@ input {
   font-size: 12px;
   line-height: 145%;
 }
+
+.radio {
+  width: 20px;
+  height: 20px;
+}
