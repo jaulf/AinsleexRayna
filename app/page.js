@@ -179,7 +179,7 @@ export default function Home() {
                 blank!). Work your way through the process and click Generate as
                 quickly as possible to get the ideas and clarity flowing.You can
                 run as many searches as you like during your 12 weeks of EPM, so
-                don&apos;t "save them up." Let’s go! ✨ 
+                don&apos;t "save them up." Let&apos;s go! ✨ 
               </span>
             </p>
           </article>
@@ -240,8 +240,8 @@ export default function Home() {
               </h6>
               <p className="helper-text">
                 💡For example, you could be good at building systems, or maybe
-                you’re an expert golfer, or you’re good at design, or you have a
-                background in manufacturing, or you’re a good teacher, or you’re
+                you&apos;re an expert golfer, or you&apos;re good at design, or you have a
+                background in manufacturing, or you&apos;re a good teacher, or you&apos;re
                 a media personality, etc.
               </p>
               <div className="Input-cont">
@@ -280,10 +280,10 @@ export default function Home() {
                 consider
               </h6>
               <p className="helper-text">
-                💡This includes age, education, whether they’re married or
+                💡This includes age, education, whether they&apos;re married or
                 single, where they live and work, how much money they make,
                 whether they own their own business or work for someone else,
-                whether they’re parents or not, etc.
+                whether they&apos;re parents or not, etc.
                 <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
@@ -306,7 +306,7 @@ export default function Home() {
                 💡Psychographics can include: What are they thinking and
                 feeling? What are their aspirations? What are they worried
                 about? What are they motivated by? What are their attitudes to
-                specific topics? What’s their interest level in YOUR topic? What
+                specific topics? What&apos;s their interest level in YOUR topic? What
                 else is occupying their mind or likely to stop them from taking
                 action? <span className="block">&nbsp;</span>
               </p>
