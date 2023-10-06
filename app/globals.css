@@ -41,6 +41,10 @@ body {
   color: #4f4d55;
 }
 
+.xgrey-700 {
+  color: #344054;
+}
+
 /* Text Colors Ending */
 
 .paragraph-small {
@@ -208,20 +212,21 @@ input {
 }
 
 .inactive-saved-ideas h4 {
-  color: #1D2739;
+  color: #1d2739;
   font-weight: 600;
   line-height: 145%;
   padding-bottom: 8px;
 }
 
-.inactive-saved-ideas p, .inactive-saved-ideas p span {
+.inactive-saved-ideas p,
+.inactive-saved-ideas p span {
   color: #667185;
   font-size: 14px;
   display: block;
 }
 
 .inactive-saved-ideas a {
-  color: #EB5017;
+  color: #eb5017;
   font-weight: 600;
   padding-top: 24px;
 }
@@ -229,4 +234,120 @@ input {
 .body-container {
   display: grid;
   grid-template-columns: max-content max-content 1fr max-content;
+}
+
+.side13 {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 16px;
+  padding: 32px 40px;
+}
+
+.heading-h6 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.4px;
+}
+
+.rps {
+  display: grid;
+  row-gap: 8px;
+  margin-top: 4px;
+}
+
+.rps > span {
+  display: block;
+}
+
+.info-alert {
+  border-radius: 4px;
+  background: #e3effc;
+  border-left: 6px solid #0d5eba;
+  padding: 12px 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.cont-container {
+  border-radius: 10px;
+  border: 1px solid #e4e7ec;
+  background: #fff;
+  padding: 24px;
+  display: grid;
+  align-content: flex-start;
+  row-gap: 24px;
+}
+
+/* paragraph-small */
+/* helper-text */
+/* Input */
+/* error */
+
+.helper-text {
+  color: #667185;
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.red-base-text {
+  font-weight: 500;
+  color: #d42620;
+}
+
+.label-semibold {
+  color: #101928;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.cont-container input {
+  border-radius: 6px;
+  background: var(--grey-50, #f9fafb);
+}
+
+.cont-container input:focus,
+.cont-container select:focus {
+  outline: 1px solid #fa9874;
+}
+
+.cont-container select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  /* adding custom chevron down */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("/Images/svg/chevron-down3.svg") no-repeat !important;
+  background-position: right 12px center !important;
+}
+
+.select-cont {
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e4e7ec;
+}
+
+.rps2 {
+  display: grid;
+  row-gap: 8px;
+  align-content: flex-start;
+}
+
+.Input-cont  input {
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e4e7ec;
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.helper-text2 {
+  margin-top: 2px;
+  color: #667185;
+  font-size: 12px;
+  line-height: 145%;
 }

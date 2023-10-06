@@ -17,12 +17,13 @@ import down2 from "@/public/Images/svg/chevron-down2.svg";
 import menu from "@/public/Images/svg/menu.svg";
 import filter from "@/public/Images/svg/filter.svg";
 import emptystate from "@/public/Images/svg/empty-state.svg";
+import infocircle from "@/public/Images/svg/info-circle.svg";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main>
       {/* TOP Navbar Container */}
-      <header className="bg-[#101928] sticky-0 top-0 border-[#101928] border">
+      <header className="bg-[#101928] sticky z-10 top-0 border-[#101928] border">
         {/* container */}
         <div className="flex p-6 justify-between items-center">
           {/* Navbar Left Side */}
@@ -86,9 +87,9 @@ export default function Home() {
       </header>
 
       {/* body contents */}
-      <section className="h-full body-container">
+      <section className="h-full relative body-container">
         {/* Sidebar - 1 */}
-        <section className="side12 py-6 px-3 justify-between bottom-0 border-r border-[#ECECED]">
+        <section className="side12 py-6 px-3 justify-between top-[92px] border-r border-[#ECECED]">
           <nav className="sidebar-one-top gap-2">
             <a>
               <Image src={home} alt="Home" />
@@ -108,7 +109,7 @@ export default function Home() {
         </section>
 
         {/* Sidebar - 2 */}
-        <section className="side12 py-6 px-5 gap-2">
+        <section className="side12 top-[92px] py-6 px-5 gap-2">
           <article>
             <h5 className="xgrey-400 py-2 nav-item-header">Modules</h5>
           </article>
@@ -160,10 +161,232 @@ export default function Home() {
         </section>
 
         {/* Sidebar - 3 */}
-        <section></section>
+        <section className="side13">
+          {/* Intro - Text */}
+          <article>
+            <h6 className="heading-h6">Profitable Product Idea Generator</h6>
+            <p className="paragraph-small xgrey-700 rps">
+              <span>
+                Collins, simply answer the questions below, then hit Generate! 
+              </span>
+              <span>
+                Based on what you share, we'll make some new, creative, possibly
+                crazy and potentially very lucrative Profitable Product Idea
+                suggestions for you.  
+              </span>
+              <span>
+                Don't get hung up on any one question (in fact, some can be left
+                blank!). Work your way through the process and click Generate as
+                quickly as possible to get the ideas and clarity flowing.You can
+                run as many searches as you like during your 12 weeks of EPM, so
+                don't "save them up." Let’s go! ✨ 
+              </span>
+            </p>
+          </article>
+
+          {/* Alert Container */}
+          <article className="info-alert">
+            <div className="shrink-0">
+              <Image src={infocircle} alt="Information Circle" />
+            </div>
+            <p className="text-[14px] leading-5">
+              I highly recommend watching each Training (or reading the
+              Transcripts) BEFORE using this Generator so you understand what
+              we're working on!The alert & notifications component
+            </p>
+          </article>
+
+          {/* Content in a Container */}
+          <section className="cont-container">
+            <article>
+              <h6 className="label-semibold pb-2">
+                Select the business mega-niches that applies{" "}
+                <span className="red-base-text">*</span>
+              </h6>
+              <div className="select-cont">
+                <select>
+                  <option disabled selected>
+                    Choose an Option
+                  </option>
+                  <option>Howard is Here</option>
+                </select>
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                Enter the niche topic you want to brainstorm micro-niche ideas
+                around{" "}
+              </h6>
+              <p className="helper-text">
+                💡Your Niche is the smaller area or topic within your larger
+                Mega-Niche. For example, Golf is a smaller topic within the
+                larger Mega-Niche of Arts, Hobbies & Sports.
+                <p>&nbsp;</p>
+              </p>
+              <p className="helper-text">
+                👇Leave blank if you want to do a broader search around your
+                skills (Step 3).
+              </p>
+              <div className="Input-cont">
+                <input type="text" />
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                List skills you have so we can generate micro-niche ideas that
+                best match you
+              </h6>
+              <p className="helper-text">
+                💡For example, you could be good at building systems, or maybe
+                you’re an expert golfer, or you’re good at design, or you have a
+                background in manufacturing, or you’re a good teacher, or you’re
+                a media personality, etc.
+              </p>
+              <div className="Input-cont">
+                <input type="text" />
+              </div>
+              <p className="helper-text2">Seperate with a comma</p>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                Are there any particular kinds of people you'd like to generate
+                micro-niche ideas around?
+              </h6>
+              <p className="helper-text">
+                <span>💡Here are some </span>
+
+                <span className="text-[#1D2739] font-semibold underline">
+                  examples & ideas.
+                </span>
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                👇Leave blank if you're open to serving anybody.
+              </p>
+              <div className="Input-cont">
+                <input
+                  type="text"
+                  placeholder="e.g  Parents, single men, vegans, millenials etc (or leave blank)"
+                />
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                Do these people have any other notable demographic you want to
+                consider
+              </h6>
+              <p className="helper-text">
+                💡This includes age, education, whether they’re married or
+                single, where they live and work, how much money they make,
+                whether they own their own business or work for someone else,
+                whether they’re parents or not, etc.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                👇Leave blank if you want to do a broader search.
+              </p>
+              <div className="Input-cont">
+                <input
+                  type="text"
+                  placeholder="e.g.  Single, marrried, professional, mom, 50+ (or leave blank)"
+                />
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                Do these people have any other notable psychographics you want
+                to consider
+              </h6>
+              <p className="helper-text">
+                💡Psychographics can include: What are they thinking and
+                feeling? What are their aspirations? What are they worried
+                about? What are they motivated by? What are their attitudes to
+                specific topics? What’s their interest level in YOUR topic? What
+                else is occupying their mind or likely to stop them from taking
+                action? <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                👇Leave blank if you want to do a broader search.
+              </p>
+              <div className="Input-cont">
+                <input
+                  type="text"
+                  placeholder="Leave blank for a broader search"
+                />
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold">
+                What is the specific problem you solve?
+              </h6>
+              <p className="helper-text">
+                💡Make sure this is an acknowledged need (i.e. a problem this
+                person recognizes they have, not just a problem you know they
+                have). Be careful not to embed your solution in the problem.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                <i className="font-medium">For example</i>, the problems I solve
+                are: people not knowing how to design or launch a course, having
+                a course that's not getting enough sales, having a course with
+                insufficient student engagement and success. The problem is not
+                people who don't have an Experience Product.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">👇Leave blank if you're not sure.</p>
+              <div className="Input-cont">
+                <input type="text" />
+              </div>
+            </article>
+
+            <article className="rps2">
+              <h6 className="label-semibold pb-2">
+                Are you creating a tribe-based or niche-based audience
+                statement? <span className="red-base-text">*</span>
+              </h6>
+              <p className="helper-text">
+                💡Tribe-Based Audience Statements are broader, while Niche-Based
+                Audience Statements are more specific.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                A Niche-Based Audience Statement is often simpler, clearer and
+                easier to understand and market to. A Tribe-Based Audience
+                Statement allows for greater depth and alignment, but can be
+                trickier to market.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                A Tribe-Based Audience Statement gets you into the ballpark of
+                who your audience is and a Niche-Based Audience Statement gets
+                you onto base.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">
+                Neither approach is better than the other and both approaches
+                will help you land your Profitable Product Idea.
+                <span className="block">&nbsp;</span>
+              </p>
+              <p className="helper-text">👇Leave blank if you're not sure.</p>
+
+             <div>
+              <p></p>
+              <div>
+                
+              </div>
+             </div>
+            </article>
+          </section>
+        </section>
 
         {/* Sidebar - 4 */}
-        <section className="w-[350px] side12 py-6 px-4">
+        <section className="w-[350px] top-[92px] side12 py-6 px-4">
           {/* Saved Ideas */}
           <article className="flex justify-between items-center">
             <h5 className=" nav-item-header">Saved Ideas</h5>
