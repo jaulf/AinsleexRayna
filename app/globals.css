@@ -253,7 +253,7 @@ input {
 .side13 {
   display: grid;
   align-content: flex-start;
-  row-gap: 16px;
+  row-gap: 24px;
   padding: 32px 40px;
 }
 
@@ -267,8 +267,8 @@ input {
 
 .rps {
   display: grid;
-  row-gap: 8px;
-  margin-top: 4px;
+  row-gap: 12px;
+  margin-top: 8px;
 }
 
 .rps > span {
@@ -285,8 +285,6 @@ input {
 }
 
 .cont-container {
-  border-radius: 10px;
-  border: 1px solid #e4e7ec;
   background: #fff;
   padding: 24px;
   display: grid;
@@ -394,4 +392,26 @@ input {
   background: #f0f2f5;
   width: 100%;
   height: 1px;
+}
+
+.cta-container {
+  padding: 24px;
+  width: 100%;
+  border-top: 1px solid #f0f2f5;
+  background: #fcfcfc;
+}
+
+.cta-button {
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  background: #eb5017;
+  padding: 14px;
+  width: 100%;
+}
+
+.over-cian {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e4e7ec;
 }
