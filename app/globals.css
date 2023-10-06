@@ -55,6 +55,10 @@ body {
   font-size: 12px;
   line-height: 145%;
 }
+.paragraph-reg {
+  font-size: 16px;
+  line-height: 145%;
+}
 
 .navbar-nav {
   font-weight: 600;
@@ -95,10 +99,19 @@ body {
   background: #f0f2f5;
 }
 
+.xgrey-50 {
+  background: #f9fafb !important;
+}
+
+.xgrey-trans {
+  background: transparent !important;
+}
+
 .nav-item-bg2 {
   padding: 10px;
   border-radius: 8px;
-  background: #f0f2f5;
+  border: 1px solid #f0f2f5;
+  background: #f9fafb;
 }
 
 a {
@@ -356,6 +369,7 @@ input {
 .radio {
   width: 20px;
   height: 20px;
+  accent-color: #f56630;
 }
 
 .step-label {
@@ -369,4 +383,15 @@ input {
   color: #1671d9;
   text-decoration: underline;
   font-weight: 400;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.divider > div {
+  background: #f0f2f5;
+  width: 100%;
+  height: 1px;
 }

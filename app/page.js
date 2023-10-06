@@ -18,6 +18,7 @@ import menu from "@/public/Images/svg/menu.svg";
 import filter from "@/public/Images/svg/filter.svg";
 import emptystate from "@/public/Images/svg/empty-state.svg";
 import infocircle from "@/public/Images/svg/info-circle.svg";
+import infocircle2 from "@/public/Images/svg/info-circle2.svg";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
             </nav>
           </div>
 
-          {/* Right side - beginning */}
+          {/* Navbar Right side */}
           <div className="flex gap-7">
             {/* Bell and Search Icon */}
             <div className="flex gap-2">
@@ -202,10 +203,13 @@ export default function Home() {
 
           {/* Content in a Container */}
           <section className="cont-container">
+            {/* Step 1 */}
             <article>
               <h4 className="step-label pb-2">Step 1:</h4>
               <h6 className="label-semibold pb-2">
-                Which of the 20 Online Business Mega-Niches are you in?{" "}
+                <span>
+                  Which of the 20 Online Business Mega-Niches are you in?{" "}
+                </span>
                 <span className="blue-under">(Taught in M1V04)</span>{" "}
                 <span className="red-base-text">*</span>
               </h6>
@@ -219,17 +223,25 @@ export default function Home() {
               </div>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 2 */}
             <article className="rps2">
               <h4 className="step-label">Step 2:</h4>
               <h6 className="label-semibold">
-                Enter the niche topic you want to brainstorm micro-niche ideas
-                around{" "}
+                <span>
+                  What Niche Topic (within the Mega-Niche you just selected)
+                  would you like to brainstorm Micro-Niche ideas around?{" "}
+                </span>
+                <span className="blue-under">(Taught in M1V05)</span>{" "}
               </h6>
               <p className="helper-text">
                 💡Your Niche is the smaller area or topic within your larger
                 Mega-Niche. For example, Golf is a smaller topic within the
                 larger Mega-Niche of Arts, Hobbies & Sports.
-                <p>&nbsp;</p>
               </p>
               <p className="helper-text">
                 👇Leave blank if you want to do a broader search around your
@@ -240,10 +252,20 @@ export default function Home() {
               </div>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 3 */}
             <article className="rps2">
+              <h4 className="step-label">Step 3:</h4>
               <h6 className="label-semibold">
-                List skills you have so we can generate micro-niche ideas that
-                best match you
+                <span>
+                  List any skills that you have so we can generate Micro-Niche
+                  ideas that best match you.{" "}
+                </span>
+                <span className="blue-under block">(Relates to in M1V05)</span>
               </h6>
               <p className="helper-text">
                 💡For example, you could be good at building systems, or maybe
@@ -257,18 +279,31 @@ export default function Home() {
               <p className="helper-text2">Seperate with a comma</p>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 4 */}
             <article className="rps2">
+              <h4 className="step-label pb-2">
+                Step 4: <span className="font-normal">(Optional)</span>
+              </h4>
               <h6 className="label-semibold">
-                Are there any particular kinds of people you&apos;d like to
-                generate micro-niche ideas around?
+                <span>
+                  {" "}
+                  Are there any particular kinds of people you&apos;d like to
+                  generate micro-niche ideas around?{" "}
+                </span>
+                <span className="blue-under block">
+                  (Relates to in M1V05 & M1V06)
+                </span>{" "}
               </h6>
               <p className="helper-text">
                 <span>💡Here are some </span>
-
                 <span className="text-[#1D2739] font-semibold underline">
                   examples & ideas.
                 </span>
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 👇Leave blank if you&apos;re open to serving anybody.
@@ -281,17 +316,25 @@ export default function Home() {
               </div>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 5 */}
             <article className="rps2">
+              <h4 className="step-label pb-2">
+                Step 5: <span className="font-normal">(Optional)</span>
+              </h4>
               <h6 className="label-semibold">
                 Do these people have any other notable demographic you want to
-                consider
+                consider <span className="blue-under">(Taught in M1V06)</span>
               </h6>
               <p className="helper-text">
                 💡This includes age, education, whether they&apos;re married or
                 single, where they live and work, how much money they make,
                 whether they own their own business or work for someone else,
                 whether they&apos;re parents or not, etc.
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 👇Leave blank if you want to do a broader search.
@@ -304,10 +347,20 @@ export default function Home() {
               </div>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 6 */}
             <article className="rps2">
+              <h4 className="step-label pb-2">
+                Step 6: <span className="font-normal">(Optional)</span>
+              </h4>
               <h6 className="label-semibold">
                 Do these people have any other notable psychographics you want
                 to consider
+                <span className="blue-under block">(Taught in M1V06)</span>{" "}
               </h6>
               <p className="helper-text">
                 💡Psychographics can include: What are they thinking and
@@ -315,7 +368,7 @@ export default function Home() {
                 about? What are they motivated by? What are their attitudes to
                 specific topics? What&apos;s their interest level in YOUR topic?
                 What else is occupying their mind or likely to stop them from
-                taking action? <span className="block">&nbsp;</span>
+                taking action?
               </p>
               <p className="helper-text">
                 👇Leave blank if you want to do a broader search.
@@ -328,23 +381,32 @@ export default function Home() {
               </div>
             </article>
 
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 7 */}
             <article className="rps2">
+              <h4 className="step-label pb-2">
+                Step 7: <span className="font-normal">(Optional)</span>
+              </h4>
               <h6 className="label-semibold">
                 What is the specific problem you solve?
+                <span className="blue-under block">(Taught in M1V04)</span>{" "}
               </h6>
               <p className="helper-text">
                 💡Make sure this is an acknowledged need (i.e. a problem this
                 person recognizes they have, not just a problem you know they
                 have). Be careful not to embed your solution in the problem.
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 <i className="font-medium">For example</i>, the problems I solve
                 are: people not knowing how to design or launch a course, having
                 a course that&apos;s not getting enough sales, having a course
-                with insufficient student engagement and success. The problem is
-                not people who don&apos;t have an Experience Product.
-                <span className="block">&nbsp;</span>
+                with insufficient student engagement and success. The problem is{" "}
+                <span className="blue-under">not</span> people who don&apos;t
+                have an Experience Product.
               </p>
               <p className="helper-text">
                 👇Leave blank if you&apos;re not sure.
@@ -354,46 +416,89 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="rps2">
-              <h6 className="label-semibold pb-2">
-                Are you creating a tribe-based or niche-based audience
-                statement? <span className="red-base-text">*</span>
-              </h6>
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 8 */}
+            <article className="grid gap-y-[10px]">
+              <h4 className="step-label">Step 8:</h4>
+              <article className="flex gap-[6px]">
+                <h6 className="label-semibold">
+                  Are you creating a tribe-based or niche-based audience{" "}
+                  <span className="blue-under">(Taught in M1V06)</span>{" "}
+                  statement? <span className="red-base-text">*</span>
+                </h6>
+                <div>
+                  <Image src={infocircle2} alt="Info Circle" />
+                </div>
+              </article>
+
               <p className="helper-text">
                 💡Tribe-Based Audience Statements are broader, while Niche-Based
                 Audience Statements are more specific.
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 A Niche-Based Audience Statement is often simpler, clearer and
                 easier to understand and market to. A Tribe-Based Audience
                 Statement allows for greater depth and alignment, but can be
                 trickier to market.
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 A Tribe-Based Audience Statement gets you into the ballpark of
                 who your audience is and a Niche-Based Audience Statement gets
                 you onto base.
-                <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 Neither approach is better than the other and both approaches
                 will help you land your Profitable Product Idea.
-                <span className="block">&nbsp;</span>
               </p>
 
-              <article>
+              <article className="xgrey-700 grid gap-y-[10px]">
                 <p className="helper-text">👇Choose one option below.</p>
-                <div>
+                <div className="flex gap-[10px] items-center">
                   <input class="radio" type="radio" id="samp1" name="samp" />
                   <label>Tribe-based audience statement</label>
                 </div>
-                <div>
+                <div className="flex gap-[10px] items-center">
                   <input class="radio" type="radio" id="samp1" name="samp" />
-                  <label>Tribe-based audience statement</label>
+                  <label>Niche-based audience statement</label>
                 </div>
               </article>
+            </article>
+
+            {/* Divider */}
+            <div className="divider">
+              <div></div>
+            </div>
+
+            {/* Step 9 */}
+            <article className="rps2">
+              <h4 className="step-label pb-2">Step 9:</h4>
+              <h6 className="label-semibold">
+                Select experience product types you’d like to generate product
+                ideas around
+              </h6>
+              <p className="helper-text">
+                <span>
+                  💡If you haven’t made money in your business yet, I recommend
+                  starting with a 1:1 Experience Product, so you can quickly
+                  test your idea before trying to leverage or scale it.
+                </span>
+                <span className="block">
+                  👇Select all that you&apos;d like to include. Select multiple
+                  by Control+Clicking on Windows (or Command+Clicking on Mac).
+                </span>
+              </p>
+              <div className="select-cont">
+                <select>
+                  <option disabled selected>
+                    Select options
+                  </option>
+                  <option>Howard is Here</option>
+                </select>
+              </div>
             </article>
           </section>
         </section>
@@ -403,12 +508,12 @@ export default function Home() {
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
             <h5 className=" nav-item-header text-[#4F4D55]">YOUR ASSETS</h5>
-            <div className="nav-item-bg">
+            <div className="nav-item-bg xgrey-trans">
               <Image src={menu} alt="Hamburger Menu" />
             </div>
           </article>
 
-          {/* Input and Output */}
+          {/* Drag & Drop + Saved */}
           <article className="in-and-out">
             <h5 className="active">Drag & Drop</h5>
             <h5>Saved</h5>
@@ -422,7 +527,7 @@ export default function Home() {
               </div>
               <input type="text" placeholder="Search Ideas..." />
             </div>
-            <div className="nav-item-bg2">
+            <div className="nav-item-bg2 xgrey-50">
               <Image src={filter} alt="filter" />
             </div>
           </article>
