@@ -179,7 +179,7 @@ export default function Home() {
                 blank!). Work your way through the process and click Generate as
                 quickly as possible to get the ideas and clarity flowing.You can
                 run as many searches as you like during your 12 weeks of EPM, so
-                don&apos;t "save them up." Let&apos;s go! ✨ 
+                don&apos;t &quot;save them up.&quot; Let&apos;s go! ✨ 
               </span>
             </p>
           </article>
