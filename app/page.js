@@ -73,7 +73,7 @@ export default function Home() {
                 </div>
                 <article>
                   <h6 className="paragraph-small font-semibold xgrey-100">
-                    Cocos Hub
+                    Coco&apos;s Hub
                   </h6>
                   <p className="paragraph-small xgrey-400">alison.e@rayna.ui</p>
                 </article>
@@ -167,19 +167,23 @@ export default function Home() {
             <h6 className="heading-h6">Profitable Product Idea Generator</h6>
             <p className="paragraph-small xgrey-700 rps">
               <span>
-                Collins, simply answer the questions below, then hit Generate! 
+                Collins, simply answer the questions below, then hit{" "}
+                <span className="font-semibold">Generate!</span> 
               </span>
               <span>
-                Based on what you share, we&apos;ll make some new, creative, possibly
-                crazy and potentially very lucrative Profitable Product Idea
-                suggestions for you.  
+                Based on what you share, we&apos;ll make some new, creative,
+                possibly crazy and potentially very lucrative Profitable Product
+                Idea suggestions for you.  
               </span>
               <span>
-                Don&apos;t get hung up on any one question (in fact, some can be left
-                blank!). Work your way through the process and click Generate as
-                quickly as possible to get the ideas and clarity flowing.You can
-                run as many searches as you like during your 12 weeks of EPM, so
-                don&apos;t &quot;save them up.&quot; Let&apos;s go! ✨ 
+                Don&apos;t get hung up on any one question (in fact, some can be
+                left blank!). Work your way through the process and click
+                Generate as quickly as possible to get the ideas and clarity
+                flowing.
+              </span>
+              <span>
+                You can run as many searches as you like during your 12 weeks of
+                EPM, so don&apos;t &quot;save them up.&quot; Let&apos;s go! 💪🏽
               </span>
             </p>
           </article>
@@ -240,9 +244,9 @@ export default function Home() {
               </h6>
               <p className="helper-text">
                 💡For example, you could be good at building systems, or maybe
-                you&apos;re an expert golfer, or you&apos;re good at design, or you have a
-                background in manufacturing, or you&apos;re a good teacher, or you&apos;re
-                a media personality, etc.
+                you&apos;re an expert golfer, or you&apos;re good at design, or
+                you have a background in manufacturing, or you&apos;re a good
+                teacher, or you&apos;re a media personality, etc.
               </p>
               <div className="Input-cont">
                 <input type="text" />
@@ -252,8 +256,8 @@ export default function Home() {
 
             <article className="rps2">
               <h6 className="label-semibold">
-                Are there any particular kinds of people you&apos;d like to generate
-                micro-niche ideas around?
+                Are there any particular kinds of people you&apos;d like to
+                generate micro-niche ideas around?
               </h6>
               <p className="helper-text">
                 <span>💡Here are some </span>
@@ -306,9 +310,9 @@ export default function Home() {
                 💡Psychographics can include: What are they thinking and
                 feeling? What are their aspirations? What are they worried
                 about? What are they motivated by? What are their attitudes to
-                specific topics? What&apos;s their interest level in YOUR topic? What
-                else is occupying their mind or likely to stop them from taking
-                action? <span className="block">&nbsp;</span>
+                specific topics? What&apos;s their interest level in YOUR topic?
+                What else is occupying their mind or likely to stop them from
+                taking action? <span className="block">&nbsp;</span>
               </p>
               <p className="helper-text">
                 👇Leave blank if you want to do a broader search.
@@ -334,12 +338,14 @@ export default function Home() {
               <p className="helper-text">
                 <i className="font-medium">For example</i>, the problems I solve
                 are: people not knowing how to design or launch a course, having
-                a course that&apos;s not getting enough sales, having a course with
-                insufficient student engagement and success. The problem is not
-                people who don&apos;t have an Experience Product.
+                a course that&apos;s not getting enough sales, having a course
+                with insufficient student engagement and success. The problem is
+                not people who don&apos;t have an Experience Product.
                 <span className="block">&nbsp;</span>
               </p>
-              <p className="helper-text">👇Leave blank if you&apos;re not sure.</p>
+              <p className="helper-text">
+                👇Leave blank if you&apos;re not sure.
+              </p>
               <div className="Input-cont">
                 <input type="text" />
               </div>
@@ -391,9 +397,9 @@ export default function Home() {
 
         {/* Sidebar - 4 */}
         <section className="w-[350px] top-[92px] side12 py-6 px-4">
-          {/* Saved Ideas */}
+          {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
-            <h5 className=" nav-item-header">Saved Ideas</h5>
+            <h5 className=" nav-item-header">YOUR ASSETS</h5>
             <div className="nav-item-bg">
               <Image src={menu} alt="Hamburger Menu" />
             </div>
@@ -401,8 +407,8 @@ export default function Home() {
 
           {/* Input and Output */}
           <article className="in-and-out">
-            <h5 className="active">Input</h5>
-            <h5>Output</h5>
+            <h5 className="active">Drag & Drop</h5>
+            <h5>Saved</h5>
           </article>
 
           {/* Search bar and filter */}
@@ -426,10 +432,9 @@ export default function Home() {
                 <Image src={emptystate} alt="No saved Idea" />
               </div>
               <div className="mt-[-28px]">
-                <h4>No saved ideas</h4>
-                <p>
-                  <span>All your saved ideas will appear here.</span>
-                  <span>You can change the filter above</span>
+                <h4>No assets available for this tool yet</h4>
+                <p className="max-w-[305px]">
+                  <span>Create assets in Profitable Product Generator first</span>
                 </p>
                 <Link href="#">Learn more</Link>
               </div>
