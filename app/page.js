@@ -203,8 +203,10 @@ export default function Home() {
           {/* Content in a Container */}
           <section className="cont-container">
             <article>
+              <h4 className="step-label pb-2">Step 1:</h4>
               <h6 className="label-semibold pb-2">
-                Select the business mega-niches that applies{" "}
+                Which of the 20 Online Business Mega-Niches are you in?{" "}
+                <span className="blue-under">(Taught in M1V04)</span>{" "}
                 <span className="red-base-text">*</span>
               </h6>
               <div className="select-cont">
@@ -218,6 +220,7 @@ export default function Home() {
             </article>
 
             <article className="rps2">
+              <h4 className="step-label">Step 2:</h4>
               <h6 className="label-semibold">
                 Enter the niche topic you want to brainstorm micro-niche ideas
                 around{" "}
@@ -399,7 +402,7 @@ export default function Home() {
         <section className="w-[350px] top-[92px] side12 py-6 px-4">
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
-            <h5 className=" nav-item-header">YOUR ASSETS</h5>
+            <h5 className=" nav-item-header text-[#4F4D55]">YOUR ASSETS</h5>
             <div className="nav-item-bg">
               <Image src={menu} alt="Hamburger Menu" />
             </div>
@@ -434,7 +437,9 @@ export default function Home() {
               <div className="mt-[-28px]">
                 <h4>No assets available for this tool yet</h4>
                 <p className="max-w-[305px]">
-                  <span>Create assets in Profitable Product Generator first</span>
+                  <span>
+                    Create assets in Profitable Product Generator first
+                  </span>
                 </p>
                 <Link href="#">Learn more</Link>
               </div>
