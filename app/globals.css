@@ -33,8 +33,16 @@ body {
   color: #f0f2f5;
 }
 
+.xbgrey-100 {
+  background-color: #f0f2f5;
+}
+
 .xgrey-500 {
   color: #667185;
+}
+
+.xgrey-600 {
+  color: #475467;
 }
 
 .xgrey-1000 {
@@ -57,6 +65,11 @@ body {
 }
 .paragraph-reg {
   font-size: 16px;
+  line-height: 145%;
+}
+.paragraph-15 {
+  font-size: 15px;
+  font-weight: 600;
   line-height: 145%;
 }
 
@@ -417,13 +430,15 @@ input {
   border-radius: 6px;
   background: #eb5017;
   padding: 14px;
-  width: 100%;
+  line-height: 145%;
+  font-weight: 600;
 }
 
 .over-cian {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #e4e7ec;
+  background-color: #fff;
 }
 
 .scrollabr {
@@ -503,4 +518,133 @@ input {
 
 .xhidden {
   display: none;
+}
+
+.s2mit2 {
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f0f2f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* step 2 module item */
+.s2mit {
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.s2mit-sub {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* secondary orange cta */
+.ora-cta-sec {
+  padding: 14px 16px;
+  display: inline-flex;
+  gap: 8px;
+  color: #eb5017;
+  font-size: 16px;
+  line-height: 145%;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1.5px solid #fcd2c2;
+  background: #ffece5;
+  box-shadow: 0px 2px 4px -1px rgba(16, 25, 40, 0.02),
+    0px 5px 13px -5px rgba(16, 25, 40, 0.05);
+}
+
+.field-result-lock,
+.field-result-refresh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.field-result-lock > article:nth-of-type(1) {
+  border-radius: 6px;
+  background: #f0f2f5;
+  display: flex;
+  padding: 12px;
+  gap: 24px;
+  width: 100%;
+}
+
+.field-result-refresh > article:nth-of-type(1) {
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  display: flex;
+  padding: 12px;
+  gap: 24px;
+  width: 100%;
+}
+
+.field-result-lock > article:nth-of-type(2) {
+  flex-shrink: 0;
+}
+
+.field-result-lock label,
+.field-result-refresh label {
+  flex-shrink: 0;
+  color: #98a2b3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 104px;
+  height: 20px;
+}
+
+.field-result-lock input {
+  font-size: 14px;
+  line-height: 145%;
+  background: transparent;
+  width: 100%;
+  outline: none !important;
+  border-radius: 0 !important;
+  color: #98a2b3;
+}
+
+.field-result-refresh input {
+  font-size: 14px;
+  line-height: 145%;
+  color: #101928;
+  background: transparent;
+  width: 100%;
+  outline: none !important;
+  border-radius: 0 !important;
+}
+
+.s2mit .second, .s2mit .third {
+  display: none;
+}
+
+.s2mit.active .second, .s2mit.active .third {
+  display: flex;
+}
+
+.s2mit.active .s2mit-text {
+  display: none;
+}
+
+.s2mit.active .s2mit-rotate {
+  transform: rotate(-180deg);
 }

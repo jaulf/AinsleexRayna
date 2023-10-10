@@ -631,11 +631,11 @@ export default function Home() {
                 <article className="xgrey-700 grid gap-y-[10px]">
                   <p className="helper-text">👇Choose one option below.</p>
                   <div className="flex gap-[10px] items-center">
-                    <input class="radio" type="radio" id="samp1" name="samp" />
+                    <input className="radio" type="radio" id="samp1" name="samp" />
                     <label>Tribe-based audience statement</label>
                   </div>
                   <div className="flex gap-[10px] items-center">
-                    <input class="radio" type="radio" id="samp1" name="samp" />
+                    <input className="radio" type="radio" id="samp1" name="samp" />
                     <label>Niche-based audience statement</label>
                   </div>
                 </article>
@@ -677,7 +677,7 @@ export default function Home() {
               </article>
             </section>
             <article className="cta-container">
-              <button className="cta-button">
+              <button className="cta-button w-full">
                 Generate Profitable Product Ideas
               </button>
             </article>
