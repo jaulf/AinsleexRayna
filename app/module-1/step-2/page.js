@@ -94,7 +94,7 @@ export default function Home() {
         <section className="side13">
           {/* Intro - Text */}
           <article>
-            <h6 className="heading-h6">Here’s your results:</h6>
+            <h6 className="heading-h6">Here&apos;s your results:</h6>
             <p className="paragraph-small xgrey-700 rps">
               <span>
                 Collins, here are a few ideas for you - including some things
@@ -107,7 +107,7 @@ export default function Home() {
                   <span className="font-semibold">
                     click 🔄 to regenerate options
                   </span>
-                  . If you don't like an idea, ignore it!
+                  . If you don&apos;t like an idea, ignore it!
                 </span>
               </span>
 
