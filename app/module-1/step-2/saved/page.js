@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,11 +17,22 @@ import LeftSidebar from "@/components/left-sidebar";
 import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";
+
+// Body Module List - save this asset
 import ModuleList from "@/components/module1-step2-module-list/moduleList";
 import SavedAssetSidebar from "@/components/saved-asset-sidebar/sidebar";
 
-export default function Home() {
+//Image importation
+import heartFill500 from "@/public/Images/svg/heart-fill-500.svg";
+import arrowUp from "@/public/Images/svg/arrow-up-400.svg";
+import lock from "@/public/Images/svg/lock-500.svg";
+import refresh from "@/public/Images/svg/refresh-400.svg";
 
+// Body Module List - saved asset
+import ModuleListSaved from "@/components/module1-step2-module-list/moduleList-saved";
+import SidebarModuleListSaved from "@/components/saved-asset-sidebar/module-list";
+
+export default function Home() {
   // DISPLAY SAVED ASSET SIDEBAR
   const sasExpand = () => {
     if (typeof window !== "undefined") {
@@ -136,7 +147,7 @@ export default function Home() {
 
           {/* Content in a Container */}
           <section className="over-cian">
-            <ModuleList sasExpand={sasExpand} />
+            <ModuleListSaved sasExpand={sasExpand} />
 
             {/* Generate more Ideas CTA */}
             <section>
@@ -171,7 +182,7 @@ export default function Home() {
         </section>
 
         {/* Sidebar - 3 */}
-        <section className="w-[350px] top-[72px] side12 py-6 px-4">
+        <section className="w-[350px] scrollabr overflow-auto top-[72px] side12 py-6 px-4">
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
             <h5 className=" nav-item-header text-[#4F4D55]">YOUR ASSETS</h5>
@@ -202,7 +213,7 @@ export default function Home() {
           {/* Active and Inactive Saved Ideas */}
           <section>
             {/* Inactive Saved Ideas */}
-            <article className="inactive-saved-ideas relative ">
+            <article className="hidden relative">
               <div>
                 <Image src={emptystate} alt="No saved Idea" />
               </div>
@@ -216,6 +227,17 @@ export default function Home() {
                 <Link href="#">Learn more</Link>
               </div>
             </article>
+
+            {/* Active Saved Ideas */}
+            <section>
+              {/* Divider */}
+              <div className="divider3">
+                <div></div>
+              </div>
+
+              {/* Container for saved Asset */}
+              <SidebarModuleListSaved />
+            </section>
           </section>
         </section>
       </section>

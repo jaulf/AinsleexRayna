@@ -3,13 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 //Image importation
-import heartEmpty500 from "@/public/Images/svg/heart-empty-500.svg";
+import heartFill500 from "@/public/Images/svg/heart-fill-500.svg";
 import arrowUp from "@/public/Images/svg/arrow-up-400.svg";
 import lock from "@/public/Images/svg/lock-500.svg";
 import refresh from "@/public/Images/svg/refresh-400.svg";
 
-export default function ModuleList({ sasExpand }) {
-
+export default function ModuleListSaved({ sasExpand }) {
   // display module 1 step 2 - module item
   // hide text - display below
   const displays2mit = (id) => {
@@ -23,15 +22,14 @@ export default function ModuleList({ sasExpand }) {
     <>
       <section className="cont-container">
         {/* Module 1 */}
-        <section
-          
-          id={"s2mit" + 1}
-          className="xbgrey-100 s2mit"
-        >
+        <section id={"s2mit" + 1} className="xbgrey-100 s2mit">
           {/* head */}
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(1)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(1)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 xgrey-700">
                 Profitable Product Idea Option 1
               </h6>
@@ -40,7 +38,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(1)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(1)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -104,21 +105,23 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
-            <Image src={heartEmpty500} alt="Empty" />
-            <p>Save this asset</p>
+          <article
+            className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
+            onClick={sasExpand}
+          >
+            <Image src={heartFill500} alt="Saved" />
+            <p>Saved Asset</p>
           </article>
         </section>
         {/* Module 2 */}
-        <section
-          
-          id={"s2mit" + 2}
-          className="xbgrey-100 s2mit"
-        >
+        <section id={"s2mit" + 2} className="xbgrey-100 s2mit">
           {/* head */}
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(2)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(2)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 xgrey-700">
                 Profitable Product Idea Option 2
               </h6>
@@ -127,7 +130,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(2)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(2)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -191,22 +197,24 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
-            <Image src={heartEmpty500} alt="Empty" />
-            <p>Save this asset</p>
+          <article
+            className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
+            onClick={sasExpand}
+          >
+            <Image src={heartFill500} alt="Saved" />
+            <p>Saved Asset</p>
           </article>
         </section>
 
         {/* Module 3 */}
-        <section
-          
-          id={"s2mit" + 3}
-          className="xbgrey-100 s2mit"
-        >
+        <section id={"s2mit" + 3} className="xbgrey-100 s2mit">
           {/* head */}
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(3)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(3)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 xgrey-700">
                 Profitable Product Idea Option 3
               </h6>
@@ -215,7 +223,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(3)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(3)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -279,22 +290,24 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
-            <Image src={heartEmpty500} alt="Empty" />
-            <p>Save this asset</p>
+          <article
+            className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
+            onClick={sasExpand}
+          >
+            <Image src={heartFill500} alt="Saved" />
+            <p>Saved Asset</p>
           </article>
         </section>
 
         {/* Module 4 */}
-        <section
-          
-          id={"s2mit" + 4}
-          className="xbgrey-100 s2mit"
-        >
+        <section id={"s2mit" + 4} className="xbgrey-100 s2mit">
           {/* head */}
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(4)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(4)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 xgrey-700">
                 Profitable Product Idea Option 4
               </h6>
@@ -303,7 +316,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(4)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(4)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -367,22 +383,24 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
-            <Image src={heartEmpty500} alt="Empty" />
-            <p>Save this asset</p>
+          <article
+            className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
+            onClick={sasExpand}
+          >
+            <Image src={heartFill500} alt="Saved" />
+            <p>Saved Asset</p>
           </article>
         </section>
 
         {/* Module 5 */}
-        <section
-          
-          id={"s2mit" + 5}
-          className="xbgrey-100 s2mit"
-        >
+        <section id={"s2mit" + 5} className="xbgrey-100 s2mit">
           {/* head */}
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(5)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(5)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 xgrey-700">
                 Profitable Product Idea Option 5
               </h6>
@@ -391,7 +409,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(5)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(5)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -455,9 +476,12 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
-            <Image src={heartEmpty500} alt="Empty" />
-            <p>Save this asset</p>
+          <article
+            className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
+            onClick={sasExpand}
+          >
+            <Image src={heartFill500} alt="Saved" />
+            <p>Saved Asset</p>
           </article>
         </section>
       </section>
