@@ -107,7 +107,7 @@ export default function ModuleListSaved({ sasExpand }) {
           {/* save asset */}
           <article
             className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
-            onClick={sasExpand}
+            
           >
             <Image src={heartFill500} alt="Saved" />
             <p>Saved Asset</p>
@@ -199,7 +199,7 @@ export default function ModuleListSaved({ sasExpand }) {
           {/* save asset */}
           <article
             className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
-            onClick={sasExpand}
+            
           >
             <Image src={heartFill500} alt="Saved" />
             <p>Saved Asset</p>
@@ -292,7 +292,7 @@ export default function ModuleListSaved({ sasExpand }) {
           {/* save asset */}
           <article
             className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
-            onClick={sasExpand}
+            
           >
             <Image src={heartFill500} alt="Saved" />
             <p>Saved Asset</p>
@@ -385,7 +385,7 @@ export default function ModuleListSaved({ sasExpand }) {
           {/* save asset */}
           <article
             className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
-            onClick={sasExpand}
+            
           >
             <Image src={heartFill500} alt="Saved" />
             <p>Saved Asset</p>
@@ -478,7 +478,7 @@ export default function ModuleListSaved({ sasExpand }) {
           {/* save asset */}
           <article
             className="paragraph-small xgrey-500 font-semibold flex gap-2 items-center third"
-            onClick={sasExpand}
+            
           >
             <Image src={heartFill500} alt="Saved" />
             <p>Saved Asset</p>

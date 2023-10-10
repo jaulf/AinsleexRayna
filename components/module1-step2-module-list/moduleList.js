@@ -104,7 +104,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
+          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -191,7 +191,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
+          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -279,7 +279,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
+          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -367,7 +367,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
+          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -455,7 +455,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center third" onClick={sasExpand}>
+          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>

@@ -759,7 +759,7 @@ input {
   overflow: hidden;
 }
 
-.hovOpacity-80 {
-  opacity: 0.8;
+.hovOpacity-80:hover {
+  opacity: 0.80;
   cursor: pointer;
-}
+} 

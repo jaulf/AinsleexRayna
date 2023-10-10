@@ -21,6 +21,7 @@ function SavedAssetSidebar({ sasExpand }) {
             <article className="flex justify-between">
               <h6 className="heading-h6">Save Item</h6>
               <Image
+              className="hovOpacity-80"
                 onClick={() => sasExpand()}
                 src={close}
                 alt="modal saved asset popup"
@@ -107,14 +108,14 @@ function SavedAssetSidebar({ sasExpand }) {
             {/* CANCEL */}
             <article
               onClick={sasExpand}
-              className="w-[185px] cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#E4E7EC] bg-[#F0F2F5] text-[#000000] font-semibold"
+              className="w-[185px] hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#E4E7EC] bg-[#F0F2F5] text-[#000000] font-semibold"
             >
               <button>cancel</button>
             </article>
-            {/* SAVE */}
+            {/* SAVE */} 
             <article
               onClick={sasExpand}
-              className="w-[185px] cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#EB5017] bg-[#EB5017] text-[#FFFFFF] font-semibold gap-2"
+              className="w-[185px] hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#EB5017] bg-[#EB5017] text-[#FFFFFF] font-semibold gap-2"
             >
               <Image className="shrink-0" src={heart} alt="Save" />
               <button>Save</button>
