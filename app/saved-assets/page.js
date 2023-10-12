@@ -24,7 +24,6 @@ import arrowRight6 from "@/public/Images/svg/arrow-right-600.svg";
 import EditSavedAssetSidebar from "@/components/saved-asset-sidebar/edit-asset-sidebar";
 
 export default function Home() {
-
   // display module 1 step 2 - module item
   // hide text - display below
   const displays4mit = (id) => {
@@ -241,7 +240,10 @@ export default function Home() {
                           <p className="w-[163px] xgrey-1000">Created 28 Dec</p>
                         </article>
                         <article className="flex gap-6 fourth">
-                          <article onClick={() => EditExpand()} className="flex gap-2 items-center cursor-pointer hovOpacity-80">
+                          <article
+                            onClick={() => EditExpand()}
+                            className="flex gap-2 items-center cursor-pointer hovOpacity-80"
+                          >
                             <Image src={editb4} alt="edit" />
                             <p className="paragraph-small text-[#1671D9]">
                               Edit
@@ -341,7 +343,10 @@ export default function Home() {
                           <p className="w-[163px] xgrey-1000">Created 28 Dec</p>
                         </article>
                         <article className="flex gap-6 fourth">
-                          <article onClick={() => EditExpand()} className="flex gap-2 items-center cursor-pointer hovOpacity-80">
+                          <article
+                            onClick={() => EditExpand()}
+                            className="flex gap-2 items-center cursor-pointer hovOpacity-80"
+                          >
                             <Image src={editb4} alt="edit" />
                             <p className="paragraph-small text-[#1671D9]">
                               Edit
@@ -372,18 +377,18 @@ export default function Home() {
                       <p>
                         Picture a canvas waiting to be painted, a blank page
                         eager to be filled, a digital realm ready to come to
-                        life. It's in this creative playground that we'll weave
+                        life. It&apos;s in this creative playground that we&apos;ll weave
                         our design magic, experimenting, iterating, and refining
-                        until our vision becomes reality. It's in this creative
-                        playground that we'll weave
+                        until our vision becomes reality. It&apos;s in this creative
+                        playground that we&apos;ll weave
                       </p>
                       <p>
                         Picture a canvas waiting to be painted, a blank page
                         eager to be filled, a digital realm ready to come to
-                        life. It's in this creative playground that we'll weave
+                        life. It&apos;s in this creative playground that we&apos;ll weave
                         our design magic, experimenting, iterating, and refining
-                        until our vision becomes reality. It's in this creative
-                        playground that we'll weave
+                        until our vision becomes reality. It&apos;s in this creative
+                        playground that we&apos;ll weave
                       </p>
                     </article>
                   </article>
