@@ -11,13 +11,32 @@ import expand1 from "@/public/Images/svg/expand1.svg";
 import heart from "@/public/Images/svg/heart.svg";
 import home2 from "@/public/Images/svg/home2.svg";
 import modules from "@/public/Images/svg/modules.svg";
+import heart8 from "@/public/Images/svg/heart-grey-800.svg";
 import up from "@/public/Images/svg/up.svg";
+import { usePathname } from "next/navigation";
 
 function LeftSidebar() {
+  // toggle active sidebar
+  const pathname = usePathname();
+
   // Only for sidebar - when introducing redux sidebar collapse and
   // and expansion will be handled on redux for consistency on multiple
   // pages for now it is just useEffect
   useEffect(() => {
+    // SET ACTIVE STATE OF 'YOUR ASSET' BASED ON NAVIGATION
+    if (pathname == "/saved-assets") {
+      document.querySelectorAll(".saved").forEach((itme) => {
+        itme.classList.add("side2-active");
+      });
+    }
+
+    const searchModule = '/module-';
+    if (pathname.startsWith(searchModule)) {
+      document.querySelectorAll(".module").forEach((itme) => {
+        itme.classList.add("side2-active");
+      });
+    }
+
     document.querySelector(".collapsed").style.display = "none";
   }, []);
 
@@ -78,11 +97,11 @@ function LeftSidebar() {
                   onClick={modulesExpand}
                   className="flex modhov justify-between items-center"
                 >
-                  <article className="s1c-b modhov side2-active">
+                  <Link href="/module-1/step-1" className="s1c-b modhov module">
                     <div>
                       <Image src={modules} alt="Modules" />
                     </div>
-                  </article>
+                  </Link>
 
                   <article className="rotate-effect xcmo2">
                     <Image src={up} alt="dropdown" />
@@ -93,11 +112,15 @@ function LeftSidebar() {
 
             {/* Assets */}
             <div className="pt-2 mt-2 border-t border-[#F0F2F5]">
-              <article className="s1c-b modhov">
+              <Link href="/saved-assets" className="saved rounded-[4px] s1c-b modhov">
                 <div>
-                  <Image src={heart} alt="Assets" />
-                </div>
-              </article>
+                {pathname == "/saved-assets" ? (
+                    <Image src={heart8} alt="Your Assets" />
+                  ) : (
+                    <Image src={heart} alt="Your Assets" />
+                  )}
+                </div> 
+              </Link>
             </div>
           </section>
         </section>
@@ -215,14 +238,18 @@ function LeftSidebar() {
             </section>
 
             {/* Assets */}
-            <div className="pt-2 mt-4 border-t border-[#F0F2F5]">
-              <article className="s1c-a">
+            <Link href="/saved-assets" className="pt-2 block modhov mt-4 border-t border-[#F0F2F5]">
+              <article className="s1c-a saved rounded-[4px]">
                 <div>
-                  <Image src={heart} alt="Assets" />
+                  {pathname == "/saved-assets" ? (
+                    <Image src={heart8} alt="Your Assets" />
+                  ) : (
+                    <Image src={heart} alt="Your Assets" />
+                  )}
                 </div>
                 <h6 className="paragraph-small">Your Assets</h6>
               </article>
-            </div>
+            </Link>
           </section>
         </section>
 
