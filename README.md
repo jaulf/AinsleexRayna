@@ -2,4 +2,3 @@ Ainslee + Rayna is an AI platform to help students during the startup business c
 
 module 1 
 module 2
-module 3
