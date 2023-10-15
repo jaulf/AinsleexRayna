@@ -15,7 +15,7 @@ import filter7 from "@/public/Images/svg/filter-700.svg";
 import calendar7 from "@/public/Images/svg/calendar-700.svg";
 import bin8 from "@/public/Images/svg/bin-800.svg";
 import editb4 from "@/public/Images/svg/edit-blue-400.svg";
-import LeftSidebar from "@/components/left-sidebar";
+import LeftSidebar from "@/components/General/left-sidebar";
 import arrowUp from "@/public/Images/svg/arrow-up-400.svg";
 import minusOrange from "@/public/Images/svg/minus-orange.svg";
 import deleteOrange from "@/public/Images/svg/delete-orange-500.svg";

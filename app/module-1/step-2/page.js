@@ -13,7 +13,7 @@ import verifiedtick from "@/public/Images/svg/verified-tick.svg";
 import filter from "@/public/Images/svg/filter.svg";
 import emptystate from "@/public/Images/svg/empty-state.svg";
 import expand2 from "@/public/Images/svg/expand2.svg";
-import LeftSidebar from "@/components/left-sidebar";
+import LeftSidebar from "@/components/General/left-sidebar";
 import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";

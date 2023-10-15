@@ -144,7 +144,7 @@ function LeftSidebar() {
       </section>
 
       {/* SIDEBAR - expanded */}
-      <section className="side-expanded side12 scrollabr overflow-auto top-[72px] gap-40 py-6 px-3 justify-between ">
+      <section className="hidden lg:inline-flex side-expanded side12 scrollabr overflow-auto top-[72px] gap-40 py-6 px-3 justify-between ">
         {/* Top Navbar */}
         <section className="top-nav whitespace-nowrap">
           {/* nav with expand icon */}

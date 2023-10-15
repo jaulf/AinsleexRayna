@@ -14,7 +14,7 @@ import emptystate from "@/public/Images/svg/empty-state.svg";
 import infocircle from "@/public/Images/svg/info-circle.svg";
 import infocircle2 from "@/public/Images/svg/info-circle2.svg";
 import expand2 from "@/public/Images/svg/expand2.svg";
-import LeftSidebar from "@/components/left-sidebar";
+import LeftSidebar from "@/components/General/left-sidebar";
 
 export default function Home() {
 
