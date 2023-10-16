@@ -62,7 +62,7 @@ export default function Home() {
             <div>
               <Image src={logo} alt="Full main logo dark" />
             </div>
-            <nav className="navbar-nav block paragraph-small xgrey-400">
+            <nav className="navbar-nav block text-[14px] leading-[145%] xgrey-400">
               <Link className="" href="#">
                 Home
               </Link>
@@ -103,10 +103,10 @@ export default function Home() {
                   </div>
                 </div>
                 <article>
-                  <h6 className="paragraph-small font-semibold xgrey-100">
+                  <h6 className="text-[14px] leading-[145%] font-semibold xgrey-100">
                     Coco&apos;s Hub
                   </h6>
-                  <p className="paragraph-small xgrey-400">alison.e@rayna.ui</p>
+                  <p className="text-[14px] leading-[145%] xgrey-400">alison.e@rayna.ui</p>
                 </article>
               </div>
               <div>
@@ -129,7 +129,7 @@ export default function Home() {
             {/* Intro - Your Assets */}
             <article className="flex flex-col px-6 gap-2">
               <h6 className="paragraph-18 xgrey-800">Your Assets</h6>
-              <p className="paragraph-small xgrey-600 opacity-70">
+              <p className="text-[14px] leading-[145%] xgrey-600 opacity-70">
                 Stay up to date with our upcoming events & opportunities
               </p>
             </article>
@@ -149,7 +149,7 @@ export default function Home() {
                   </article>
 
                   {/* Filter */}
-                  <button className="button-type1 xgrey-700">
+                  <button className="button-type1 text-[#344054]">
                     <Image src={filter7} alt="Filter" />
                     <p>Filter</p>
                   </button>
@@ -189,7 +189,7 @@ export default function Home() {
                   {/* DROPDOWN - BULK ACTIONS */}
                   {/* RIGHT - DROPDOWN */}
                   <article className="timeline-dropdown">
-                    <select className="xgrey-700 font-semibold button-type-dropdown">
+                    <select className="text-[#344054] font-semibold button-type-dropdown">
                       <option>Bulk action</option>
                       <option>Last 14 days</option>
                       <option>Last 28 days</option>
@@ -245,13 +245,13 @@ export default function Home() {
                             className="flex gap-2 items-center cursor-pointer hovOpacity-80"
                           >
                             <Image src={editb4} alt="edit" />
-                            <p className="paragraph-small text-[#1671D9]">
+                            <p className="text-[14px] leading-[145%] text-[#1671D9]">
                               Edit
                             </p>
                           </article>
                           <article className="flex gap-2 items-center">
                             <Image src={bin8} alt="Delete" />
-                            <p className="paragraph-small text-[#1D2739]">
+                            <p className="text-[14px] leading-[145%] text-[#1D2739]">
                               Delete
                             </p>
                           </article>
@@ -348,13 +348,13 @@ export default function Home() {
                             className="flex gap-2 items-center cursor-pointer hovOpacity-80"
                           >
                             <Image src={editb4} alt="edit" />
-                            <p className="paragraph-small text-[#1671D9]">
+                            <p className="text-[14px] leading-[145%] text-[#1671D9]">
                               Edit
                             </p>
                           </article>
                           <article className="flex gap-2 items-center">
                             <Image src={bin8} alt="Delete" />
-                            <p className="paragraph-small text-[#1D2739]">
+                            <p className="text-[14px] leading-[145%] text-[#1D2739]">
                               Delete
                             </p>
                           </article>
@@ -456,7 +456,7 @@ export default function Home() {
 
           {/* Footer Message */}
           <article className="pb-10 pt-16 flex justify-center items-center">
-            <p className="xgrey-400 paragraph-small">
+            <p className="xgrey-400 text-[14px] leading-[145%]">
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>

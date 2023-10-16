@@ -32,10 +32,10 @@ export default function ModuleList({ sasExpand }) {
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
             <article onClick={() => displays2mit(1)} className=" cursor-pointer">
-              <h6 className="paragraph-15 xgrey-700">
+              <h6 className="paragraph-15 text-[#344054]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text paragraph-small xgrey-500 pt-2">
+              <p className="s2mit-text text-[14px] leading-[145%] xgrey-500 pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -104,7 +104,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article className="text-[14px] leading-[145%] text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -119,10 +119,10 @@ export default function ModuleList({ sasExpand }) {
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
             <article onClick={() => displays2mit(2)} className=" cursor-pointer">
-              <h6 className="paragraph-15 xgrey-700">
+              <h6 className="paragraph-15 text-[#344054]">
                 Profitable Product Idea Option 2
               </h6>
-              <p className="s2mit-text paragraph-small xgrey-500 pt-2">
+              <p className="s2mit-text text-[14px] leading-[145%] xgrey-500 pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -191,7 +191,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article className="text-[14px] leading-[145%] text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -207,10 +207,10 @@ export default function ModuleList({ sasExpand }) {
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
             <article onClick={() => displays2mit(3)} className=" cursor-pointer">
-              <h6 className="paragraph-15 xgrey-700">
+              <h6 className="paragraph-15 text-[#344054]">
                 Profitable Product Idea Option 3
               </h6>
-              <p className="s2mit-text paragraph-small xgrey-500 pt-2">
+              <p className="s2mit-text text-[14px] leading-[145%] xgrey-500 pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -279,7 +279,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article className="text-[14px] leading-[145%] text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -295,10 +295,10 @@ export default function ModuleList({ sasExpand }) {
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
             <article onClick={() => displays2mit(4)} className=" cursor-pointer">
-              <h6 className="paragraph-15 xgrey-700">
+              <h6 className="paragraph-15 text-[#344054]">
                 Profitable Product Idea Option 4
               </h6>
-              <p className="s2mit-text paragraph-small xgrey-500 pt-2">
+              <p className="s2mit-text text-[14px] leading-[145%] xgrey-500 pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -367,7 +367,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article className="text-[14px] leading-[145%] text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -383,10 +383,10 @@ export default function ModuleList({ sasExpand }) {
           <article className="s2mit-sub first">
             {/* Result header and body plus dropdown arrow */}
             <article onClick={() => displays2mit(5)} className=" cursor-pointer">
-              <h6 className="paragraph-15 xgrey-700">
+              <h6 className="paragraph-15 text-[#344054]">
                 Profitable Product Idea Option 5
               </h6>
-              <p className="s2mit-text paragraph-small xgrey-500 pt-2">
+              <p className="s2mit-text text-[14px] leading-[145%] xgrey-500 pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -455,7 +455,7 @@ export default function ModuleList({ sasExpand }) {
           </article>
 
           {/* save asset */}
-          <article className="paragraph-small text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article className="text-[14px] leading-[145%] text-[#EB5017] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>

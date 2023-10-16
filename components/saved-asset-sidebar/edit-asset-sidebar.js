@@ -37,7 +37,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
             <section className="flex flex-col gap-6">
               {/* INPUT FIELD */}
               <article className="flex flex-col gap-1">
-                <label className="xgrey-700 paragraph-small font-medium">
+                <label className="text-[#344054] text-[14px] leading-[145%] font-medium">
                   Enter name for this asset
                 </label>
                 <input
@@ -54,7 +54,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
 
               {/* RESULT DETAILS */}
               <article className="flex flex-col gap-4">
-                <h6 className="xgrey-700 paragraph-small font-medium">
+                <h6 className="text-[#344054] text-[14px] leading-[145%] font-medium">
                   Result details
                 </h6>
 

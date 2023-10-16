@@ -30,7 +30,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(9)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Weight loss idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -103,7 +103,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(10)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -176,7 +176,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(11)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -249,7 +249,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(12)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -322,7 +322,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(13)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -395,7 +395,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(14)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">
@@ -468,7 +468,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               onClick={() => displays3mit(15)}
               className=" cursor-pointer"
             >
-              <h6 className="paragraph-small font-semibold xgrey-700">
+              <h6 className="text-[14px] leading-[145%] font-semibold text-[#344054]">
                 Idea 1
               </h6>
               <p className="s2mit-text paragraph-xsmall xgrey-500 pt-1 max-w-[266px] overflow-hidden clipText">

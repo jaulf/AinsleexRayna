@@ -66,7 +66,7 @@ function LeftSidebar() {
   return (
     <>
       {/* SIDEBAR - collapsed */}
-      <section className="xhidden side12 scrollabr overflow-auto top-[72px] gap-40 py-6 px-3 justify-between collapsed">
+      <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between collapsed lg:mr-[175px]">
         {/* Top Navbar */}
         <section className="top-nav whitespace-nowrap">
           {/* nav with expand icon */}
@@ -126,7 +126,7 @@ function LeftSidebar() {
         </section>
 
         {/* Bottom navbar */}
-        <section className="xgrey-700 btm-nav">
+        <section className="text-[#344054] btm-nav">
           {/* Help */}
           <article className="s1c-b modhov">
             <div>
@@ -144,7 +144,7 @@ function LeftSidebar() {
       </section>
 
       {/* SIDEBAR - expanded */}
-      <section className="hidden lg:inline-flex side-expanded side12 scrollabr overflow-auto top-[72px] gap-40 py-6 px-3 justify-between ">
+      <section className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between ">
         {/* Top Navbar */}
         <section className="top-nav whitespace-nowrap">
           {/* nav with expand icon */}
@@ -152,7 +152,7 @@ function LeftSidebar() {
             onClick={sidebarMov}
             className="s1c-a modhov justify-between xgrey-400"
           >
-            <h6 className="paragraph-small">Nav</h6>
+            <h6 className="text-[14px] leading-[145%]">Nav</h6>
             <div className="cursor-point">
               <Image src={expand1} alt="Expand" />
             </div>
@@ -167,7 +167,7 @@ function LeftSidebar() {
                 <div>
                   <Image src={home2} alt="Dashboard" />
                 </div>
-                <h6 className="paragraph-small">Dashboard</h6>
+                <h6 className="text-[14px] leading-[145%]">Dashboard</h6>
               </article>
 
               {/* Modules */}
@@ -181,7 +181,7 @@ function LeftSidebar() {
                     <div>
                       <Image src={modules} alt="Modules" />
                     </div>
-                    <h6 className="paragraph-small">Modules</h6>
+                    <h6 className="text-[14px] leading-[145%]">Modules</h6>
                   </article>
 
                   <article className="rotate-effect xcmo">
@@ -192,43 +192,43 @@ function LeftSidebar() {
                 {/* modules dropdown - reveal */}
                 <section className="module-cont cmo">
                   <article className="module-item active">
-                    <h5 className="paragraph-small">Module 01</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 01</h5>
                     <div className="invisible">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 02</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 02</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 03</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 03</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 04</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 04</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 05</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 05</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 06</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 06</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
                   <article className="module-item">
-                    <h5 className="paragraph-small">Module 07</h5>
+                    <h5 className="text-[14px] leading-[145%]">Module 07</h5>
                     <div className="">
                       <Image src={down2} alt="dropdown" />
                     </div>
@@ -247,20 +247,20 @@ function LeftSidebar() {
                     <Image src={heart} alt="Your Assets" />
                   )}
                 </div>
-                <h6 className="paragraph-small">Your Assets</h6>
+                <h6 className="text-[14px] leading-[145%]">Your Assets</h6>
               </article>
             </Link>
           </section>
         </section>
 
         {/* Bottom navbar */}
-        <section className="xgrey-700 btm-nav">
+        <section className="text-[#344054] btm-nav">
           {/* Help */}
           <article className="s1c-a">
             <div>
               <Image src={help2} alt="Help" />
             </div>
-            <h6 className="paragraph-small">Help</h6>
+            <h6 className="text-[14px] leading-[145%]">Help</h6>
           </article>
 
           {/* Logout */}
@@ -268,7 +268,7 @@ function LeftSidebar() {
             <div>
               <Image src={signout} alt="Logout" />
             </div>
-            <h6 className="paragraph-small">Log Out</h6>
+            <h6 className="text-[14px] leading-[145%]">Log Out</h6>
           </article>
         </section>
       </section>

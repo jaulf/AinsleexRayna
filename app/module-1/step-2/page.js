@@ -43,7 +43,7 @@ export default function Home() {
             <div>
               <Image src={logo} alt="Full main logo dark" />
             </div>
-            <nav className="navbar-nav block paragraph-small xgrey-400">
+            <nav className="navbar-nav block text-[14px] leading-[145%] xgrey-400">
               <Link className="" href="#">
                 Home
               </Link>
@@ -84,10 +84,10 @@ export default function Home() {
                   </div>
                 </div>
                 <article>
-                  <h6 className="paragraph-small font-semibold xgrey-100">
+                  <h6 className="text-[14px] leading-[145%] font-semibold xgrey-100">
                     Coco&apos;s Hub
                   </h6>
-                  <p className="paragraph-small xgrey-400">alison.e@rayna.ui</p>
+                  <p className="text-[14px] leading-[145%] xgrey-400">alison.e@rayna.ui</p>
                 </article>
               </div>
               <div>
@@ -99,7 +99,7 @@ export default function Home() {
       </header>
 
       {/* body contents */}
-      <section className="h-full relative body-container2">
+      <section className="h-full relative grid-cols-[max-content_1fr_max-content]">
         {/* Left Side Navigation Bar */}
         <LeftSidebar />
 
@@ -108,7 +108,7 @@ export default function Home() {
           {/* Intro - Text */}
           <article>
             <h6 className="heading-h6">Here&apos;s your results:</h6>
-            <p className="paragraph-small xgrey-700 rps">
+            <p className="text-[14px] leading-[145%] text-[#344054] rps">
               <span>
                 Collins, here are a few ideas for you - including some things
                 you may not have thought of on your own! Keep an open mind...If
@@ -164,7 +164,7 @@ export default function Home() {
           {/* Footer Message */}
 
           <article className="pb-10 pt-[167px] flex justify-center items-center">
-            <p className="xgrey-400 paragraph-small">
+            <p className="xgrey-400 text-[14px] leading-[145%]">
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>
