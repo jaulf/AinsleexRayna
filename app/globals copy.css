@@ -269,7 +269,7 @@ select {
 }
 
 .inactive-saved-ideas a {
-  color: #eb5017;
+  color: #F29408;
   font-weight: 600;
   padding-top: 24px;
 }
@@ -470,7 +470,7 @@ select {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  background: #eb5017;
+  background: #F29408;
   padding: 14px;
   line-height: 145%;
   font-weight: 600;
@@ -622,7 +622,7 @@ select {
   padding: 14px 16px;
   display: inline-flex;
   gap: 8px;
-  color: #eb5017;
+  color: #F29408;
   font-size: 16px;
   line-height: 145%;
   font-weight: 600;

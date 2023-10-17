@@ -18,7 +18,7 @@ import LeftSidebar from "@/components/General/left-sidebar";
 import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
 export default function Home() {
-  return (
+  return ( 
     <main>
       {/* TOP Navbar Container */}
       {/* USE THIS NAVBAR COMPONENT */}
@@ -96,12 +96,12 @@ export default function Home() {
       </header>
 
       {/* body contents */}
-      <section className="h-full bg-[#fafafa] relative grid lg:grid-cols-[max-content_1fr_max-content]">
+      <section className="h-full bg-[#fafafa] relative grid lg:grid-cols-[1fr_max-content]">
         {/* Left Side Navigation Bar */}
         <LeftSidebar /> 
-
+ 
         {/* Sidebar - 2 */}
-        <section className="grid gap-y-6 py-14 px-4 lg:py-8 lg:px-10">
+        <section className="lg:ml-[307px] grid gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
           {/* Intro - Text */}
           <article>
             <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">Profitable Product Idea Generator</h6>
@@ -145,7 +145,7 @@ export default function Home() {
             <section className="bg-white p-6 grid content-start gap-y-6">
               {/* Step 1 */}
               <article>
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630] pb-2">Step 1:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408] pb-2">Step 1:</h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%] pb-2">
                   <span>
                     Which of the 20 Online Business Mega-Niches are you in?{" "}
@@ -170,7 +170,7 @@ export default function Home() {
 
               {/* Step 2 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">Step 2:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 2:</h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   <span>
                     What Niche Topic (within the Mega-Niche you just selected)
@@ -199,7 +199,7 @@ export default function Home() {
 
               {/* Step 3 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">Step 3:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 3:</h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   <span>
                     List any skills that you have so we can generate Micro-Niche
@@ -231,7 +231,7 @@ export default function Home() {
 
               {/* Step 4 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
                   Step 4: <span className="font-normal">(Optional)</span>
                 </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
@@ -268,7 +268,7 @@ export default function Home() {
 
               {/* Step 5 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
                   Step 5: <span className="font-normal">(Optional)</span>
                 </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
@@ -299,7 +299,7 @@ export default function Home() {
 
               {/* Step 6 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
                   Step 6: <span className="font-normal">(Optional)</span>
                 </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
@@ -335,7 +335,7 @@ export default function Home() {
 
               {/* Step 7 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
                   Step 7: <span className="font-normal">(Optional)</span>
                 </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
@@ -373,7 +373,7 @@ export default function Home() {
 
               {/* Step 8 */}
               <article className="grid gap-y-[10px]">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">Step 8:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 8:</h4>
                 <article className="flex gap-[6px]">
                   <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                     Are you creating a tribe-based or niche-based audience{" "}
@@ -409,7 +409,7 @@ export default function Home() {
                   <p className="helper-text text-[#667185] text-[14px] leading-[145%]">👇Choose one option below.</p>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="radio focus:outline-[#fa9874] w-5 h-5 accent-[#f56630]"
+                      className="accent-[#F29408] radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -418,7 +418,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="radio focus:outline-[#fa9874] w-5 h-5 accent-[#f56630]"
+                      className="accent-[#F29408] radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -435,7 +435,7 @@ export default function Home() {
 
               {/* Step 9 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#f56630]">Step 9:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 9:</h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   Select experience product types you’d like to generate product
                   ideas around
@@ -464,7 +464,7 @@ export default function Home() {
               </article>
             </section>
             <article className="cta-container p-6 w-full border-t bg-[#fcfcfc]">
-              <button className="cta-button bg-[#eb5017] p-[14px] text-center text-[#fff] font-semibold leading-[145%] rounded-md w-full">
+              <button className="cta-button bg-[#F29408] p-[14px] text-center text-[#000619] font-semibold leading-[145%] rounded-md w-full">
                 Generate Profitable Product Ideas
               </button>
             </article>
@@ -491,7 +491,7 @@ export default function Home() {
 
           {/* Drag & Drop + Saved */}
           <article className="in-and-out w-full grid grid-cols-2 text-center">
-            <h5 className="py-4 font-semibold border-b active border-[#f56630] text-[#f56630]">Drag & Drop</h5>
+            <h5 className="py-4 font-semibold border-b active border-[#F29408] text-[#F29408]">Drag & Drop</h5>
             <h5 className="py-4 font-semibold border-b border-[#e4e7ec] text-[#344054]">Saved</h5>
           </article>
 
@@ -522,7 +522,7 @@ export default function Home() {
                     Create assets in Profitable Product Generator first
                   </span>
                 </p>
-                <Link className="text-[#eb5017] font-semibold pt-6 block" href="#">Learn more</Link>
+                <Link className="text-[#F29408] font-semibold pt-6 block" href="#">Learn more</Link>
               </div>
             </article>
           </section>

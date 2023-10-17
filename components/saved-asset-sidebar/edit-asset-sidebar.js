@@ -79,7 +79,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
             {/* SAVE */}
             <article
               onClick={EditExpand}
-              className="w-[185px] hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#EB5017] bg-[#EB5017] text-[#FFFFFF] font-semibold gap-2"
+              className="w-[185px] hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#F29408] bg-[#F29408] text-[#FFFFFF] font-semibold gap-2"
             >
               <Image className="shrink-0" src={heart} alt="Save" />
               <button>Save</button>

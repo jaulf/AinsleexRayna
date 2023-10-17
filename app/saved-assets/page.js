@@ -184,7 +184,7 @@ export default function Home() {
                   {/* Delete */}
                   <article className="flex gap-1 items-center">
                     <Image src={deleteOrange} alt="" />
-                    <p className="text-[#EB5017] font-semibold">Delete</p>
+                    <p className="text-[#F29408] font-semibold">Delete</p>
                   </article>
                   {/* DROPDOWN - BULK ACTIONS */}
                   {/* RIGHT - DROPDOWN */}
