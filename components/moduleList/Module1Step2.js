@@ -25,7 +25,7 @@ export default function ModuleList({ sasExpand }) {
         {/* Module 1 - ACTIVE */}
         <section
           id={"s2mit" + 1}
-          className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#E4E7EC] border flex flex-col items-center gap-4 w-full"
+          className="xbgrey-100 active s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#E4E7EC] border flex flex-col items-center gap-4 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
@@ -34,12 +34,12 @@ export default function ModuleList({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text hidden lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185] pt-[2px] lg:pt-2">
+              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185]  pt-[2px] lg:pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
             {/* clicking this will hide the body and save asset */}
-            <article onClick={() => displays2mit(1)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer rotate-[180deg]">
+            <article onClick={() => displays2mit(1)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -121,7 +121,7 @@ export default function ModuleList({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 2
               </h6>
-              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185] pt-[2px] lg:pt-2">
+              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185]  pt-[2px] lg:pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -209,7 +209,7 @@ export default function ModuleList({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 3
               </h6>
-              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185] pt-[2px] lg:pt-2">
+              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185]  pt-[2px] lg:pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -297,7 +297,7 @@ export default function ModuleList({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 4
               </h6>
-              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185] pt-[2px] lg:pt-2">
+              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185]  pt-[2px] lg:pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -385,7 +385,7 @@ export default function ModuleList({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 5
               </h6>
-              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185] pt-[2px] lg:pt-2">
+              <p className="s2mit-text lg:text-[14px] text-[12px] leading-[145%] xgrey-500 text-[#667185]  pt-[2px] lg:pt-2">
                 Losing weight using a kletogenic diet
               </p>
             </article>

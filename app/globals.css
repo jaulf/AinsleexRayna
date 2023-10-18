@@ -1,3 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrollabr {
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
+}
+.scrollabr::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+.scrollabr::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.scrollabr::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.navbar-nav .active {
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: #1d2739;
+  color: #f7f9fc; /* grey 75*/
+}
+
+.sidebar-one-top .active {
+  border-radius: 8px;
+  background: #f0f2f5;
+}
+
+.module-cont .active,
+.sidebar-is-active {
+  color: #101928;
+  background: #f0f2f5;
+  font-weight: 600;
+}
+
+.in-and-out .active {
+  color: #f56630;
+  border-bottom: 1px solid #f56630;
+}
+.s2mit.active,
+.s4mit.active,
+.s3mit.active {
+  border: 1px solid #d0d5dd;
+}
+
+.s2mit .second,
+.s2mit .third,
+.s4mit .second,
+.s4mit .third,
+.s3mit .second,
+.s3mit .third {
+  display: none;
+}
+
+.s4mit .fourth {
+  display: none;
+}
+
+.s4mit.active .fourth,
+.s4mit.selected .fourth {
+  display: flex;
+}
+
+.s2mit.active .second,
+.s2mit.active .third,
+.s4mit.active .second,
+.s4mit.active .third,
+.s3mit.active .second,
+.s3mit.active .third {
+  display: flex;
+}
+
+.s2mit.active .s2mit-text,
+.s4mit.active .s4mit-text,
+.s3mit.active .s2mit-text {
+  display: none;
+}
+
+.s2mit.active .s2mit-rotate,
+.s4mit.active .s2mit-rotate,
+.s3mit.active .s2mit-rotate {
+  transform: rotate(-180deg);
+}
+
+#sas.active {
+  display: flex;
+}
+
+#esas.active {
+  display: flex;
+}
+
+.roshash {
+  transform: rotate(180deg);
+}
+
+.rotate-effect {
+  transition: transform 0.4s ease;
+}

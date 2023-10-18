@@ -17,7 +17,7 @@ import LeftSidebar from "@/components/General/left-sidebar";
 import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";
-import ModuleList from "@/components/module1-step2-module-list/moduleList";
+import ModuleList from "@/components/moduleList/Module1Step2";
 import SavedAssetSidebar from "@/components/saved-asset-sidebar/sidebar";
 import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
@@ -157,13 +157,13 @@ export default function Home() {
             <ModuleList sasExpand={sasExpand} />
 
             {/* CTA down + Generate more ideas */}
-            <article className="cta-container lg:mt-[132px] lg:p-6 w-full inline-flex justify-center lg:justify-between items-center">
+            <article className="cta-container lg:mt-[132px] lg:p-6 lg:pb-0 w-full inline-flex justify-center lg:justify-between items-center">
               <button className="xgrey-600 text-[#475467] font-semibold hidden lg:inline-flex gap-2 items-center">
                 <Image src={arrowLeft} alt="Arrow Left" />
                 <p>Go Back</p>
               </button>
               <article className="p-6 flex justify-center">
-                <button className=" shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
+                <button className="shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
                   <Image src={generate500} alt="Generate more ideas" />
                   <p>Generate more ideas</p>
                 </button>
@@ -173,8 +173,8 @@ export default function Home() {
 
           {/* Footer Message */}
 
-          <article className="pb-10 pt-[167px] flex justify-center items-center">
-            <p className="xgrey-400 text-[14px] leading-[145%]">
+          <article className="pb-10 pt-16 flex justify-center items-center">
+            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]"> 
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>
@@ -194,10 +194,10 @@ export default function Home() {
 
           {/* Drag & Drop + Saved */}
           <article className="in-and-out w-full grid grid-cols-2 text-center">
-            <h5 className="py-4 font-semibold border-b active border-[#F29408] text-[#F29408]">
+            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
               Drag & Drop
             </h5>
-            <h5 className="py-4 font-semibold border-b border-[#e4e7ec] text-[#344054]">
+            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
               Saved
             </h5>
           </article>
@@ -209,7 +209,7 @@ export default function Home() {
                 <Image src={search2} alt="search" />
               </div>
               <input
-                className=" bg-transparent leading-5"
+                className="text-[14px] bg-transparent leading-5"
                 type="text"
                 placeholder="Search Ideas..."
               />

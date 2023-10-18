@@ -480,7 +480,7 @@ export default function Home() {
               <div>
                 <Image src={search2} alt="search" />
               </div>
-              <input type="text" placeholder="Search Ideas..." />
+              <input className="text-[14px] outline-none" type="text" placeholder="Search Ideas..." />
             </div>
             <div className="nav-item-bg2 xgrey-50">
               <Image src={filter} alt="filter" />

@@ -491,8 +491,8 @@ export default function Home() {
 
           {/* Drag & Drop + Saved */}
           <article className="in-and-out w-full grid grid-cols-2 text-center">
-            <h5 className="py-4 font-semibold border-b active border-[#F29408] text-[#F29408]">Drag & Drop</h5>
-            <h5 className="py-4 font-semibold border-b border-[#e4e7ec] text-[#344054]">Saved</h5>
+            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">Drag & Drop</h5>
+            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">Saved</h5>
           </article>
 
           {/* Search bar and filter */}
@@ -501,7 +501,7 @@ export default function Home() {
               <div>
                 <Image src={search2} alt="search" />
               </div>
-              <input className=" bg-transparent leading-5" type="text" placeholder="Search Ideas..." />
+              <input className=" bg-transparent outline-none text-[14px] leading-5" type="text" placeholder="Search Ideas..." />
             </div>
             <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
               <Image src={filter} alt="filter" />

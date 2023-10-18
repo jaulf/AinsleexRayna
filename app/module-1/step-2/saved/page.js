@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Image Importation
-import logo from "@/public/Images/svg/logo.svg";
+import logo from "@/public/Images/png/logo.png";
 import bell from "@/public/Images/svg/bell.svg";
 import search from "@/public/Images/svg/search.svg";
 import search2 from "@/public/Images/svg/search2.svg";
@@ -17,9 +17,10 @@ import LeftSidebar from "@/components/General/left-sidebar";
 import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";
+import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
 // Body Module List - save this asset
-import ModuleList from "@/components/module1-step2-module-list/moduleList";
+import ModuleList from "@/components/moduleList/Module1Step2";
 import SavedAssetSidebar from "@/components/saved-asset-sidebar/sidebar";
 
 //Image importation
@@ -29,7 +30,7 @@ import lock from "@/public/Images/svg/lock-500.svg";
 import refresh from "@/public/Images/svg/refresh-400.svg";
 
 // Body Module List - saved asset
-import ModuleListSaved from "@/components/module1-step2-module-list/moduleList-saved";
+import ModuleListSaved from "@/components/moduleList/Module1Step2-Saved";
 import SidebarModuleListSaved from "@/components/saved-asset-sidebar/module-list";
 
 export default function Home() {
@@ -39,50 +40,64 @@ export default function Home() {
       document.getElementById("sas").classList.toggle("active");
     }
   };
-
+ 
   return (
     <main>
       {/* Saved Asset Sidebar */}
       <SavedAssetSidebar sasExpand={sasExpand} />
 
       {/* TOP Navbar Container */}
+      {/* USE THIS NAVBAR COMPONENT */}
       <header className="bg-[#101928] sticky z-10 top-0 border-[#101928] border">
         {/* container */}
-        <div className="flex px-6 py-[14px] justify-between items-center">
+        <div className="flex p-4 lg:px-6 lg:py-[14px] justify-between items-center">
           {/* Navbar Left Side */}
           <div className="flex gap-6 items-center">
-            <div>
-              <Image src={logo} alt="Full main logo dark" />
+            <div className="shrink-0 w-full h-auto max-w-[97px] lg:max-w-[120px]">
+              <Image
+                class="w-full h-auto"
+                src={logo}
+                alt="Full main logo dark"
+              />
             </div>
-            <nav className="navbar-nav block text-[14px] leading-[145%] xgrey-400">
-              <Link className="" href="#">
+            <nav className="hidden lg:flex shrink-0 gap-6 items-center font-semibold navbar-nav text-[14px] leading-[145%] text-[#98a2b3]">
+              <Link className="px-5 " href="#">
                 Home
               </Link>
-              <Link className="active" href="#">
+              {/* ACTIVE LINK */}
+              <Link
+                className="px-5 active - py-2 px-5 bg-[#1d2739] rounded-md text-[#F7F9FC]"
+                href="#"
+              >
                 Experience Product Masterclass
               </Link>
-              <Link className="" href="#">
+              <Link className="px-5 " href="#">
                 Momentum
               </Link>
-              <Link className="" href="#">
+              <Link className="px-5 " href="#">
                 LYM Lab
               </Link>
             </nav>
           </div>
 
           {/* Navbar Right side */}
-          <div className="flex gap-7">
+          <div className="flex lg:gap-7">
             {/* Bell and Search Icon */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <div className="p-3">
                 <Image src={bell} alt="Bell Icon" />
               </div>
               <div className="p-3">
                 <Image src={search} alt="Search Icon" />
               </div>
+              {/* Hamburger */}
+              <div className="p-2 block lg:hidden">
+                <Image src={hamburgerMenu} alt="" />
+              </div>
             </div>
+
             {/* user profile  */}
-            <div className="flex gap-4 items-center">
+            <div className="hidden md:flex gap-4 items-center">
               <div className="flex gap-2 items-center">
                 <div className="w-8 h-8 relative inline-flex  justify-center items-center">
                   <Image
@@ -95,10 +110,12 @@ export default function Home() {
                   </div>
                 </div>
                 <article>
-                  <h6 className="text-[14px] leading-[145%] font-semibold xgrey-100">
+                  <h6 className="text-[14px] leading-[145%] font-semibold text-[#f0f2f5]">
                     Coco&apos;s Hub
                   </h6>
-                  <p className="text-[14px] leading-[145%] xgrey-400">alison.e@rayna.ui</p>
+                  <p className="text-[14px] leading-[145%] text-[#98a2b3]">
+                    alison.e@rayna.ui
+                  </p>
                 </article>
               </div>
               <div>
@@ -110,16 +127,18 @@ export default function Home() {
       </header>
 
       {/* body contents */}
-      <section className="h-full relative grid-cols-[max-content_1fr_max-content]">
+      <section className="h-full bg-[#fafafa] relative grid lg:grid-cols-[1fr_max-content]">
         {/* Left Side Navigation Bar */}
         <LeftSidebar />
 
         {/* Sidebar - 2 */}
-        <section className="side13">
+        <section className="side13 lg:ml-[307px] grid content-start gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
           {/* Intro - Text */}
           <article>
-            <h6 className="heading-h6">Here&apos;s your results:</h6>
-            <p className="text-[14px] leading-[145%] text-[#344054] rps">
+            <h6 className="heading-h6 text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+              Here&apos;s your results:
+            </h6>
+            <p className="text-[14px] leading-[145%] text-[#344054] rps grid gap-y-3 mt-2">
               <span>
                 Collins, here are a few ideas for you - including some things
                 you may not have thought of on your own! Keep an open mind...If
@@ -146,66 +165,68 @@ export default function Home() {
           </article>
 
           {/* Content in a Container */}
-          <section className="over-cian">
+          <section className="over-cian rounded-[10px] overflow-hidden border border-[#e4e7ec] bg-white">
             <ModuleListSaved sasExpand={sasExpand} />
 
-            {/* Generate more Ideas CTA */}
-            <section>
-              <article className="p-6 flex justify-center mt-[132px]">
-                <button className="ora-cta-sec">
+            {/* CTA down + Generate more ideas */}
+            <article className="cta-container lg:mt-[132px] lg:p-6 lg:pb-0 w-full inline-flex justify-center lg:justify-between items-center">
+              <button className="xgrey-600 text-[#475467] font-semibold hidden lg:inline-flex gap-2 items-center">
+                <Image src={arrowLeft} alt="Arrow Left" />
+                <p>Go Back</p>
+              </button>
+              <article className="p-6 flex justify-center">
+                <button className="shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
                   <Image src={generate500} alt="Generate more ideas" />
                   <p>Generate more ideas</p>
                 </button>
               </article>
-            </section>
-
-            {/* CTA down section 2 */}
-            <article className="cta-container inline-flex justify-between items-center">
-              <button className="xgrey-600 font-semibold inline-flex gap-2 items-center">
-                <Image src={arrowLeft} alt="Arrow Left" />
-                <p>Go Back</p>
-              </button>
-              <button className="cta-button inline-flex items-center gap-6">
-                <span>Next: Credibility Statement Generator</span>
-                <Image className="" src={arrowRight} alt="Arrow Right" />
-              </button>
             </article>
           </section>
 
           {/* Footer Message */}
 
-          <article className="pb-10 pt-[167px] flex justify-center items-center">
-            <p className="xgrey-400 text-[14px] leading-[145%]">
+          <article className="pb-10 pt-16 flex justify-center items-center">
+            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]"> 
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>
         </section>
 
         {/* Sidebar - 3 */}
-        <section className="w-[350px] scrollabr overflow-auto top-[72px] side12 py-6 px-4">
+        <section className="lg:w-[350px] overflow-auto top-[72px] hidden lg:inline-flex side12 py-6 px-4 h-[calc(100vh_-_72px)] bg-white flex-col sticky">
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
-            <h5 className=" nav-item-header text-[#4F4D55]">YOUR ASSETS</h5>
-            <div className="nav-item-bg xgrey-trans">
+            <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
+              YOUR ASSETS
+            </h5>
+            <div className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
               <Image src={expand2} alt="Hamburger Menu" />
             </div>
           </article>
 
           {/* Drag & Drop + Saved */}
-          <article className="in-and-out">
-            <h5 className="active">Drag & Drop</h5>
-            <h5>Saved</h5>
+          <article className="in-and-out w-full grid grid-cols-2 text-center">
+            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
+              Drag & Drop
+            </h5>
+            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
+              Saved
+            </h5>
           </article>
 
           {/* Search bar and filter */}
-          <article className="search-and-filter">
-            <div className="search-bar">
+          <article className="search-and-filter grid grid-cols-[1fr_max-content] items-center justify-center gap-x-3">
+            <div className="search-bar my-3 w-full rounded-md border bg-[#f9fafb] border-[#f0f2f5] flex p-[10px] items-center gap-1">
               <div>
                 <Image src={search2} alt="search" />
               </div>
-              <input type="text" placeholder="Search Ideas..." />
+              <input
+                className="text-[14px] bg-transparent leading-5"
+                type="text"
+                placeholder="Search Ideas..."
+              />
             </div>
-            <div className="nav-item-bg2 xgrey-50">
+            <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
               <Image src={filter} alt="filter" />
             </div>
           </article>
@@ -231,8 +252,8 @@ export default function Home() {
             {/* Active Saved Ideas */}
             <section>
               {/* Divider */}
-              <div className="divider3">
-                <div></div>
+              <div className="divider3 block w-full h-auto">
+                <div className="bg-[#ECECED] w-full h-[1px]"></div>
               </div>
 
               {/* Container for saved Asset */}

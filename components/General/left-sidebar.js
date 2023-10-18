@@ -66,7 +66,7 @@ function LeftSidebar() {
   return (
     <>
       {/* SIDEBAR - collapsed */}
-      <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white flex-col fixed collapsed">
+      <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
         {/* Top Navbar */}
         <section className="whitespace-nowrap inline-flex flex-col gap-3">
           {/* nav with expand icon */}
@@ -143,7 +143,7 @@ function LeftSidebar() {
       </section>
 
       {/* SIDEBAR - expanded */}
-      <section className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white flex-col fixed">
+      <section className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed">
         {/* Top Navbar */}
         <section className="top-nav inline-flex flex-col gap-3 whitespace-nowrap">
           {/* nav with expand icon */}

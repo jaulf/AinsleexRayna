@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Image Importation
-import logo from "@/public/Images/svg/logo.svg";
+import logo from "@/public/Images/png/logo.png";
 import bell from "@/public/Images/svg/bell.svg";
 import search from "@/public/Images/svg/search.svg";
 import search2 from "@/public/Images/svg/search2.svg";
@@ -21,7 +21,8 @@ import minusOrange from "@/public/Images/svg/minus-orange.svg";
 import deleteOrange from "@/public/Images/svg/delete-orange-500.svg";
 import arrowLeft6 from "@/public/Images/svg/arrow-left-600.svg";
 import arrowRight6 from "@/public/Images/svg/arrow-right-600.svg";
-import EditSavedAssetSidebar from "@/components/saved-asset-sidebar/edit-asset-sidebar";
+import EditSavedAssetSidebar from "@/components/sidebars/edit-asset-sidebar";
+import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
 export default function Home() {
   // display module 1 step 2 - module item
@@ -54,43 +55,57 @@ export default function Home() {
       <EditSavedAssetSidebar EditExpand={EditExpand} />
 
       {/* TOP Navbar Container */}
+      {/* USE THIS NAVBAR COMPONENT */}
       <header className="bg-[#101928] sticky z-10 top-0 border-[#101928] border">
         {/* container */}
-        <div className="flex px-6 py-[14px] justify-between items-center">
+        <div className="flex p-4 lg:px-6 lg:py-[14px] justify-between items-center">
           {/* Navbar Left Side */}
           <div className="flex gap-6 items-center">
-            <div>
-              <Image src={logo} alt="Full main logo dark" />
+            <div className="shrink-0 w-full h-auto max-w-[97px] lg:max-w-[120px]">
+              <Image
+                class="w-full h-auto"
+                src={logo}
+                alt="Full main logo dark"
+              />
             </div>
-            <nav className="navbar-nav block text-[14px] leading-[145%] xgrey-400">
-              <Link className="" href="#">
+            <nav className="hidden lg:flex shrink-0 gap-6 items-center font-semibold navbar-nav text-[14px] leading-[145%] text-[#98a2b3]">
+              <Link className="px-5 " href="#">
                 Home
               </Link>
-              <Link className="active" href="#">
+              {/* ACTIVE LINK */}
+              <Link
+                className="px-5 active - py-2 px-5 bg-[#1d2739] rounded-md text-[#F7F9FC]"
+                href="#"
+              >
                 Experience Product Masterclass
               </Link>
-              <Link className="" href="#">
+              <Link className="px-5 " href="#">
                 Momentum
               </Link>
-              <Link className="" href="#">
+              <Link className="px-5 " href="#">
                 LYM Lab
               </Link>
             </nav>
           </div>
 
           {/* Navbar Right side */}
-          <div className="flex gap-7">
+          <div className="flex lg:gap-7">
             {/* Bell and Search Icon */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <div className="p-3">
                 <Image src={bell} alt="Bell Icon" />
               </div>
               <div className="p-3">
                 <Image src={search} alt="Search Icon" />
               </div>
+              {/* Hamburger */}
+              <div className="p-2 block lg:hidden">
+                <Image src={hamburgerMenu} alt="" />
+              </div>
             </div>
+
             {/* user profile  */}
-            <div className="flex gap-4 items-center">
+            <div className="hidden md:flex gap-4 items-center">
               <div className="flex gap-2 items-center">
                 <div className="w-8 h-8 relative inline-flex  justify-center items-center">
                   <Image
@@ -103,10 +118,12 @@ export default function Home() {
                   </div>
                 </div>
                 <article>
-                  <h6 className="text-[14px] leading-[145%] font-semibold xgrey-100">
+                  <h6 className="text-[14px] leading-[145%] font-semibold text-[#f0f2f5]">
                     Coco&apos;s Hub
                   </h6>
-                  <p className="text-[14px] leading-[145%] xgrey-400">alison.e@rayna.ui</p>
+                  <p className="text-[14px] leading-[145%] text-[#98a2b3]">
+                    alison.e@rayna.ui
+                  </p>
                 </article>
               </div>
               <div>
@@ -118,18 +135,18 @@ export default function Home() {
       </header>
 
       {/* body contents */}
-      <section className="h-full relative body-container3">
+      <section className="h-full bg-[#fafafa] relative body-container3 grid grid-cols-1">
         {/* Left Side Navigation Bar */}
         <LeftSidebar />
 
         {/* Sidebar - 2 */}
-        <section className="side14">
+        <section className="side14 lg:ml-[307px] grid content-start gap-y-6 py-10 pr-[50px]">
           {/* Content in a Container */}
-          <section className="over-cian py-6 flex flex-col gap-6">
+          <section className="over-cian py-6 flex flex-col gap-6 rounded-[10px] overflow-hidden border border-[#e4e7ec] bg-white">
             {/* Intro - Your Assets */}
             <article className="flex flex-col px-6 gap-2">
-              <h6 className="paragraph-18 xgrey-800">Your Assets</h6>
-              <p className="text-[14px] leading-[145%] xgrey-600 opacity-70">
+              <h6 className="paragraph-18 text-[18px] font-semibold leading-[100%] tracking-[-0.36px] text-[#1D2739] xgrey-800">Your Assets</h6>
+              <p className="text-[14px] leading-[145%] xgrey-600 text-[#475467] opacity-70">
                 Stay up to date with our upcoming events & opportunities
               </p>
             </article>
@@ -141,22 +158,22 @@ export default function Home() {
                 {/* LEFT - SEARCH AND FILTER */}
                 <article className="flex gap-2">
                   {/* SEARCH */}
-                  <article className="w-[292px] search-cont flex gap-2">
+                  <article className="w-[292px] search-cont rounded-md border border-[#e4e7ec] bg-[#f9fafb] py-2 px-3 flex gap-2">
                     {/* search icon */}
                     <Image src={search5} alt="search icon" />
                     {/* input field */}
-                    <input type="text" placeholder="search here..." />
+                    <input className="w-full bg-transparent outline-none" type="text" placeholder="search here..." />
                   </article>
 
                   {/* Filter */}
-                  <button className="button-type1 text-[#344054]">
+                  <button className="button-type1 text-[14px] leading-[140%] font-semibold flex items-center gap-2 py-2 px-3 rounded-md border border-[#e4e7ec] bg-[#fff] shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
                     <Image src={filter7} alt="Filter" />
                     <p>Filter</p>
                   </button>
                 </article>
 
                 {/* RIGHT - DROPDOWN */}
-                <article className="timeline-dropdown">
+                <article className="timeline-dropdown flex py-2 px-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
                   <Image className="shrink-0" src={calendar7} alt="calendar" />
                   <select className="button-type-dropdown">
                     <option>Last 7 days</option>
@@ -173,11 +190,11 @@ export default function Home() {
                 <article className="flex items-center gap-6 ">
                   <article className="flex items-center gap-4">
                     <Image src={minusOrange} alt="" />
-                    <p className="xgrey-600 font-semibold tracking-[-0.32px]">
+                    <p className="xgrey-600 text-[#475467] font-semibold tracking-[-0.32px]">
                       2 Selected
                     </p>
                   </article>
-                  <p className="font-semibold xgrey-800">Select All</p>
+                  <p className="font-semibold xgrey-800 text-[#1D2739]">Select All</p>
                 </article>
                 {/* RIGHT */}
                 <article className="flex items-center gap-6">
@@ -188,7 +205,7 @@ export default function Home() {
                   </article>
                   {/* DROPDOWN - BULK ACTIONS */}
                   {/* RIGHT - DROPDOWN */}
-                  <article className="timeline-dropdown">
+                  <article className="timeline-dropdown flex py-2 px-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
                     <select className="text-[#344054] font-semibold button-type-dropdown">
                       <option>Bulk action</option>
                       <option>Last 14 days</option>
@@ -200,8 +217,8 @@ export default function Home() {
               </article>
 
               {/* DIVIDER */}
-              <div className="divider px-6">
-                <div></div>
+              <div className="divider w-full h-auto px-6">
+                <div className="bg-[#f0f2f5] w-full h-[1px]"></div>
               </div>
 
               {/* CONTAINER - LIST OF SAVED ASSETS */}
@@ -209,7 +226,7 @@ export default function Home() {
                 {/* LIST 1 - SAVED ASSETS - for credibility Statement */}
                 <article
                   id={"s4mit" + 1}
-                  className="saved-asset-item s4mit first"
+                  className="saved-asset-item rounded-[8px] border-[1.5px] border-[#f0f2f5] p-6 bg-[#f9fafb]  s4mit first"
                 >
                   {/* TOP */}
                   <article className="flex gap-6 items-center ">
@@ -312,7 +329,7 @@ export default function Home() {
                 {/* LIST 2 - SAVED ASSETS - for credibility Statement */}
                 <article
                   id={"s4mit" + 2}
-                  className="saved-asset-item s4mit first"
+                  className="saved-asset-item rounded-[8px] border-[1.5px] border-[#f0f2f5] p-6 bg-[#f9fafb]  s4mit first"
                 >
                   {/* TOP */}
                   <article className="flex gap-6 items-center ">
@@ -372,7 +389,7 @@ export default function Home() {
                   {/* Body */}
                   <article className="flex flex-col gap-4 w-full second">
                     {/* List of paragraphs */}
-                    <article className="flex flex-col bg-[#fff] border text-[14px] leading-[145%] xgrey-500 border-[#e4e7ec] rounded-md p-3 gap-3 w-full">
+                    <article className="flex flex-col bg-[#fff] border text-[14px] leading-[145%] xgrey-500 text-[#667185] border-[#e4e7ec] rounded-md p-3 gap-3 w-full">
                       {/* result */}
                       <p>
                         Picture a canvas waiting to be painted, a blank page
@@ -456,7 +473,7 @@ export default function Home() {
 
           {/* Footer Message */}
           <article className="pb-10 pt-16 flex justify-center items-center">
-            <p className="xgrey-400 text-[14px] leading-[145%]">
+            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]"> 
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>
