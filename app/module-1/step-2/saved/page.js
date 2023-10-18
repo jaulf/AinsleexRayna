@@ -21,7 +21,7 @@ import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
 // Body Module List - save this asset
 import ModuleList from "@/components/moduleList/Module1Step2";
-import SavedAssetSidebar from "@/components/saved-asset-sidebar/sidebar";
+import SavedAssetSidebar from "@/components/sidebars/Module1Step2-save-asset";
 
 //Image importation
 import heartFill500 from "@/public/Images/svg/heart-fill-500.svg";

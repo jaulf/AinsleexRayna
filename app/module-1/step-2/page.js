@@ -18,7 +18,7 @@ import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";
 import ModuleList from "@/components/moduleList/Module1Step2";
-import SavedAssetSidebar from "@/components/saved-asset-sidebar/sidebar";
+import SavedAssetSidebar from "@/components/sidebars/Module1Step2-save-asset";
 import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
 export default function Home() {

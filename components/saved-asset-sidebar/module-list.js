@@ -25,13 +25,13 @@ export default function SidebarModuleListSaved({ sasExpand }) {
         {/* ACTIVE - Module 1 */}
         <section
           id={"s3mit" + 9}
-          className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#D0D5DD] flex flex-col items-center gap-3 w-full"
+          className="xbgrey-100 active s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(9)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -43,17 +43,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
-              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer rotate-[180deg]"
+              onClick={() => displays3mit(9)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
 
           {/* Divider */}
-          <div className="divider3 block w-full h-auto">
-                <div className="bg-[#F0F2F5] w-full h-[1px]"></div>
-              </div>
+          <div className="divider3 block w-full h-auto second">
+            <div className="bg-[#F0F2F5] w-full h-[1px]"></div>
+          </div>
 
           {/* body of 4 */}
           <article className="flex flex-col gap-4 w-full second ">
@@ -127,17 +127,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
         </section>
-        
+
         {/* INACTIVE - Module 2 */}
         <section
-          id={"s3mit" + 9}
+          id={"s3mit" + 10}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(10)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -149,7 +149,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(10)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
@@ -228,17 +228,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
         </section>
-        
+
         {/* INACTIVE - Module 2 */}
         <section
-          id={"s3mit" + 9}
+          id={"s3mit" + 11}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(11)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -250,7 +250,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(11)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
@@ -329,17 +329,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
         </section>
-        
+
         {/* INACTIVE - Module 2 */}
         <section
-          id={"s3mit" + 9}
+          id={"s3mit" + 12}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(12)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -351,7 +351,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(12)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
@@ -430,17 +430,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
         </section>
-        
+
         {/* INACTIVE - Module 2 */}
         <section
-          id={"s3mit" + 9}
+          id={"s3mit" + 13}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(13)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -452,7 +452,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(13)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
@@ -531,17 +531,17 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
         </section>
-        
+
         {/* INACTIVE - Module 2 */}
         <section
-          id={"s3mit" + 9}
+          id={"s3mit" + 14}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
           {/* head */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(14)}
               className=" cursor-pointer"
             >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
@@ -553,7 +553,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
             {/* clicking this will hide the body and save asset */}
             <article
-              onClick={() => displays2mit(1)}
+              onClick={() => displays3mit(14)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
             >
               <Image src={arrowUp} alt="dropdown" />
