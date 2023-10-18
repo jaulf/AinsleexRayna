@@ -31,7 +31,7 @@ import refresh from "@/public/Images/svg/refresh-400.svg";
 
 // Body Module List - saved asset
 import ModuleListSaved from "@/components/moduleList/Module1Step2-Saved";
-import SidebarModuleListSaved from "@/components/saved-asset-sidebar/module-list";
+import SidebarModuleListSaved from "@/components/moduleList/saved-asset-module-list";
 
 export default function Home() {
   // DISPLAY SAVED ASSET SIDEBAR
