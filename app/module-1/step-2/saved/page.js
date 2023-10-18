@@ -3,35 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Image Importation
-import logo from "@/public/Images/png/logo.png";
-import bell from "@/public/Images/svg/bell.svg";
-import search from "@/public/Images/svg/search.svg";
 import search2 from "@/public/Images/svg/search2.svg";
-import down from "@/public/Images/svg/chevron-down.svg";
-import userPic from "@/public/Images/png/Image.png";
-import verifiedtick from "@/public/Images/svg/verified-tick.svg";
 import filter from "@/public/Images/svg/filter.svg";
 import emptystate from "@/public/Images/svg/empty-state.svg";
 import expand2 from "@/public/Images/svg/expand2.svg";
 import LeftSidebar from "@/components/General/left-sidebar";
-import arrowRight from "@/public/Images/svg/arrow-right.svg";
 import arrowLeft from "@/public/Images/svg/arrow-left.svg";
 import generate500 from "@/public/Images/svg/generate-o-500.svg";
-import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 
-// Body Module List - save this asset
-import ModuleList from "@/components/moduleList/Module1Step2";
+// RIGHT SIDEBAR
 import SavedAssetSidebar from "@/components/sidebars/Module1Step2-save-asset";
-
-//Image importation
-import heartFill500 from "@/public/Images/svg/heart-fill-500.svg";
-import arrowUp from "@/public/Images/svg/arrow-up-400.svg";
-import lock from "@/public/Images/svg/lock-500.svg";
-import refresh from "@/public/Images/svg/refresh-400.svg";
 
 // Body Module List - saved asset
 import ModuleListSaved from "@/components/moduleList/Module1Step2-Saved";
 import SidebarModuleListSaved from "@/components/moduleList/saved-asset-module-list";
+
+// NAVBAR IMPORTATION
+import Navbar from "@/components/General/navbar";
 
 export default function Home() {
   // DISPLAY SAVED ASSET SIDEBAR
@@ -40,91 +28,14 @@ export default function Home() {
       document.getElementById("sas").classList.toggle("active");
     }
   };
- 
+
   return (
     <main>
       {/* Saved Asset Sidebar */}
       <SavedAssetSidebar sasExpand={sasExpand} />
 
       {/* TOP Navbar Container */}
-      {/* USE THIS NAVBAR COMPONENT */}
-      <header className="bg-[#101928] sticky z-10 top-0 border-[#101928] border">
-        {/* container */}
-        <div className="flex p-4 lg:px-6 lg:py-[14px] justify-between items-center">
-          {/* Navbar Left Side */}
-          <div className="flex gap-6 items-center">
-            <div className="shrink-0 w-full h-auto max-w-[97px] lg:max-w-[120px]">
-              <Image
-                class="w-full h-auto"
-                src={logo}
-                alt="Full main logo dark"
-              />
-            </div>
-            <nav className="hidden lg:flex shrink-0 gap-6 items-center font-semibold navbar-nav text-[14px] leading-[145%] text-[#98a2b3]">
-              <Link className="px-5 " href="#">
-                Home
-              </Link>
-              {/* ACTIVE LINK */}
-              <Link
-                className="px-5 active - py-2 px-5 bg-[#1d2739] rounded-md text-[#F7F9FC]"
-                href="#"
-              >
-                Experience Product Masterclass
-              </Link>
-              <Link className="px-5 " href="#">
-                Momentum
-              </Link>
-              <Link className="px-5 " href="#">
-                LYM Lab
-              </Link>
-            </nav>
-          </div>
-
-          {/* Navbar Right side */}
-          <div className="flex lg:gap-7">
-            {/* Bell and Search Icon */}
-            <div className="flex gap-2 items-center">
-              <div className="p-3">
-                <Image src={bell} alt="Bell Icon" />
-              </div>
-              <div className="p-3">
-                <Image src={search} alt="Search Icon" />
-              </div>
-              {/* Hamburger */}
-              <div className="p-2 block lg:hidden">
-                <Image src={hamburgerMenu} alt="" />
-              </div>
-            </div>
-
-            {/* user profile  */}
-            <div className="hidden md:flex gap-4 items-center">
-              <div className="flex gap-2 items-center">
-                <div className="w-8 h-8 relative inline-flex  justify-center items-center">
-                  <Image
-                    className="w-full h-auto"
-                    src={userPic}
-                    alt="Profile Picture"
-                  />
-                  <div className="absolute bottom-[-1.6px] right-[-1.6px]">
-                    <Image src={verifiedtick} alt="Verified Tick" />
-                  </div>
-                </div>
-                <article>
-                  <h6 className="text-[14px] leading-[145%] font-semibold text-[#f0f2f5]">
-                    Coco&apos;s Hub
-                  </h6>
-                  <p className="text-[14px] leading-[145%] text-[#98a2b3]">
-                    alison.e@rayna.ui
-                  </p>
-                </article>
-              </div>
-              <div>
-                <Image src={down} alt="Chevron Down Icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* body contents */}
       <section className="h-full bg-[#fafafa] relative grid lg:grid-cols-[1fr_max-content]">
@@ -186,7 +97,7 @@ export default function Home() {
           {/* Footer Message */}
 
           <article className="pb-10 pt-16 flex justify-center items-center">
-            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]"> 
+            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]">
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>

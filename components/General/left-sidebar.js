@@ -67,12 +67,12 @@ function LeftSidebar() {
     <>
       {/* SIDEBAR - collapsed */}
       <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
-        {/* Top Navbar */}
+        {/* TOP OF NAVBAR */}
         <section className="whitespace-nowrap inline-flex flex-col gap-3">
-          {/* nav with expand icon */}
+          {/* EXPAND ICON */}
           <article
             onClick={sidebarMov}
-            className="s1c-b inline-flex flex-col items-center gap-3 py-2 px-3 modhov border-b border-[#F0F2F5] justify-between text-[#98a2b3]"
+            className="s1c-b cursor-pointer inline-flex flex-col items-center gap-3 py-2 px-3 modhov border-b border-[#F0F2F5] justify-between text-[#98a2b3]"
           >
             <div>
               <Image src={expand1} alt="Expand" />
@@ -91,10 +91,7 @@ function LeftSidebar() {
               </article>
 
               {/* Modules */}
-              <div
-                onClick={modulesExpand}
-                className="block"
-              >
+              <div onClick={modulesExpand} className="block">
                 <Link
                   href="/module-1/step-1"
                   className="s1c-b inline-flex flex-col items-center gap-3 py-2 px-3 modhov module"
@@ -124,16 +121,16 @@ function LeftSidebar() {
           </section>
         </section>
 
-        {/* Bottom navbar */}
+        {/* BOTTOM OF NAVBAR */}
         <section className="text-[#344054] inline-flex flex-col btm-nav">
-          {/* Help */}
+          {/* HELP */}
           <article className="s1c-b inline-flex items-center gap-3 py-2 px-3 modhov">
             <div>
               <Image src={help2} alt="Help" />
             </div>
           </article>
 
-          {/* Logout */}
+          {/* LOGOUT */}
           <article className="s1c-b inline-flex items-center gap-3 py-2 px-3 modhov">
             <div>
               <Image src={signout} alt="Logout" />
@@ -142,11 +139,11 @@ function LeftSidebar() {
         </section>
       </section>
 
-      {/* SIDEBAR - expanded */}
+      {/* SIDEBAR - EXPANDED */}
       <section className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed">
-        {/* Top Navbar */}
+        {/* TOP OF NAVBAR */}
         <section className="top-nav inline-flex flex-col gap-3 whitespace-nowrap">
-          {/* nav with expand icon */}
+          {/* NAV TEXT + EXPAND ICON */}
           <article
             onClick={sidebarMov}
             className="s1a-c flex items-center gap-3 py-3 px-2 modhov justify-between text-[#98a2b3]"
@@ -157,11 +154,11 @@ function LeftSidebar() {
             </div>
           </article>
 
-          {/* dashboard & modules and assets */}
+          {/* DASHBOARD + MODULES + SAVED ASSET */}
           <section>
-            {/*  dashboard and modules */}
+            {/*  DASHBOARD + MODULES */}
             <section className="flex flex-col gap-1">
-              {/* Dashboard */}
+              {/* DASHBOARD */}
               <article className="s1a-c flex items-center gap-3 py-3 px-2">
                 <div>
                   <Image src={home2} alt="Dashboard" />
@@ -169,9 +166,9 @@ function LeftSidebar() {
                 <h6 className="text-[14px] leading-[145%]">Dashboard</h6>
               </article>
 
-              {/* Modules */}
+              {/* MODULES */}
               <section className="inline-flex flex-col gap-2">
-                {/* modules - dropdown */}
+                {/* MODULES - DROPDOWN */}
                 <div
                   onClick={modulesExpand}
                   className="flex modhov justify-between items-center"
@@ -188,44 +185,57 @@ function LeftSidebar() {
                   </article>
                 </div>
 
-                {/* modules dropdown - reveal */}
+                {/* MODULES - REVEALED UNDER */}
                 <section className="module-cont w-max overflow-hidden inline-flex flex-col cmo">
+                  {/* ACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
                     <h5 className="text-[14px] leading-[145%]">Module 01</h5>
                     <div className="shrink-0 invisible">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 02</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 03</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 04</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 05</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 06</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
                     </div>
                   </article>
+
+                  {/* INACTIVE */}
                   <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 07</h5>
                     <div className="shrink-0 ">
@@ -236,7 +246,7 @@ function LeftSidebar() {
               </section>
             </section>
 
-            {/* Assets */}
+            {/* ASSETS */}
             <Link
               href="/saved-assets"
               className="pt-2 block modhov mt-4 border-t border-[#F0F2F5]"
@@ -255,7 +265,7 @@ function LeftSidebar() {
           </section>
         </section>
 
-        {/* Bottom navbar */}
+        {/* BOTTOM OF NAVBAR */}
         <section className="text-[#344054] btm-nav">
           {/* Help */}
           <article className="s1a-c flex items-center gap-3 py-3 px-2">

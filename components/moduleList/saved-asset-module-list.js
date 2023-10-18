@@ -27,7 +27,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           id={"s3mit" + 9}
           className="xbgrey-100 active s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -55,7 +55,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <div className="bg-[#F0F2F5] w-full h-[1px]"></div>
           </div>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -111,7 +111,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="flex items-center justify-between third w-full"
             onClick={sasExpand}
@@ -133,7 +133,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           id={"s3mit" + 10}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -156,7 +156,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -212,7 +212,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="hidden items-center justify-between third w-full"
             onClick={sasExpand}
@@ -229,12 +229,12 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           </article>
         </section>
 
-        {/* INACTIVE - Module 2 */}
+        {/* INACTIVE - Module 3 */}
         <section
           id={"s3mit" + 11}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -257,7 +257,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -313,7 +313,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="hidden items-center justify-between third w-full"
             onClick={sasExpand}
@@ -330,12 +330,12 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           </article>
         </section>
 
-        {/* INACTIVE - Module 2 */}
+        {/* INACTIVE - Module 4 */}
         <section
           id={"s3mit" + 12}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -358,7 +358,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -414,7 +414,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="hidden items-center justify-between third w-full"
             onClick={sasExpand}
@@ -431,12 +431,12 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           </article>
         </section>
 
-        {/* INACTIVE - Module 2 */}
+        {/* INACTIVE - Module 5 */}
         <section
           id={"s3mit" + 13}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -459,7 +459,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -515,7 +515,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="hidden items-center justify-between third w-full"
             onClick={sasExpand}
@@ -532,12 +532,12 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           </article>
         </section>
 
-        {/* INACTIVE - Module 2 */}
+        {/* INACTIVE - Module 6 */}
         <section
           id={"s3mit" + 14}
           className="xbgrey-100 s3mit bg-[#f9fafb] p-3 rounded-[8px] border border-[#f0f2f5] flex flex-col items-center gap-3 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -560,7 +560,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -616,7 +616,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="hidden items-center justify-between third w-full"
             onClick={sasExpand}

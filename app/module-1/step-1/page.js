@@ -2,109 +2,36 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Image Importation
-import logo from "@/public/Images/png/logo.png";
-import bell from "@/public/Images/svg/bell.svg";
-import search from "@/public/Images/svg/search.svg";
 import search2 from "@/public/Images/svg/search2.svg";
-import down from "@/public/Images/svg/chevron-down.svg";
-import userPic from "@/public/Images/png/Image.png";
-import verifiedtick from "@/public/Images/svg/verified-tick.svg";
 import filter from "@/public/Images/svg/filter.svg";
 import emptystate from "@/public/Images/svg/empty-state.svg";
 import infocircle from "@/public/Images/svg/info-circle.svg";
 import infocircle2 from "@/public/Images/svg/info-circle2.svg";
 import expand2 from "@/public/Images/svg/expand2.svg";
 import LeftSidebar from "@/components/General/left-sidebar";
-import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
+
+// NAVBAR IMPORTATION
+import Navbar from "@/components/General/navbar";
 
 export default function Home() {
-  return ( 
+  return (
     <main>
+      
       {/* TOP Navbar Container */}
-      {/* USE THIS NAVBAR COMPONENT */}
-      <header className="bg-[#101928] sticky z-10 top-0 border-[#101928] border">
-        {/* container */}
-        <div className="flex p-4 lg:px-6 lg:py-[14px] justify-between items-center">
-          {/* Navbar Left Side */}
-          <div className="flex gap-6 items-center">
-            <div className="shrink-0 w-full h-auto max-w-[97px] lg:max-w-[120px]">
-              <Image
-                class="w-full h-auto"
-                src={logo}
-                alt="Full main logo dark"
-              />
-            </div>
-            <nav className="hidden lg:flex shrink-0 gap-6 items-center font-semibold navbar-nav text-[14px] leading-[145%] text-[#98a2b3]">
-              <Link className="px-5 " href="#">
-                Home
-              </Link>
-              {/* ACTIVE LINK */}
-              <Link className="px-5 active - py-2 px-5 bg-[#1d2739] rounded-md text-[#F7F9FC]" href="#">
-                Experience Product Masterclass
-              </Link>
-              <Link className="px-5 " href="#">
-                Momentum
-              </Link>
-              <Link className="px-5 " href="#">
-                LYM Lab
-              </Link>
-            </nav>
-          </div>
+      <Navbar />
 
-          {/* Navbar Right side */}
-          <div className="flex lg:gap-7">
-            {/* Bell and Search Icon */}
-            <div className="flex gap-2 items-center">
-              <div className="p-3">
-                <Image src={bell} alt="Bell Icon" />
-              </div>
-              <div className="p-3">
-                <Image src={search} alt="Search Icon" />
-              </div>
-              {/* Hamburger */}
-              <div className="p-2 block lg:hidden">
-                <Image src={hamburgerMenu} alt="" />
-              </div>
-            </div>
-
-            {/* user profile  */}
-            <div className="hidden md:flex gap-4 items-center">
-              <div className="flex gap-2 items-center">
-                <div className="w-8 h-8 relative inline-flex  justify-center items-center">
-                  <Image
-                    className="w-full h-auto"
-                    src={userPic}
-                    alt="Profile Picture"
-                  />
-                  <div className="absolute bottom-[-1.6px] right-[-1.6px]">
-                    <Image src={verifiedtick} alt="Verified Tick" />
-                  </div>
-                </div>
-                <article>
-                  <h6 className="text-[14px] leading-[145%] font-semibold text-[#f0f2f5]">
-                    Coco&apos;s Hub
-                  </h6>
-                  <p className="text-[14px] leading-[145%] text-[#98a2b3]">alison.e@rayna.ui</p>
-                </article>
-              </div>
-              <div>
-                <Image src={down} alt="Chevron Down Icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* body contents */}
+      {/* BODY CONTENTS */}
       <section className="h-full bg-[#fafafa] relative grid lg:grid-cols-[1fr_max-content]">
-        {/* Left Side Navigation Bar */}
-        <LeftSidebar /> 
- 
-        {/* Sidebar - 2 */}
+        {/* LEFT SIDEBAR */}
+        <LeftSidebar />
+
+        {/* CENTER BODY CONTENT - MAIN CONTENT */}
         <section className="lg:ml-[307px] grid gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
-          {/* Intro - Text */}
+          {/* INTRO - TEXTS */}
           <article>
-            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">Profitable Product Idea Generator</h6>
+            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+              Profitable Product Idea Generator
+            </h6>
             <p className="text-[14px] leading-[145%] text-[#344054] grid gap-3 mt-2">
               <span>
                 Collins, simply answer the questions below, then hit{" "}
@@ -113,7 +40,7 @@ export default function Home() {
               <span>
                 Based on what you share, we&apos;ll make some new, creative,
                 possibly crazy and potentially very lucrative Profitable Product
-                Idea suggestions for you. 
+                Idea suggestions for you.
               </span>
               <span>
                 Don&apos;t get hung up on any one question (in fact, some can be
@@ -128,11 +55,13 @@ export default function Home() {
             </p>
           </article>
 
-          {/* Alert Container */}
+          {/* ALERT CONTAINER */}
           <article className="rounded-[4px] bg-[#e3effc] border-l-[6px] border-[#0d5eba] py-3 px-2 flex gap-2 items-start">
+            {/* BLUE IMAGE IMPORTATION */}
             <div className="shrink-0">
               <Image src={infocircle} alt="Information Circle" />
             </div>
+            {/* INFORMATION -TEXT */}
             <p className="text-[14px] leading-5">
               I highly recommend watching each Training (or reading the
               Transcripts) BEFORE using this Generator so you understand what
@@ -140,17 +69,21 @@ export default function Home() {
             </p>
           </article>
 
-          {/* Content in a Container */}
+          {/* CONTAINER - CONTENT - STEP 1 - 9 */}
           <section className="rounded-[10px] overflow-hidden border border-[#e4e7ec] bg-white">
             <section className="bg-white p-6 grid content-start gap-y-6">
               {/* Step 1 */}
               <article>
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408] pb-2">Step 1:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408] pb-2">
+                  Step 1:
+                </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%] pb-2">
                   <span>
                     Which of the 20 Online Business Mega-Niches are you in?{" "}
                   </span>
-                  <span className="text-[#1671d9] underline font-normal">(Taught in M1V04)</span>{" "}
+                  <span className="text-[#1671d9] underline font-normal">
+                    (Taught in M1V04)
+                  </span>{" "}
                   <span className="text-[#d42620] font-semibold">*</span>
                 </h6>
                 <div className="select-cont bg-[#f9fafb] rounded-md outline-none ">
@@ -170,13 +103,17 @@ export default function Home() {
 
               {/* Step 2 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 2:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
+                  Step 2:
+                </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   <span>
                     What Niche Topic (within the Mega-Niche you just selected)
                     would you like to brainstorm Micro-Niche ideas around?{" "}
                   </span>
-                  <span className="text-[#1671d9] underline font-normal">(Taught in M1V05)</span>{" "}
+                  <span className="text-[#1671d9] underline font-normal">
+                    (Taught in M1V05)
+                  </span>{" "}
                 </h6>
                 <p className="helper-text text-[#667185] text-[14px] leading-[145%]">
                   💡Your Niche is the smaller area or topic within your larger
@@ -188,7 +125,10 @@ export default function Home() {
                   skills (Step 3).
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" type="text" /> 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    type="text"
+                  />
                 </div>
               </article>
 
@@ -199,7 +139,9 @@ export default function Home() {
 
               {/* Step 3 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 3:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
+                  Step 3:
+                </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   <span>
                     List any skills that you have so we can generate Micro-Niche
@@ -216,12 +158,15 @@ export default function Home() {
                   good teacher, or you&apos;re a media personality, etc.
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="Building systems, good speaker, good teacher, etc"
                   />
                 </div>
-                <p className="helper-text text-[#667185] text-[14px] leading-[145%]2 hidden">Seperate with a comma</p>
+                <p className="helper-text text-[#667185] text-[14px] leading-[145%]2 hidden">
+                  Seperate with a comma
+                </p>
               </article>
 
               {/* Divider */}
@@ -254,7 +199,8 @@ export default function Home() {
                   👇Leave blank if you&apos;re open to serving anybody.
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="e.g  Parents, single men, vegans, millenials etc (or leave blank)"
                   />
@@ -273,7 +219,10 @@ export default function Home() {
                 </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   Do these people have any other notable demographic you want to
-                  consider <span className="text-[#1671d9] underline font-normal">(Taught in M1V06)</span>
+                  consider{" "}
+                  <span className="text-[#1671d9] underline font-normal">
+                    (Taught in M1V06)
+                  </span>
                 </h6>
                 <p className="helper-text text-[#667185] text-[14px] leading-[145%]">
                   💡This includes age, education, whether they&apos;re married
@@ -285,7 +234,8 @@ export default function Home() {
                   👇Leave blank if you want to do a broader search.
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="e.g.  Single, marrried, professional, mom, 50+ (or leave blank)"
                   />
@@ -321,7 +271,8 @@ export default function Home() {
                   👇Leave blank if you want to do a broader search.
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="Feels like life is slipping them by, driven and ambitious, wants to make a difference in the world (or leave blank)"
                   />
@@ -355,14 +306,19 @@ export default function Home() {
                   course, having a course that&apos;s not getting enough sales,
                   having a course with insufficient student engagement and
                   success. The problem is{" "}
-                  <span className="text-[#1671d9] underline font-normal">not</span> people who don&apos;t
-                  have an Experience Product.
+                  <span className="text-[#1671d9] underline font-normal">
+                    not
+                  </span>{" "}
+                  people who don&apos;t have an Experience Product.
                 </p>
                 <p className="helper-text text-[#667185] text-[14px] leading-[145%]">
                   👇Leave blank if you&apos;re not sure.
                 </p>
                 <div className="Input-cont">
-                  <input className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3" type="text" /> 
+                  <input
+                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    type="text"
+                  />
                 </div>
               </article>
 
@@ -373,12 +329,17 @@ export default function Home() {
 
               {/* Step 8 */}
               <article className="grid gap-y-[10px]">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 8:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
+                  Step 8:
+                </h4>
                 <article className="flex gap-[6px]">
                   <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                     Are you creating a tribe-based or niche-based audience{" "}
-                    <span className="text-[#1671d9] underline font-normal">(Taught in M1V06)</span>{" "}
-                    statement? <span className="text-[#d42620] font-semibold">*</span>
+                    <span className="text-[#1671d9] underline font-normal">
+                      (Taught in M1V06)
+                    </span>{" "}
+                    statement?{" "}
+                    <span className="text-[#d42620] font-semibold">*</span>
                   </h6>
                   <div className="shrink-0">
                     <Image src={infocircle2} alt="Info Circle" />
@@ -406,7 +367,9 @@ export default function Home() {
                 </p>
 
                 <article className="text-[#344054] grid gap-y-[10px]">
-                  <p className="helper-text text-[#667185] text-[14px] leading-[145%]">👇Choose one option below.</p>
+                  <p className="helper-text text-[#667185] text-[14px] leading-[145%]">
+                    👇Choose one option below.
+                  </p>
                   <div className="flex gap-[10px] items-center">
                     <input
                       className="accent-[#F29408] radio w-5 h-5"
@@ -435,7 +398,9 @@ export default function Home() {
 
               {/* Step 9 */}
               <article className="rps2 grid gap-y-2 content-start">
-                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">Step 9:</h4>
+                <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408]">
+                  Step 9:
+                </h4>
                 <h6 className="text-[#101928] text-[14px] font-medium leading-[145%]">
                   Select experience product types you’d like to generate product
                   ideas around
@@ -470,20 +435,21 @@ export default function Home() {
             </article>
           </section>
 
-          {/* Footer Message */}
-
+          {/* FOOTER MESSAGE */}
           <article className="pb-10 pt-16 flex justify-center items-center">
-            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]"> 
+            <p className="xgrey-400 text-[#98a2b3] text-[14px] leading-[145%]">
               © 2023 Ainslee. All rights reserved.
             </p>
           </article>
         </section>
 
-        {/* Sidebar - 3 */}
+        {/* RIGHT SIDEBAR  */}
         <section className="lg:w-[350px] top-[72px] hidden lg:inline-flex side12 py-6 px-4 h-[calc(100vh_-_72px)] bg-white flex-col sticky ">
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
-            <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">YOUR ASSETS</h5>
+            <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
+              YOUR ASSETS
+            </h5>
             <div className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
               <Image src={expand2} alt="Hamburger Menu" />
             </div>
@@ -491,8 +457,12 @@ export default function Home() {
 
           {/* Drag & Drop + Saved */}
           <article className="in-and-out w-full grid grid-cols-2 text-center">
-            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">Drag & Drop</h5>
-            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">Saved</h5>
+            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
+              Drag & Drop
+            </h5>
+            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
+              Saved
+            </h5>
           </article>
 
           {/* Search bar and filter */}
@@ -501,7 +471,11 @@ export default function Home() {
               <div>
                 <Image src={search2} alt="search" />
               </div>
-              <input className=" bg-transparent outline-none text-[14px] leading-5" type="text" placeholder="Search Ideas..." />
+              <input
+                className=" bg-transparent outline-none text-[14px] leading-5"
+                type="text"
+                placeholder="Search Ideas..."
+              />
             </div>
             <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
               <Image src={filter} alt="filter" />
@@ -516,13 +490,20 @@ export default function Home() {
                 <Image src={emptystate} alt="No saved Idea" />
               </div>
               <div className="mt-[-28px]">
-                <h4 className="text-[#1d2739] font-semibold leading-[145%] pb-2">No assets available for this tool yet</h4>
+                <h4 className="text-[#1d2739] font-semibold leading-[145%] pb-2">
+                  No assets available for this tool yet
+                </h4>
                 <p className="max-w-[272px] text-[#667185] text-[14px] block">
                   <span>
                     Create assets in Profitable Product Generator first
                   </span>
                 </p>
-                <Link className="text-[#F29408] font-semibold pt-6 block" href="#">Learn more</Link>
+                <Link
+                  className="text-[#F29408] font-semibold pt-6 block"
+                  href="#"
+                >
+                  Learn more
+                </Link>
               </div>
             </article>
           </section>

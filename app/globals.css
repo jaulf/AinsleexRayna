@@ -100,3 +100,10 @@
 .rotate-effect {
   transition: transform 0.4s ease;
 }
+
+
+.modhov:hover {
+  cursor: pointer;
+  background: #f7f9fc;
+  border-radius: 4px;
+}
