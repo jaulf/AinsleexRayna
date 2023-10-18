@@ -41,7 +41,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(9)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -147,7 +147,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(10)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -248,7 +248,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(11)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -349,7 +349,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(12)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -450,7 +450,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(13)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -551,7 +551,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays3mit(14)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"

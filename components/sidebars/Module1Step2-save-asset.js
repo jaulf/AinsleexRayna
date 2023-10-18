@@ -60,7 +60,7 @@ function SavedAssetSidebar({ sasExpand }) {
                   Result details
                 </h6>
 
-                {/* body of 4 */}
+                {/* BODY OF 4 */}
                 <article className="flex flex-col gap-4 pt-4 w-full second ">
                   {/* field with lock */}
                   <article className="field-result-lock flex justify-between items-center gap-4">

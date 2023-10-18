@@ -26,7 +26,7 @@ export default function ModuleListSaved({ sasExpand }) {
           id={"s2mit" + 1}
           className="xbgrey-100 s2mit bg-[#f9fafb] active p-4 rounded-[8px] border-[#E4E7EC] border flex flex-col items-center gap-4 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -40,7 +40,7 @@ export default function ModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays2mit(1)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -49,7 +49,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -124,7 +124,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="text-[14px] leading-[145%] text-[#667185] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third"
             onClick={sasExpand}
@@ -138,7 +138,7 @@ export default function ModuleListSaved({ sasExpand }) {
           id={"s2mit" + 2}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -152,7 +152,7 @@ export default function ModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays2mit(2)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -161,7 +161,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -236,7 +236,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="text-[14px] leading-[145%] text-[#667185] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
             onClick={sasExpand}
@@ -251,7 +251,7 @@ export default function ModuleListSaved({ sasExpand }) {
           id={"s2mit" + 3}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -265,7 +265,7 @@ export default function ModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays2mit(3)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -274,7 +274,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -349,7 +349,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="text-[14px] leading-[145%] text-[#667185] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
             onClick={sasExpand}
@@ -364,7 +364,7 @@ export default function ModuleListSaved({ sasExpand }) {
           id={"s2mit" + 4}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -378,7 +378,7 @@ export default function ModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays2mit(4)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -387,7 +387,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -462,7 +462,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="text-[14px] leading-[145%] text-[#667185] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
             onClick={sasExpand}
@@ -477,7 +477,7 @@ export default function ModuleListSaved({ sasExpand }) {
           id={"s2mit" + 5}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
-          {/* head */}
+          {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
             <article
@@ -491,7 +491,7 @@ export default function ModuleListSaved({ sasExpand }) {
                 Losing weight using a kletogenic diet
               </p>
             </article>
-            {/* clicking this will hide the body and save asset */}
+            {/* clicking this will hide the body below */}
             <article
               onClick={() => displays2mit(5)}
               className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
@@ -500,7 +500,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* body of 4 */}
+          {/* BODY OF 4 */}
           <article className="hidden flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
@@ -575,7 +575,7 @@ export default function ModuleListSaved({ sasExpand }) {
             </article>
           </article>
 
-          {/* save asset */}
+          {/* SAVE ASSET */}
           <article
             className="text-[14px] leading-[145%] text-[#667185] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
             onClick={sasExpand}

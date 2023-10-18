@@ -58,7 +58,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
                   Result details
                 </h6>
 
-                {/* body of 4 */}
+                {/* BODY OF 4 */}
                 <textarea
                   className="sas-input flex py-[11px] px-3 outline-none rounded-[6px] border border-[#f0f2f5] bg-white w-full focus:border-[#FDEACE] focus:shadow-[0px_0px_0px_4px_rgba(242,148,8,0.10)] h-screen max-h-[210px] lg:max-h-[320px]"
                   placeholder="Picture a canvas waiting to be painted, a blank page eager to be filled, a digital realm ready to come to life. It's in this creative playground that we'll weave our design magic, experimenting, iterating, and refining until our vision becomes reality. loss Idea 1"
