@@ -115,7 +115,7 @@ export default function Home() {
               </article>
 
               {/* SELECTED */}
-              <article className="bg-[#F7F9FC] px-6 py-2 flex flex-col lg:flex-row gap-6 items-center justify-between">
+              <article className="bg-[#F7F9FC] px-4 lg:px-6 py-2 flex flex-col lg:flex-row gap-6 items-center justify-between">
                 {/* LEFT */}
                 <article className="w-full flex justify-between lg:justify-start items-center gap-6 ">
                   <article className="flex items-center gap-4">
