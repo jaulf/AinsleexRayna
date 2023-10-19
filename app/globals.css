@@ -107,3 +107,16 @@
   background: #f7f9fc;
   border-radius: 4px;
 }
+
+.clipText {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.saved-asset-item.selected {
+  border: 1px solid #c6ddf7;
+  background: #edf4fd;
+}

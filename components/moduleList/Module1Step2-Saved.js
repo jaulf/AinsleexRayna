@@ -130,7 +130,7 @@ export default function ModuleListSaved({ sasExpand }) {
             onClick={sasExpand}
           >
             <Image src={heartFill500} alt="Empty" />
-            <p>Save this asset</p>
+            <p>Saved Asset</p>
           </article>
         </section>
         {/* INACTIVE - Module 2 */}
@@ -242,7 +242,7 @@ export default function ModuleListSaved({ sasExpand }) {
             onClick={sasExpand}
           >
             <Image src={heartFill500} alt="Empty" />
-            <p>Save this asset</p>
+            <p>Saved Asset</p>
           </article>
         </section>
 
@@ -355,7 +355,7 @@ export default function ModuleListSaved({ sasExpand }) {
             onClick={sasExpand}
           >
             <Image src={heartFill500} alt="Empty" />
-            <p>Save this asset</p>
+            <p>Saved Asset</p>
           </article>
         </section>
 
@@ -468,7 +468,7 @@ export default function ModuleListSaved({ sasExpand }) {
             onClick={sasExpand}
           >
             <Image src={heartFill500} alt="Empty" />
-            <p>Save this asset</p>
+            <p>Saved Asset</p>
           </article>
         </section>
 
@@ -581,7 +581,7 @@ export default function ModuleListSaved({ sasExpand }) {
             onClick={sasExpand}
           >
             <Image src={heartFill500} alt="Empty" />
-            <p>Save this asset</p>
+            <p>Saved Asset</p>
           </article>
         </section>
       </section>

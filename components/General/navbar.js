@@ -15,7 +15,7 @@ function Navbar() {
     <>
       {/* TOP Navbar Container */}
       {/* USE THIS NAVBAR COMPONENT */}
-      <header className="lg:bg-[#000B33] sticky z-10 top-0 lg:border-[#1D2739] bg-[#101928] border-[#1D2739] border">
+      <header className="lg:bg-[#000B33] sticky z-[60] top-0 lg:border-[#1D2739] bg-[#101928] border-[#1D2739] border">
         {/* container */}
         <div className="flex p-4 lg:px-6 lg:py-[14px] justify-between items-center">
           {/* Navbar Left Side */}
@@ -33,7 +33,7 @@ function Navbar() {
               </Link>
               {/* ACTIVE LINK */}
               <Link
-                className="px-5 active - py-2 px-5 bg-[rgba(255,255,255,0.1)] rounded-md text-[#F7F9FC]"
+                className="px-5 active - py-2 bg-[rgba(255,255,255,0.1)] rounded-md text-[#F7F9FC]"
                 href="#"
               >
                 Experience Product Masterclass
@@ -64,9 +64,9 @@ function Navbar() {
             </div>
 
             {/* user profile  */}
-            <div className="hidden md:flex gap-4 items-center">
+            <div className="hidden lg:flex gap-4 items-center">
               <div className="flex gap-2 items-center">
-                <div className="w-8 h-8 relative inline-flex  justify-center items-center">
+                <div className="w-8 h-8 relative inline-flex justify-center items-center">
                   <Image
                     className="w-full h-auto"
                     src={userPic}

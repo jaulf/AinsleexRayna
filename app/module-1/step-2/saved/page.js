@@ -104,74 +104,79 @@ export default function Home() {
         </section>
 
         {/* Sidebar - 3 */}
-        <section className="lg:w-[350px] overflow-auto top-[72px] hidden lg:inline-flex side12 py-6 px-4 h-[calc(100vh_-_72px)] bg-white flex-col sticky">
-          {/* YOUR ASSETS */}
-          <article className="flex justify-between items-center">
-            <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
-              YOUR ASSETS
-            </h5>
-            <div className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
-              <Image src={expand2} alt="Hamburger Menu" />
-            </div>
-          </article>
-
-          {/* Drag & Drop + Saved */}
-          <article className="in-and-out w-full grid grid-cols-2 text-center">
-            <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
-              Drag & Drop
-            </h5>
-            <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
-              Saved
-            </h5>
-          </article>
-
-          {/* Search bar and filter */}
-          <article className="search-and-filter grid grid-cols-[1fr_max-content] items-center justify-center gap-x-3">
-            <div className="search-bar my-3 w-full rounded-md border bg-[#f9fafb] border-[#f0f2f5] flex p-[10px] items-center gap-1">
-              <div>
-                <Image src={search2} alt="search" />
-              </div>
-              <input
-                className="text-[14px] bg-transparent leading-5"
-                type="text"
-                placeholder="Search Ideas..."
-              />
-            </div>
-            <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
-              <Image src={filter} alt="filter" />
-            </div>
-          </article>
-
-          {/* Active and Inactive Saved Ideas */}
-          <section>
-            {/* Inactive Saved Ideas */}
-            <article className="hidden relative">
-              <div>
-                <Image src={emptystate} alt="No saved Idea" />
-              </div>
-              <div className="mt-[-28px]">
-                <h4>No assets available for this tool yet</h4>
-                <p className="max-w-[272px]">
-                  <span>
-                    Create assets in Profitable Product Generator first
-                  </span>
-                </p>
-                <Link href="#">Learn more</Link>
+        {/* add overlay for mobile */}
+        <div className="z-[20] lg:relative lg:z-0 lg:block lg:bg-transparent fixed top-0 left-0 right-0 bottom-0 flex justify-end bg-[rgba(0,0,0,.25)]">
+          <section className="lg:w-[350px] z-[50] fixed scrollabr overflow-auto top-[78px] right-0 left-[80px] lg:left-auto lg:right-auto bottom-0 w-auto lg:top-[72px] lg:inline-flex side12 pt-6 lg:pb-6 pb-40 px-4 lg:h-[calc(100vh_-_72px)] h-full flex flex-col lg:sticky bg-white">
+            <section className="">
+              {/* YOUR ASSETS */}
+            <article className="flex justify-between items-center">
+              <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
+                YOUR ASSETS
+              </h5>
+              <div className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
+                <Image src={expand2} alt="Hamburger Menu" />
               </div>
             </article>
 
-            {/* Active Saved Ideas */}
-            <section>
-              {/* Divider */}
-              <div className="divider3 block w-full h-auto">
-                <div className="bg-[#ECECED] w-full h-[1px]"></div>
-              </div>
+            {/* Drag & Drop + Saved */}
+            <article className="in-and-out w-full grid grid-cols-2 text-center">
+              <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
+                Drag & Drop
+              </h5>
+              <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
+                Saved
+              </h5>
+            </article>
 
-              {/* Container for saved Asset */}
-              <SidebarModuleListSaved />
+            {/* Search bar and filter */}
+            <article className="search-and-filter grid grid-cols-[1fr_max-content] items-center justify-center gap-x-3 overflow-auto">
+              <div className="search-bar my-3 w-full rounded-md border bg-[#f9fafb] border-[#f0f2f5] flex p-[10px] items-center gap-1">
+                <div>
+                  <Image src={search2} alt="search" />
+                </div>
+                <input
+                  className="text-[14px] bg-transparent leading-5"
+                  type="text"
+                  placeholder="Search Ideas..."
+                />
+              </div>
+              <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
+                <Image src={filter} alt="filter" />
+              </div>
+            </article>
+
+            {/* Active and Inactive Saved Ideas */}
+            <section>
+              {/* Inactive Saved Ideas */}
+              <article className="hidden relative">
+                <div>
+                  <Image src={emptystate} alt="No saved Idea" />
+                </div>
+                <div className="mt-[-28px]">
+                  <h4>No assets available for this tool yet</h4>
+                  <p className="max-w-[272px]">
+                    <span>
+                      Create assets in Profitable Product Generator first
+                    </span>
+                  </p>
+                  <Link href="#">Learn more</Link>
+                </div>
+              </article>
+
+              {/* Active Saved Ideas */}
+              <section>
+                {/* Divider */}
+                <div className="divider3 block w-full h-auto">
+                  <div className="bg-[#ECECED] w-full h-[1px]"></div>
+                </div>
+
+                {/* Container for saved Asset */}
+                <SidebarModuleListSaved />
+              </section>
+            </section>
             </section>
           </section>
-        </section>
+        </div>
       </section>
     </main>
   );
