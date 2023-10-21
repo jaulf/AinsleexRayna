@@ -166,7 +166,7 @@ export default function Home() {
                       <article className="flex lg:shrink-0 gap-4 items-center">
                         <input
                           onClick={() => selecteds4mit(1)}
-                          className="w-5 h-5 shrink-0 border border-[#d0d5dd] accent-[#F29408]"
+                          className="w-5 h-5 shrink-0 accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-0"
                           type="checkbox"
                         />
                         <article className="flex flex-col gap-2 w-full lg:w-[359px]">
@@ -291,7 +291,7 @@ export default function Home() {
                       <article className="flex lg:shrink-0 gap-4 items-center">
                         <input
                           onClick={() => selecteds4mit(2)}
-                          className="w-5 h-5 shrink-0 border border-[#d0d5dd] accent-[#F29408]"
+                          className="w-5 h-5 shrink-0 accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-0"
                           type="checkbox"
                         />
                         <article className="flex flex-col gap-2 w-full lg:w-[359px]">
