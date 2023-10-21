@@ -87,7 +87,7 @@ export default function Home() {
                   <span className="text-[#d42620] font-semibold">*</span>
                 </h6>
                 <div className="select-cont bg-[#f9fafb] rounded-md outline-none ">
-                  <select className="focus:border-0 focus:border-transparent bg-[#f9fafb] border border-[#e4e7ec] focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className="focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border border-[#e4e7ec] focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Choose an option
                     </option>
@@ -126,7 +126,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] focus:border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                   />
                 </div>
@@ -159,7 +159,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] focus:border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="Building systems, good speaker, good teacher, etc"
                   />
@@ -200,7 +200,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 bg-[#f9fafb] focus:border-[#e4e7ec] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="e.g  Parents, single men, vegans, millenials etc (or leave blank)"
                   />
@@ -235,7 +235,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="e.g.  Single, marrried, professional, mom, 50+ (or leave blank)"
                   />
@@ -272,7 +272,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                     placeholder="Feels like life is slipping them by, driven and ambitious, wants to make a difference in the world (or leave blank)"
                   />
@@ -316,7 +316,7 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="focus:ring-0 ring-0 focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#fa9874] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
                     type="text"
                   />
                 </div>
@@ -372,7 +372,7 @@ export default function Home() {
                   </p>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="accent-[#F29408] radio w-5 h-5"
+                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-0 radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -381,7 +381,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="accent-[#F29408] radio w-5 h-5"
+                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-0 radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -419,7 +419,7 @@ export default function Home() {
                   </span>
                 </p>
                 <div className="select-cont rounded-md  outline-none ">
-                  <select className="focus:border-0 focus:border-transparent bg-[#f9fafb] border-[#e4e7ec] border focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className="focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border-[#e4e7ec] border focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Select options
                     </option>
@@ -472,7 +472,7 @@ export default function Home() {
                 <Image src={search2} alt="search" />
               </div>
               <input
-                className=" bg-transparent outline-none text-[14px] leading-5"
+                className="w-full ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
                 type="text"
                 placeholder="Search Ideas..."
               />

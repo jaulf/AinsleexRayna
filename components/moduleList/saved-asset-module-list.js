@@ -37,7 +37,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55] pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55] pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -59,9 +59,9 @@ export default function SidebarModuleListSaved({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */}
+              {/* result */} 
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -74,10 +74,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -87,10 +87,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -100,11 +100,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>
@@ -143,7 +143,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -162,7 +162,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -175,10 +175,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -188,10 +188,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -201,11 +201,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>
@@ -244,7 +244,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -263,7 +263,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -276,10 +276,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -289,10 +289,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -302,11 +302,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>
@@ -345,7 +345,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -364,7 +364,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -377,10 +377,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -390,10 +390,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -403,11 +403,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>
@@ -446,7 +446,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -465,7 +465,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -478,10 +478,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -491,10 +491,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -504,11 +504,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>
@@ -547,7 +547,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#0A090B]">
                 Profitable Product Idea Option 1
               </h6>
-              <p className="s2mit-text block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
+              <p className="block text-[12px] leading-[145%] xgrey-500 text-[#4F4D55]  pt-[2px]">
                 Losing weight using a kletogenic diet
               </p>
             </article>
@@ -566,7 +566,7 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
                 <div className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
@@ -579,10 +579,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
               </article>
@@ -592,10 +592,10 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
               </article>
@@ -605,11 +605,11 @@ export default function SidebarModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
 
-                <div className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
               </article>

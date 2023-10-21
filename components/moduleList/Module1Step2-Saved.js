@@ -55,17 +55,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
-                <input
-                  className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                  value="Weight Loss"
-                />
-              </article>
-              {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+                <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                  Weight Loss
+                </div>
               </article>
             </article>
 
@@ -73,17 +68,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Lose weight using a ketogenic diet"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Lose weight using a ketogenic diet
+                </div>
               </article>
             </article>
 
@@ -91,17 +81,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Post-pregnancy moms"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Post-pregnancy moms
+                </div>
               </article>
             </article>
 
@@ -109,17 +94,13 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Membership"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Membership
+                </div>
               </article>
             </article>
           </article>
@@ -162,22 +143,17 @@ export default function ModuleListSaved({ sasExpand }) {
           </article>
 
           {/* BODY OF 4 */}
-          <article className="hidden flex-col gap-4 w-full second ">
+          <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
-                <input
-                  className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                  value="Weight Loss"
-                />
-              </article>
-              {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+                <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                  Weight Loss
+                </div>
               </article>
             </article>
 
@@ -185,17 +161,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Lose weight using a ketogenic diet"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Lose weight using a ketogenic diet
+                </div>
               </article>
             </article>
 
@@ -203,17 +174,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Post-pregnancy moms"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Post-pregnancy moms
+                </div>
               </article>
             </article>
 
@@ -221,17 +187,13 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Membership"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Membership
+                </div>
               </article>
             </article>
           </article>
@@ -275,22 +237,17 @@ export default function ModuleListSaved({ sasExpand }) {
           </article>
 
           {/* BODY OF 4 */}
-          <article className="hidden flex-col gap-4 w-full second ">
+          <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
-                <input
-                  className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                  value="Weight Loss"
-                />
-              </article>
-              {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+                <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                  Weight Loss
+                </div>
               </article>
             </article>
 
@@ -298,17 +255,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Lose weight using a ketogenic diet"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Lose weight using a ketogenic diet
+                </div>
               </article>
             </article>
 
@@ -316,17 +268,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Post-pregnancy moms"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Post-pregnancy moms
+                </div>
               </article>
             </article>
 
@@ -334,17 +281,13 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Membership"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Membership
+                </div>
               </article>
             </article>
           </article>
@@ -388,22 +331,17 @@ export default function ModuleListSaved({ sasExpand }) {
           </article>
 
           {/* BODY OF 4 */}
-          <article className="hidden flex-col gap-4 w-full second ">
+          <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
-                <input
-                  className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                  value="Weight Loss"
-                />
-              </article>
-              {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+                <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                  Weight Loss
+                </div>
               </article>
             </article>
 
@@ -411,17 +349,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Lose weight using a ketogenic diet"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Lose weight using a ketogenic diet
+                </div>
               </article>
             </article>
 
@@ -429,17 +362,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Post-pregnancy moms"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Post-pregnancy moms
+                </div>
               </article>
             </article>
 
@@ -447,17 +375,13 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Membership"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Membership
+                </div>
               </article>
             </article>
           </article>
@@ -501,22 +425,17 @@ export default function ModuleListSaved({ sasExpand }) {
           </article>
 
           {/* BODY OF 4 */}
-          <article className="hidden flex-col gap-4 w-full second ">
+          <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
                 </label>
-                <input
-                  className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                  value="Weight Loss"
-                />
-              </article>
-              {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+                <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                  Weight Loss
+                </div>
               </article>
             </article>
 
@@ -524,17 +443,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Core Solution
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Lose weight using a ketogenic diet"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Lose weight using a ketogenic diet
+                </div>
               </article>
             </article>
 
@@ -542,17 +456,12 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Audience Sta...
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Post-pregnancy moms"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Post-pregnancy moms
+                </div>
               </article>
             </article>
 
@@ -560,17 +469,13 @@ export default function ModuleListSaved({ sasExpand }) {
             <article className="field-result-refresh flex justify-between items-center gap-4">
               {/* result */}
               <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Product type
                 </label>
-                <input
-                  className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                  value="Membership"
-                />
-              </article>
-              {/* refresh */}
-              <article className="shrink-0">
-                <Image src={refresh} alt="refresh" />
+
+                <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                  Membership
+                </div>
               </article>
             </article>
           </article>

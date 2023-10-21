@@ -132,7 +132,7 @@ export default function Home() {
                 <Image src={search2} alt="search" />
               </div>
               <input
-                className=" bg-transparent outline-none text-[14px] leading-5"
+                className="w-full ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
                 type="text"
                 placeholder="Search Ideas..."
               />

@@ -11,7 +11,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
     <>
       <section
         id="esas"
-        className="z-[20] fixed top-0 left-0 right-0 bottom-0 hidden justify-end items-end  bg-[rgba(0,0,0,.25)]"
+        className="z-[120] fixed top-0 left-0 right-0 bottom-0 hidden justify-end items-end  bg-[rgba(0,0,0,.25)]"
       >
         {/* RIGHT - CONTAINER WITH OVERLAY */}
         <section className="w-full lg:w-max bg-[#F9FAFB] h-max lg:h-full flex lg:inline-flex flex-col justify-between">
@@ -41,7 +41,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
                   Enter name for this asset
                 </label>
                 <input
-                  className="sas-input flex py-[11px] px-3 outline-none rounded-[6px] border border-[#f0f2f5] bg-white w-full focus:border-[#FDEACE] focus:shadow-[0px_0px_0px_4px_rgba(242,148,8,0.10)]"
+                  className="sas-input ring-0 focus:ring-0 flex py-[11px] px-3 outline-none rounded-[6px] border border-[#f0f2f5] bg-white w-full focus:border-[#FDEACE] focus:shadow-[0px_0px_0px_4px_rgba(242,148,8,0.10)]"
                   type="text"
                   placeholder="try it out"
                 />
@@ -60,7 +60,7 @@ function EditSavedAssetSidebar( {EditExpand }) {
 
                 {/* BODY OF 4 */}
                 <textarea
-                  className="sas-input flex py-[11px] px-3 outline-none rounded-[6px] border border-[#f0f2f5] bg-white w-full focus:border-[#FDEACE] focus:shadow-[0px_0px_0px_4px_rgba(242,148,8,0.10)] h-screen max-h-[210px] lg:max-h-[320px]"
+                  className="sas-input ring-0 focus:ring-0 flex py-[11px] px-3 outline-none rounded-[6px] border border-[#f0f2f5] bg-white w-full focus:border-[#FDEACE] focus:shadow-[0px_0px_0px_4px_rgba(242,148,8,0.10)] h-screen max-h-[210px] lg:max-h-[320px]"
                   placeholder="Picture a canvas waiting to be painted, a blank page eager to be filled, a digital realm ready to come to life. It's in this creative playground that we'll weave our design magic, experimenting, iterating, and refining until our vision becomes reality. loss Idea 1"
                 />
               </article>

@@ -89,9 +89,9 @@ export default function Home() {
                     <Image src={search5} alt="search icon" />
                     {/* input field */}
                     <input
-                      className="w-full bg-transparent outline-none"
+                      className="w-full ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
                       type="text"
-                      placeholder="search here..."
+                      placeholder="Search Ideas..."
                     />
                   </article>
 
@@ -103,9 +103,9 @@ export default function Home() {
                 </article>
 
                 {/* RIGHT - DROPDOWN */}
-                <article className="timeline-dropdown w-max shrink-0 grow-0 lg:w-auto inline-flex py-2 px-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
+                <article className="timeline-dropdown w-max shrink-0 grow-0 lg:w-auto inline-flex py-2 pl-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
                   <Image className="shrink-0" src={calendar7} alt="calendar" />
-                  <select className="shrink-0 font-medium button-type-dropdown text-[14px] bg-transparent">
+                  <select className="shrink-0 ring-0 focus:ring-0 pl-0 py-0 m-0 border-none text-[#344054] text-[14px] font-medium button-type-dropdown bg-transparent">
                     <option>Last 7 days</option>
                     <option>Last 14 days</option>
                     <option>Last 28 days</option>
@@ -115,7 +115,7 @@ export default function Home() {
               </article>
 
               {/* SELECTED */}
-              <article className="bg-[#F7F9FC] px-4 lg:px-6 py-2 flex flex-col lg:flex-row gap-6 items-center justify-between">
+              <article className="bg-[#F7F9FC] px-4 lgpx-6 py-2 flex flex-col lg:flex-row gap-6 items-center justify-between">
                 {/* LEFT */}
                 <article className="w-full flex justify-between lg:justify-start items-center gap-6 ">
                   <article className="flex items-center gap-4">
@@ -136,8 +136,8 @@ export default function Home() {
                   </article>
                   {/* DROPDOWN - BULK ACTIONS */}
                   {/* RIGHT - DROPDOWN */}
-                  <article className="timeline-dropdown flex py-2 px-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
-                    <select className="shrink-0 text-[#344054] text-[14px] lg:text-[16px] font-semibold button-type-dropdown bg-transparent">
+                  <article className="timeline-dropdown flex py-2 pl-2 rounded-md gap-1 border border-[#e4e7ec] bg-white shadow-[0px_1.5px_4px_-1px_rgba(16,25,40,0.07)] text-[#344054]">
+                    <select className="shrink-0 ring-0 focus:ring-0 pl-0 py-0 m-0 border-none text-[#344054] text-[14px] lg:text-[16px] font-semibold button-type-dropdown bg-transparent">
                       <option>Bulk action</option>
                       <option>Last 14 days</option>
                       <option>Last 28 days</option>
@@ -163,13 +163,13 @@ export default function Home() {
                   <article className="flex gap-6 lg:items-center ">
                     <article className="flex w-full gap-6 lg:items-center flex-col lg:flex-row">
                       {/* LEFT */}
-                      <article className="flex lg:shrink-0 gap-4 items-center lg:w-[359px]">
-                      <input
+                      <article className="flex lg:shrink-0 gap-4 items-center">
+                        <input
                           onClick={() => selecteds4mit(1)}
                           className="w-5 h-5 shrink-0 border border-[#d0d5dd] accent-[#F29408]"
                           type="checkbox"
                         />
-                        <article className="flex flex-col gap-2 w-full lg:w-auto">
+                        <article className="flex flex-col gap-2 w-full lg:w-[359px]">
                           <h6 className="text-[16px] leading-[125%] text-[#1D2739] font-semibold">
                             Weight loss idea 1
                           </h6>
@@ -228,13 +228,12 @@ export default function Home() {
                     <article className="field-result-lock flex justify-between items-center gap-4">
                       {/* result */}
                       <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
-                        <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                        <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                           Micro Niche
                         </label>
-                        <input
-                          className="text-[14px] leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none"
-                          value="Weight Loss"
-                        />
+                        <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
+                          Weight Loss
+                        </div>
                       </article>
                     </article>
 
@@ -242,13 +241,12 @@ export default function Home() {
                     <article className="field-result-refresh flex justify-between items-center gap-4">
                       {/* result */}
                       <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                        <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                        <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                           Core Solution
                         </label>
-                        <input
-                          className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                          value="Lose weight using a ketogenic diet"
-                        />
+                        <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                          Lose weight using a ketogenic diet
+                        </div>
                       </article>
                     </article>
 
@@ -256,13 +254,12 @@ export default function Home() {
                     <article className="field-result-refresh flex justify-between items-center gap-4">
                       {/* result */}
                       <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                        <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                        <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                           Audience Sta...
                         </label>
-                        <input
-                          className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                          value="Post-pregnancy moms"
-                        />
+                        <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                          Post-pregnancy moms
+                        </div>
                       </article>
                     </article>
 
@@ -270,13 +267,13 @@ export default function Home() {
                     <article className="field-result-refresh flex justify-between items-center gap-4">
                       {/* result */}
                       <article className="rounded-[6px] bg-white border border-[#e4e7ec] flex flex-col lg:flex-row p-3 gap-2 lg:gap-3 w-full">
-                        <label className="shrink-0 text-[#98a2b3] font-medium text-[12px] lg:text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
+                        <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                           Product type
                         </label>
-                        <input
-                          className="text-[12px] lg:text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none"
-                          value="Membership"
-                        />
+
+                        <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
+                          Membership
+                        </div>
                       </article>
                     </article>
                   </article>
@@ -291,13 +288,13 @@ export default function Home() {
                   <article className="flex gap-6 lg:items-center ">
                     <article className="flex w-full gap-6 lg:items-center flex-col lg:flex-row">
                       {/* LEFT */}
-                      <article className="flex lg:shrink-0 gap-4 items-center lg:w-[359px]">
+                      <article className="flex lg:shrink-0 gap-4 items-center">
                         <input
                           onClick={() => selecteds4mit(2)}
                           className="w-5 h-5 shrink-0 border border-[#d0d5dd] accent-[#F29408]"
                           type="checkbox"
                         />
-                        <article className="flex flex-col gap-2 w-full lg:w-auto">
+                        <article className="flex flex-col gap-2 w-full lg:w-[359px]">
                           <h6 className="text-[16px] leading-[125%] text-[#1D2739] font-semibold">
                             Weight loss idea 2
                           </h6>
