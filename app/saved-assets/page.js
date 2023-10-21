@@ -279,7 +279,7 @@ export default function Home() {
                   </article>
                 </article>
 
-                {/* LIST 2 - SAVED ASSETS - for credibility Statement */}
+                {/* LIST 2 - SAVED ASSETS - Module 1 Program ... */}
                 <article
                   id={"s4mit" + 2}
                   className="saved-asset-item rounded-[8px] border-[1.5px] border-[#f0f2f5] p-4 lg:p-6 bg-[#f9fafb] s4mit flex flex-col gap-6 first"
