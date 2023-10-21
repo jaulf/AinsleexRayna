@@ -331,7 +331,7 @@ export default function Home() {
                         </article>
                         <article className="flex gap-6 fourth">
                           <article
-                            onClick={() => EditExpand()}
+                            onClick={() => EditExpandField()}
                             className="flex gap-2 items-center cursor-pointer hovOpacity-80"
                           >
                             <Image src={editb4} alt="edit" />
