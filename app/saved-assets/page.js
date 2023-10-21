@@ -22,6 +22,7 @@ import deleteOrange from "@/public/Images/svg/delete-orange-500.svg";
 import arrowLeft6 from "@/public/Images/svg/arrow-left-600.svg";
 import arrowRight6 from "@/public/Images/svg/arrow-right-600.svg";
 import EditSavedAssetSidebar from "@/components/sidebars/edit-asset-sidebar";
+import EditSavedAssetSidebarField from "@/components/sidebars/edit-asset-sidebar-field";
 import hamburgerMenu from "@/public/Images/svg/hamburger-menu.svg";
 import Navbar from "@/components/General/navbar";
 
@@ -50,10 +51,18 @@ export default function Home() {
     }
   };
 
+   // DISPLAY EDIT SAVED ASSET SIDEBAR - Input Type:text Field
+  const EditExpandField = () => {
+    if (typeof window !== "undefined") {
+      document.getElementById("esas-field").classList.toggle("active");
+    }
+  };
+
   return (
     <main>
       {/* Edit Asset */}
       <EditSavedAssetSidebar EditExpand={EditExpand} />
+    <EditSavedAssetSidebarField EditExpandField={EditExpandField} />
 
       {/* TOP Navbar Container */}
       <Navbar />
