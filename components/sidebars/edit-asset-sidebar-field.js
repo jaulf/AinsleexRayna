@@ -6,11 +6,11 @@ import React from "react";
 import heart from "@/public/Images/svg/heart-black.svg";
 import close from "@/public/Images/svg/close-600.svg";
 
-function EditSavedAssetSidebarField( {EditExpand }) {
+function EditSavedAssetSidebarField( {EditExpandField }) {
   return (
     <>
       <section
-        id="esas"
+        id="esas-field"
         className="z-[120] fixed top-0 left-0 right-0 bottom-0 hidden justify-end items-end  bg-[rgba(0,0,0,.25)]"
       >
         {/* RIGHT - CONTAINER WITH OVERLAY */}
