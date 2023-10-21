@@ -22,7 +22,7 @@ function EditSavedAssetSidebarField( {EditExpandField }) {
               <h6 className="heading-h6 text-[16px] lg:text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">Edit Asset</h6>
               <Image
                 className="hovOpacity-80"
-                onClick={() => EditExpand()}
+                onClick={() => EditExpandField()}
                 src={close}
                 alt="modal saved asset popup"
               />
@@ -124,14 +124,14 @@ function EditSavedAssetSidebarField( {EditExpandField }) {
           <section className="flex items-center gap-3 p-6 bg-white border-t border-[#E4E7EC]">
             {/* CANCEL */}
             <article
-              onClick={EditExpand}
+              onClick={EditExpandField}
               className="lg:w-[185px] w-full hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#E4E7EC] bg-[#F0F2F5] text-[#000000] font-semibold"
             >
               <button>cancel</button>
             </article>
             {/* SAVE */}
             <article
-              onClick={EditExpand}
+              onClick={EditExpandField}
               className="lg:w-[185px] w-full hovOpacity-80 cursor-pointer py-[10px] flex justify-center items-center rounded-md border border-[#F29408] bg-[#F29408] text-[#000619] font-semibold gap-2"
             >
               <Image className="shrink-0" src={heart} alt="Save" />
