@@ -93,6 +93,10 @@
   display: flex;
 }
 
+#esas-field.active {
+  display: flex;
+}
+
 .roshash {
   transform: rotate(180deg);
 }
