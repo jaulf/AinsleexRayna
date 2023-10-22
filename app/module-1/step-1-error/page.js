@@ -29,7 +29,7 @@ export default function Home() {
         <section className="lg:ml-[307px] grid gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
           {/* INTRO - TEXTS */}
           <article>
-            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px] text-[#101928]">
               Profitable Product Idea Generator
             </h6>
             <p className="text-[14px] leading-[145%] text-[#344054] grid gap-3 mt-2">
@@ -56,22 +56,20 @@ export default function Home() {
           </article>
 
           {/* ALERT CONTAINER */}
-          <article className="rounded-[4px] bg-[#e3effc] border-l-[6px] border-[#0d5eba] py-3 px-2 flex gap-2 items-start">
+          <article className="rounded-[4px] bg-[#e3effc] border-l-[6px] border-[#0d5eba] py-3 px-2 flex gap-2 items-start text-[#1D2739]">
             {/* BLUE IMAGE IMPORTATION */}
             <div className="shrink-0">
               <Image src={infocircle} alt="Information Circle" />
             </div>
             {/* INFORMATION -TEXT */}
             <p className="text-[14px] leading-5">
-              I highly recommend watching each Training (or reading the
-              Transcripts) BEFORE using this Generator so you understand what
-              we&apos;re working on!The alert & notifications component
+              I highly recommend watching each Training (or reading the Transcripts) BEFORE using this Generator so you understand what we&apos;re working on!
             </p>
           </article>
 
           {/* CONTAINER - CONTENT - STEP 1 - 9 */}
           <section className="rounded-[10px] overflow-hidden border border-[#e4e7ec] bg-white">
-            <section className="bg-white p-6 grid content-start gap-y-6">
+          <section className="bg-white p-6 grid content-start gap-y-6">
               {/* Step 1 */}
               <article>
                 <h4 className="font-bold leading-[145%] tracking-[0.08px] text-[#F29408] pb-2">
@@ -87,13 +85,17 @@ export default function Home() {
                   <span className="text-[#d42620] font-semibold">*</span>
                 </h6>
                 <div className="select-cont bg-[#f9fafb] rounded-md outline-none ">
-                  <select className="focus:ring-0g ring-0 focus:border-[2px] focus:border-transparent bg-[#f9fafb] border border-[#e4e7ec] focus:outline-[#E26E6A] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className="error ring-2 focus:ring-2 focus:ring-[#E26E6A] ring-[#E26E6A] focus:border-transparent focus:outline-0 border-[1px] border-transparent bg-[#f9fafb] focus:outline-[#E26E6A] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Choose an option
                     </option>
                     <option>Howard is Here</option>
                   </select>
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -126,10 +128,14 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[2px] bg-[#f9fafb] focus:outline-[#E26E6A] rounded-md border border-[#e4e7ec] focus:border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error w-full py-[10px] px-3 rounded-md"
                     type="text"
                   />
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -159,14 +165,16 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[2px] bg-[#f9fafb] focus:outline-[#E26E6A] rounded-md border border-[#e4e7ec] focus:border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error rounded-md w-full py-[10px] px-3"
                     type="text"
                     placeholder="Building systems, good speaker, good teacher, etc"
                   />
                 </div>
-                <p className="helper-text text-[#667185] text-[14px] leading-[145%]2 hidden">
-                  Seperate with a comma
-                </p>
+
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -200,11 +208,16 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[2px] bg-[#f9fafb] focus:border-[#e4e7ec] focus:outline-[#E26E6A] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error w-full rounded-md  py-[10px] px-3"
                     type="text"
                     placeholder="e.g  Parents, single men, vegans, millenials etc (or leave blank)"
                   />
                 </div>
+
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -235,11 +248,15 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[2px] focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#E26E6A] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error rounded-md border w-full py-[10px] px-3"
                     type="text"
                     placeholder="e.g.  Single, marrried, professional, mom, 50+ (or leave blank)"
                   />
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -272,11 +289,15 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#E26E6A] focus:border-[2px] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error rounded-md w-full py-[10px] px-3"
                     type="text"
                     placeholder="Feels like life is slipping them by, driven and ambitious, wants to make a difference in the world (or leave blank)"
                   />
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -316,10 +337,14 @@ export default function Home() {
                 </p>
                 <div className="Input-cont">
                   <input
-                    className="focus:ring-0 ring-0 focus:border-[#e4e7ec] bg-[#f9fafb] focus:outline-[#E26E6A] focus:border-[2px] rounded-md border border-[#e4e7ec] w-full py-[10px] px-3"
+                    className="error rounded-md w-full py-[10px] px-3"
                     type="text"
                   />
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -372,7 +397,7 @@ export default function Home() {
                   </p>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-[2px] radio w-5 h-5"
+                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-[1px] radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -381,7 +406,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-[10px] items-center">
                     <input
-                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-[2px] radio w-5 h-5"
+                      className="accent-[#F29408] text-[#F29408] outline-none ring-0 focus:outline-none focus:ring-0 focus:border-[1px] radio w-5 h-5"
                       type="radio"
                       id="samp1"
                       name="samp"
@@ -389,6 +414,10 @@ export default function Home() {
                     <label>Niche-based audience statement</label>
                   </div>
                 </article>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
 
               {/* Divider */}
@@ -419,13 +448,17 @@ export default function Home() {
                   </span>
                 </p>
                 <div className="select-cont rounded-md  outline-none ">
-                  <select className="focus:ring-0 ring-0 focus:border-[2px] focus:border-transparent bg-[#f9fafb] border-[#e4e7ec] border focus:outline-[#E26E6A] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className="error rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Select options
                     </option>
                     <option>Howard is Here</option>
                   </select>
                 </div>
+                {/* Error Message */}
+                <span className="text-[#CB1A14] text-[14px] leading-[145%] pt-[10px] block">
+                  This field is required
+                </span>
               </article>
             </section>
             <article className="cta-container p-6 w-full border-t bg-[#fcfcfc]">

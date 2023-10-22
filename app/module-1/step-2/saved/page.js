@@ -48,7 +48,7 @@ export default function Home() {
         <section className="side13 lg:ml-[307px] grid content-start gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
           {/* Intro - Text */}
           <article>
-            <h6 className="heading-h6 text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+            <h6 className="heading-h6 text-[20px] font-semibold leading-[120%] tracking-[-0.4px] text-[#101928]">
               Here&apos;s your results:
             </h6>
             <p className="text-[14px] leading-[145%] text-[#344054] rps grid gap-y-3 mt-2">

@@ -124,3 +124,14 @@
   border: 1px solid #c6ddf7;
   background: #edf4fd;
 }
+
+.error {
+  background-image: url('/Images/svg/error.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  @apply  ring-2 focus:ring-2 focus:ring-[#E26E6A] ring-[#E26E6A] focus:border-transparent focus:outline-0 border-[1px] border-transparent bg-[#f9fafb] focus:outline-[#E26E6A] outline-none 
+}

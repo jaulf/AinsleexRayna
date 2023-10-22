@@ -29,7 +29,7 @@ export default function Home() {
         <section className="lg:ml-[307px] grid gap-y-6 py-14 px-4 lg:pl-0 lg:pr-[58px] lg:py-8">
           {/* INTRO - TEXTS */}
           <article>
-            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+            <h6 className="text-[20px] font-semibold leading-[120%] tracking-[-0.4px] text-[#101928]">
               Profitable Product Idea Generator
             </h6>
             <p className="text-[14px] leading-[145%] text-[#344054] grid gap-3 mt-2">
@@ -56,16 +56,14 @@ export default function Home() {
           </article>
 
           {/* ALERT CONTAINER */}
-          <article className="rounded-[4px] bg-[#e3effc] border-l-[6px] border-[#0d5eba] py-3 px-2 flex gap-2 items-start">
+          <article className="rounded-[4px] bg-[#e3effc] border-l-[6px] border-[#0d5eba] py-3 px-2 flex gap-2 items-start text-[#1D2739]">
             {/* BLUE IMAGE IMPORTATION */}
             <div className="shrink-0">
               <Image src={infocircle} alt="Information Circle" />
             </div>
             {/* INFORMATION -TEXT */}
             <p className="text-[14px] leading-5">
-              I highly recommend watching each Training (or reading the
-              Transcripts) BEFORE using this Generator so you understand what
-              we&apos;re working on!The alert & notifications component
+              I highly recommend watching each Training (or reading the Transcripts) BEFORE using this Generator so you understand what we&apos;re working on!
             </p>
           </article>
 

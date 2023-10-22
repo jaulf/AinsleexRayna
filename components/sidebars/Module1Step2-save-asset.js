@@ -19,7 +19,7 @@ function SavedAssetSidebar({ sasExpand }) {
           <section className="p-6 flex flex-col gap-6">
             {/* SAVE AND CLOSE */}
             <article className="flex justify-between">
-              <h6 className="heading-h6 text-[16px] lg:text-[20px] font-semibold leading-[120%] tracking-[-0.4px]">
+              <h6 className="heading-h6 text-[16px] lg:text-[20px] font-semibold leading-[120%] tracking-[-0.4px] text-[#101928]">
                 Save Asset
               </h6>
               <Image
