@@ -5,7 +5,7 @@ import Link from "next/link";
 //Image importation
 import heartFill500 from "@/public/Images/svg/heart-fill-500.svg";
 import arrowUp from "@/public/Images/svg/arrow-up-400.svg";
-import lock from "@/public/Images/svg/lock-500.svg";
+import lock from "@/public/Images/png/lock.png";
 import refresh from "@/public/Images/svg/refresh-400.svg";
 
 export default function ModuleListSaved({ sasExpand }) {
@@ -63,8 +63,8 @@ export default function ModuleListSaved({ sasExpand }) {
                 </div>
               </article>
               {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+              <article className="shrink-0 max-w-[20px] w-full">
+                <Image className="w-full h-auto" src={lock} alt="lock" />
               </article>
             </article>
 
@@ -172,8 +172,8 @@ export default function ModuleListSaved({ sasExpand }) {
                 </div>
               </article>
               {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+              <article className="shrink-0 max-w-[20px] w-full">
+                <Image className="w-full h-auto" src={lock} alt="lock" />
               </article>
             </article>
 
@@ -282,8 +282,8 @@ export default function ModuleListSaved({ sasExpand }) {
                 </div>
               </article>
               {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+              <article className="shrink-0 max-w-[20px] w-full">
+                <Image className="w-full h-auto" src={lock} alt="lock" />
               </article>
             </article>
 
@@ -392,8 +392,8 @@ export default function ModuleListSaved({ sasExpand }) {
                 </div>
               </article>
               {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+              <article className="shrink-0 max-w-[20px] w-full">
+                <Image className="w-full h-auto" src={lock} alt="lock" />
               </article>
             </article>
 
@@ -502,8 +502,8 @@ export default function ModuleListSaved({ sasExpand }) {
                 </div>
               </article>
               {/* lock */}
-              <article className="shrink-0">
-                <Image src={lock} alt="lock" />
+              <article className="shrink-0 max-w-[20px] w-full">
+                <Image className="w-full h-auto" src={lock} alt="lock" />
               </article>
             </article>
 
