@@ -391,7 +391,7 @@ function LeftSidebar() {
                     <Image src={heart} alt="Your Assets" />
                   )}
                 </div>
-                <h6 className="text-[18px] leading-[100%]">Your Assets</h6>
+                <h6 className="text-[18px] leading-[100%]">Saved Assets</h6>
               </article>
             </Link>
         </div>
