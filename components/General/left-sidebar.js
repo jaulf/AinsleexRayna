@@ -13,6 +13,10 @@ import home2 from "@/public/Images/svg/home2.svg";
 import modules from "@/public/Images/svg/modules.svg";
 import heart8 from "@/public/Images/svg/heart-grey-800.svg";
 import up from "@/public/Images/svg/up.svg";
+import close6 from "@/public/Images/svg/close-600.svg";
+import homeF from "@/public/Images/svg/home-filled.svg";
+import modulesF from "@/public/Images/svg/modules-filled.svg";
+import heartF from "@/public/Images/svg/heart-filled.svg";
 import { usePathname } from "next/navigation";
 
 function LeftSidebar() {
@@ -63,8 +67,15 @@ function LeftSidebar() {
     }
   };
 
+  // Function to display mobile popup when onclick modules on sticky nav
+  const modulesMobileExpand = () => {
+    document.getElementById("modules-popup").classList.toggle("active");
+  };
+
   return (
     <>
+      {/* DESKTOP */}
+
       {/* SIDEBAR - collapsed */}
       <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
         {/* TOP OF NAVBAR */}
@@ -188,7 +199,7 @@ function LeftSidebar() {
                 {/* MODULES - REVEALED UNDER */}
                 <section className="module-cont w-max overflow-hidden inline-flex flex-col cmo">
                   {/* ACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
                     <h5 className="text-[14px] leading-[145%]">Module 01</h5>
                     <div className="shrink-0 invisible">
                       <Image src={down2} alt="dropdown" />
@@ -196,7 +207,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 02</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -204,7 +215,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 03</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -212,7 +223,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 04</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -220,7 +231,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 05</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -228,7 +239,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 06</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -236,7 +247,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 pr-2 pl-10 rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 07</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -283,6 +294,181 @@ function LeftSidebar() {
             <h6 className="text-[14px] leading-[145%]">Log Out</h6>
           </article>
         </section>
+      </section>
+
+      {/* MOBILE */}
+
+      {/* MODULES POPUP - REVEAL ONCLICK - CHNAGE to FLEX */}
+      <section
+        id="modules-popup"
+        className="z-[20] hidden fixed top-0 left-0 right-0 bottom-0 justify-start bg-[rgba(0,0,0,.25)] lg:hidden"
+      >
+        {/* CONTAINER */}
+        <div className="p-6 flex flex-col gap-4 z-[50] fixed scrollabr overflow-auto top-[77px] right-[40px] left-0 bottom-0 w-auto side12 h-full bg-white">
+          {/* MODULES + CLOSE */}
+          <div className="flex items-center justify-between">
+            {/* MODULES */}
+            <div className="flex gap-3 items-center">
+              <Image className="shrink-0" src={modules} alt="" />
+              <p className="text-[#111827] text-[18px] leading-[28px] font-semibold">
+                Modules
+              </p>
+            </div>
+
+            {/* CLOSE */}
+            <div onClick={() => modulesMobileExpand()}>
+              <Image src={close6} alt="" />
+            </div>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="divider block w-full h-auto">
+            <div className="bg-[#EAECF0] w-full h-[1px]"></div>
+          </div>
+
+          {/* MODULES */}
+          <section className="inline-flex flex-col gap-2">
+            {/* MODULES - REVEALED UNDER */}
+            <section className="module-cont overflow-hidden inline-flex flex-col gap-1 py-2 cmo">
+              {/* ACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
+                <h5 className="text-[16px] leading-[145%]">Module 01</h5>
+                <div className="shrink-0 invisible">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 02</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 03</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 04</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 05</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 06</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+
+              {/* INACTIVE */}
+              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                <h5 className="text-[16px] leading-[145%]">Module 07</h5>
+                <div className="shrink-0 ">
+                  <Image src={down2} alt="dropdown" />
+                </div>
+              </article>
+            </section>
+          </section>
+        </div>
+      </section>
+
+      {/* STICKY BOTTOM NAV */}
+      <section id="bottom-nav" className="left-6 right-6 bottom-8 fixed bg-[#000B33] rounded-[16px] lg:hidden">
+        {/* HOME - active */}
+        <nav id="Home" className="hidden grid-cols-[112px_1fr_1fr] p-1 gap-1">
+          {/* HOME -active */}
+          <Link
+            href="#"
+            className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
+          >
+            <Image src={homeF} alt="" />
+            <p className="text-[16px] text-[#F2F4F7]">Home</p>
+          </Link>
+          {/* modules */}
+          <Link
+            onClick={() => modulesMobileExpand()}
+            href="#"
+            className="flex justify-center items-center"
+          >
+            <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
+          </Link>
+          <Link href="#" className="flex justify-center items-center">
+            <p className="text-[16px] text-center text-[#F2F4F7]">
+              Saved Assets
+            </p>
+          </Link>
+        </nav>
+
+        {/* MODULES -active */}
+        <nav
+          id="Modules"
+          className="grid grid-cols-[1fr_138px_max-content] p-1 gap-1"
+        >
+          {/* HOME */}
+          <Link href="#" className="flex justify-center items-center">
+            <p className="text-[16px] text-center text-[#F2F4F7]">Home</p>
+          </Link>
+          {/* MODULES -active */}
+          <Link
+            onClick={() => modulesMobileExpand()}
+            href="#"
+            className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
+          >
+            <Image src={modulesF} alt="" />
+            <p className="text-[16px] text-[#F2F4F7]">Modules</p>
+          </Link>
+          <Link href="#" className="flex justify-center items-center px-4">
+            <p className="text-[16px] text-center text-[#F2F4F7]">
+              Saved Assets
+            </p>
+          </Link>
+        </nav>
+
+        {/* SAVED ASSET - active */}
+        <nav
+          id="saved-assets"
+          className="hidden grid-cols-[1fr_1fr_152px] p-1 gap-1"
+        >
+          {/* HOME */}
+          <Link href="#" className="flex justify-center items-center">
+            <p className="text-[16px] text-center text-[#F2F4F7]">Home</p>
+          </Link>
+
+          {/* modules */}
+          <Link
+            onClick={() => modulesMobileExpand()}
+            href="#"
+            className="flex justify-center items-center"
+          >
+            <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
+          </Link>
+          {/* SAVED ASSETS - active */}
+          <Link
+            href="#"
+            className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
+          >
+            <Image src={heartF} alt="" />
+            <p className="text-[16px] text-[#F2F4F7]">Saved Assets</p>
+          </Link>
+        </nav>
       </section>
     </>
   );

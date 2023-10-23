@@ -12,7 +12,6 @@ import bell from "@/public/Images/svg/bell.svg";
 import search from "@/public/Images/svg/search.svg";
 import search3 from "@/public/Images/svg/search-300.svg";
 import logout4 from "@/public/Images/svg/logout-400.svg";
-
 import help3 from "@/public/Images/svg/help-300.svg";
 import setting3 from "@/public/Images/svg/setting-300.svg";
 import close from "@/public/Images/svg/close.svg";

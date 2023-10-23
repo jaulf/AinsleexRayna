@@ -108,7 +108,7 @@ export default function Home() {
         {/* Sidebar - 3 */}
         {/* add overlay for mobile */}
         <div className="z-[20] lg:relative lg:z-0 lg:block lg:bg-transparent fixed top-0 left-0 right-0 bottom-0 flex justify-end bg-[rgba(0,0,0,.25)]">
-          <section className="lg:w-[350px] z-[50] fixed scrollabr overflow-auto top-[78px] right-0 left-[40px] lg:left-auto lg:right-auto bottom-0 w-auto lg:top-[72px] lg:inline-flex side12 pt-6 lg:pb-6 pb-40 px-4 lg:h-[calc(100vh_-_72px)] h-full flex flex-col lg:sticky bg-white">
+          <section className="lg:w-[350px] z-[50] fixed scrollabr overflow-auto top-[77px] right-0 left-[40px] lg:left-auto lg:right-auto bottom-0 w-auto lg:top-[72px] lg:inline-flex side12 pt-6 lg:pb-6 pb-40 px-4 lg:h-[calc(100vh_-_72px)] h-full flex flex-col lg:sticky bg-white">
             <section className="">
               {/* YOUR ASSETS */}
               <article className="flex justify-between items-center">
