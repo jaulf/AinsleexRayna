@@ -9,7 +9,6 @@ import lock from "@/public/Images/svg/lock-500.svg";
 import refresh from "@/public/Images/svg/refresh-400.svg";
 
 export default function ModuleList({ sasExpand }) {
-
   // display module 1 step 2 - module item
   // hide text - display below
   const displays2mit = (id) => {
@@ -30,7 +29,10 @@ export default function ModuleList({ sasExpand }) {
           {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(1)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(1)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 1
               </h6>
@@ -39,7 +41,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body below */}
-            <article onClick={() => displays2mit(1)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(1)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -48,7 +53,7 @@ export default function ModuleList({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */} 
+              {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
                 <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
@@ -56,6 +61,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
                   Weight Loss
                 </div>
+              </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
               </article>
             </article>
 
@@ -70,6 +79,10 @@ export default function ModuleList({ sasExpand }) {
                   Lose weight using a ketogenic diet
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -82,6 +95,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -97,25 +114,34 @@ export default function ModuleList({ sasExpand }) {
                   Membership
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
           </article>
 
           {/* SAVE ASSET */}
-          <article className="text-[14px] leading-[145%] text-[#F29408] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article
+            className="text-[14px] leading-[145%] text-[#F29408] font-semibold flex gap-2 items-center cursor-pointer hovOpacity-80 third"
+            onClick={sasExpand}
+          >
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
         </section>
         {/* INACTIVE - Module 2 */}
         <section
-          
           id={"s2mit" + 2}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
           {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(2)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(2)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 2
               </h6>
@@ -124,7 +150,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body below */}
-            <article onClick={() => displays2mit(2)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(2)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -133,7 +162,7 @@ export default function ModuleList({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */} 
+              {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
                 <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
@@ -141,6 +170,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
                   Weight Loss
                 </div>
+              </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
               </article>
             </article>
 
@@ -155,6 +188,10 @@ export default function ModuleList({ sasExpand }) {
                   Lose weight using a ketogenic diet
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -167,6 +204,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -182,11 +223,18 @@ export default function ModuleList({ sasExpand }) {
                   Membership
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
           </article>
 
           {/* SAVE ASSET */}
-          <article className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article
+            className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
+            onClick={sasExpand}
+          >
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -194,14 +242,16 @@ export default function ModuleList({ sasExpand }) {
 
         {/* INACTIVE - Module 3 */}
         <section
-          
           id={"s2mit" + 3}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
           {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(3)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(3)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 3
               </h6>
@@ -210,7 +260,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body below */}
-            <article onClick={() => displays2mit(3)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(3)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -219,7 +272,7 @@ export default function ModuleList({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */} 
+              {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
                 <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
@@ -227,6 +280,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
                   Weight Loss
                 </div>
+              </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
               </article>
             </article>
 
@@ -241,6 +298,10 @@ export default function ModuleList({ sasExpand }) {
                   Lose weight using a ketogenic diet
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -253,6 +314,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -268,11 +333,18 @@ export default function ModuleList({ sasExpand }) {
                   Membership
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
           </article>
 
           {/* SAVE ASSET */}
-          <article className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article
+            className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
+            onClick={sasExpand}
+          >
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -280,14 +352,16 @@ export default function ModuleList({ sasExpand }) {
 
         {/* INACTIVE - Module 4 */}
         <section
-          
           id={"s2mit" + 4}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
           {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(4)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(4)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 4
               </h6>
@@ -296,7 +370,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body below */}
-            <article onClick={() => displays2mit(4)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(4)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -305,7 +382,7 @@ export default function ModuleList({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */} 
+              {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
                 <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
@@ -313,6 +390,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
                   Weight Loss
                 </div>
+              </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
               </article>
             </article>
 
@@ -327,6 +408,10 @@ export default function ModuleList({ sasExpand }) {
                   Lose weight using a ketogenic diet
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -339,6 +424,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -354,11 +443,18 @@ export default function ModuleList({ sasExpand }) {
                   Membership
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
           </article>
 
           {/* SAVE ASSET */}
-          <article className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article
+            className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
+            onClick={sasExpand}
+          >
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
@@ -366,14 +462,16 @@ export default function ModuleList({ sasExpand }) {
 
         {/* INACTIVE - Module 5 */}
         <section
-          
           id={"s2mit" + 5}
           className="xbgrey-100 s2mit bg-[#f9fafb] p-4 rounded-[8px] border-[#f0f2f5] border flex flex-col items-center gap-4 w-full"
         >
           {/* HEAD - H6 + P + DROPDOWN IMAGE */}
           <article className="s2mit-sub flex w-full justify-between items-center first">
             {/* Result header and body plus dropdown arrow */}
-            <article onClick={() => displays2mit(5)} className=" cursor-pointer">
+            <article
+              onClick={() => displays2mit(5)}
+              className=" cursor-pointer"
+            >
               <h6 className="paragraph-15 text-[14px] font-semibold leading-[145%] text-[#344054]">
                 Profitable Product Idea Option 5
               </h6>
@@ -382,7 +480,10 @@ export default function ModuleList({ sasExpand }) {
               </p>
             </article>
             {/* clicking this will hide the body below */}
-            <article onClick={() => displays2mit(5)} className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer">
+            <article
+              onClick={() => displays2mit(5)}
+              className="shrink-0 s2mit-rotate xcmo rotate-effect cursor-pointer"
+            >
               <Image src={arrowUp} alt="dropdown" />
             </article>
           </article>
@@ -391,7 +492,7 @@ export default function ModuleList({ sasExpand }) {
           <article className="flex flex-col gap-4 w-full second ">
             {/* field with lock */}
             <article className="field-result-lock flex justify-between items-center gap-4">
-              {/* result */} 
+              {/* result */}
               <article className="rounded-[6px] bg-[#f0f2f5] flex flex-col lg:flex-row p-3 gap-2 lg:gap-6 w-full">
                 <label className="shrink-0 text-[#98a2b3] font-medium text-[14px] leading-[145%] w-full max-w-[104px] lg:h-5">
                   Micro Niche
@@ -399,6 +500,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] text-left leading-[145%] text-[#98a2b3] bg-transparent w-full outline-none rounded-none">
                   Weight Loss
                 </div>
+              </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
               </article>
             </article>
 
@@ -413,6 +518,10 @@ export default function ModuleList({ sasExpand }) {
                   Lose weight using a ketogenic diet
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -425,6 +534,10 @@ export default function ModuleList({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Post-pregnancy moms
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -440,11 +553,18 @@ export default function ModuleList({ sasExpand }) {
                   Membership
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
           </article>
 
           {/* SAVE ASSET */}
-          <article className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third" onClick={sasExpand}>
+          <article
+            className="text-[14px] leading-[145%] text-[#F29408] font-semibold hidden gap-2 items-center cursor-pointer hovOpacity-80 third"
+            onClick={sasExpand}
+          >
             <Image src={heartEmpty500} alt="Empty" />
             <p>Save this asset</p>
           </article>
