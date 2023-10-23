@@ -63,6 +63,13 @@ function LeftSidebar() {
       document.getElementById("Modules").style.display = "grid";
       document.getElementById("saved-assets").style.display = "hidden";
     }
+
+    
+    if (pathname == "/") {
+      document.getElementById("Home").style.display = "grid";
+      document.getElementById("Modules").style.display = "hidden";
+      document.getElementById("saved-assets").style.display = "hidden";
+    }
   }, []);
 
   // hiding sidebar
@@ -414,7 +421,7 @@ function LeftSidebar() {
         <nav id="Home" className="hidden grid-cols-[112px_1fr_1fr] p-1 gap-1">
           {/* HOME -active */}
           <Link
-            href="#"
+            href="/"
             className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
           >
             <Image src={homeF} alt="" />
@@ -444,7 +451,7 @@ function LeftSidebar() {
           className="hidden grid-cols-[1fr_138px_max-content] p-1 gap-1"
         >
           {/* HOME */}
-          <Link href="#" className="flex justify-center items-center">
+          <Link href="/" className="flex justify-center items-center">
             <p className="text-[16px] text-center text-[#F2F4F7]">Home</p>
           </Link>
           {/* MODULES -active */}
@@ -473,7 +480,7 @@ function LeftSidebar() {
           className="hidden grid-cols-[1fr_1fr_152px] p-1 gap-1"
         >
           {/* HOME */}
-          <Link href="#" className="flex justify-center items-center">
+          <Link href="/" className="flex justify-center items-center">
             <p className="text-[16px] text-center text-[#F2F4F7]">Home</p>
           </Link>
 
