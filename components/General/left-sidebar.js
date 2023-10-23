@@ -204,7 +204,7 @@ function LeftSidebar() {
                 {/* MODULES - DROPDOWN */}
                 <div
                   onClick={modulesExpand}
-                  className="flex modhov justify-between items-center"
+                  className="flex modhov justify-between items-center pr-4"
                 >
                   <article className="s1a-c flex items-center gap-3 py-3 px-2">
                     <div>
@@ -221,7 +221,7 @@ function LeftSidebar() {
                 {/* MODULES - REVEALED UNDER */}
                 <section className="module-cont w-max overflow-hidden inline-flex flex-col cmo">
                   {/* ACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
                     <h5 className="text-[14px] leading-[145%]">Module 01</h5>
                     <div className="shrink-0 invisible">
                       <Image src={down2} alt="dropdown" />
@@ -229,7 +229,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 02</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -237,7 +237,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 03</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -245,7 +245,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 04</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -253,7 +253,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 05</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -261,7 +261,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 06</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />
@@ -269,7 +269,7 @@ function LeftSidebar() {
                   </article>
 
                   {/* INACTIVE */}
-                  <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
+                  <article className="module-item flex gap-20 items-center py-3 pl-10 pr-4 justify-between rounded-[4px] text-[#667185]">
                     <h5 className="text-[14px] leading-[145%]">Module 07</h5>
                     <div className="shrink-0 ">
                       <Image src={down2} alt="dropdown" />

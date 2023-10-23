@@ -62,6 +62,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Weight Loss
                 </div>
               </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -74,6 +78,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -88,6 +96,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Post-pregnancy moms
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -101,6 +113,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
           </article>
@@ -155,6 +171,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Weight Loss
                 </div>
               </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -167,6 +187,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -181,6 +205,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Post-pregnancy moms
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -194,6 +222,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
           </article>
@@ -249,6 +281,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Weight Loss
                 </div>
               </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -261,6 +297,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -275,6 +315,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Post-pregnancy moms
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -288,6 +332,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
           </article>
@@ -343,6 +391,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Weight Loss
                 </div>
               </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -355,6 +407,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -369,6 +425,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Post-pregnancy moms
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -382,6 +442,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
           </article>
@@ -437,6 +501,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Weight Loss
                 </div>
               </article>
+              {/* lock */}
+              <article className="shrink-0">
+                <Image src={lock} alt="lock" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -449,6 +517,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Lose weight using a ketogenic diet
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
 
@@ -463,6 +535,10 @@ export default function ModuleListSaved({ sasExpand }) {
                   Post-pregnancy moms
                 </div>
               </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
+              </article>
             </article>
 
             {/* field with refresh */}
@@ -476,6 +552,10 @@ export default function ModuleListSaved({ sasExpand }) {
                 <div className="text-[14px] leading-[145%] text-[#101928] bg-transparent w-full outline-none rounded-none">
                   Membership
                 </div>
+              </article>
+              {/* refresh */}
+              <article className="shrink-0">
+                <Image src={refresh} alt="refresh" />
               </article>
             </article>
           </article>

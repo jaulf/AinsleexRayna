@@ -76,18 +76,19 @@ export default function Home() {
 
           {/* CONTAINER - CONTENT */}
           <section className="over-cian rounded-[10px] overflow-hidden border border-[#e4e7ec] bg-white">
-            
             {/* LIST OF MODULE COMPONENT */}
             <ModuleList sasExpand={sasExpand} />
 
             {/* CTA - GO BACK & GENERATE MORE IDEAS*/}
-            <article className="cta-container lg:mt-[132px] lg:p-6 lg:pb-0 w-full inline-flex justify-center lg:justify-between items-center">
-              <button className="xgrey-600 text-[#475467] font-semibold hidden lg:inline-flex gap-2 items-center">
-                <Image src={arrowLeft} alt="Arrow Left" />
-                <p>Go Back</p>
-              </button>
-              <article className="p-6 flex justify-center">
-                <button className="shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
+            <article className="cta-container lg:mt-[132px] p-6 lg:pb-0 w-full inline-flex justify-between items-center">
+              <article>
+                <button className="xgrey-600 text-[#475467] text-[14px] lg:text-[16px] font-semibold inline-flex gap-2 items-center">
+                  <Image src={arrowLeft} alt="Arrow Left" />
+                  <p>Go Back</p>
+                </button>
+              </article>
+              <article className="lg:p-6 flex justify-center">
+                <button className="items-center shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
                   <Image src={generate500} alt="Generate more ideas" />
                   <p>Generate more ideas</p>
                 </button>
@@ -103,8 +104,8 @@ export default function Home() {
           </article>
         </section>
 
-         {/* RIGHT SIDEBAR  */}
-         <section className="lg:w-[350px] top-[72px] hidden lg:inline-flex side12 py-6 px-4 h-[calc(100vh_-_72px)] bg-white flex-col sticky ">
+        {/* RIGHT SIDEBAR  */}
+        <section className="lg:w-[350px] top-[72px] hidden lg:inline-flex side12 py-6 px-4 h-[calc(100vh_-_72px)] bg-white flex-col sticky ">
           {/* YOUR ASSETS */}
           <article className="flex justify-between items-center">
             <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">

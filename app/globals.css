@@ -42,7 +42,8 @@
 }
 .s2mit.active,
 .s4mit.active,
-.s3mit.active {
+.s3mit.active
+.s5mit.active {
   border: 1px solid #d0d5dd;
 }
 
@@ -51,7 +52,9 @@
 .s4mit .second,
 .s4mit .third,
 .s3mit .second,
-.s3mit .third {
+.s3mit .third,
+.s5mit .second,
+.s5mit .third {
   display: none;
 }
 
@@ -69,19 +72,23 @@
 .s4mit.active .second,
 .s4mit.active .third,
 .s3mit.active .second,
-.s3mit.active .third {
+.s3mit.active .third,
+.s5mit.active .second,
+.s5mit.active .third {
   display: flex;
 }
 
 .s2mit.active .s2mit-text,
 .s4mit.active .s4mit-text,
-.s3mit.active .s2mit-text {
+.s3mit.active .s2mit-text,
+.s5mit.active .s2mit-text {
   display: none;
 }
 
 .s2mit.active .s2mit-rotate,
 .s4mit.active .s2mit-rotate,
-.s3mit.active .s2mit-rotate {
+.s3mit.active .s2mit-rotate,
+.s5mit.active .s2mit-rotate {
   transform: rotate(-180deg);
 }
 
