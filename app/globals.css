@@ -144,3 +144,6 @@
   display: flex;
 }
 
+.expanded {
+  max-height: 0;
+}

@@ -131,23 +131,6 @@ function LeftSidebar() {
             </div>
           </section>
         </section>
-
-        {/* BOTTOM OF NAVBAR */}
-        <section className="text-[#344054] inline-flex flex-col btm-nav">
-          {/* HELP */}
-          <article className="s1c-b inline-flex items-center gap-3 py-2 px-3 modhov">
-            <div>
-              <Image src={help2} alt="Help" />
-            </div>
-          </article>
-
-          {/* LOGOUT */}
-          <article className="s1c-b inline-flex items-center gap-3 py-2 px-3 modhov">
-            <div>
-              <Image src={signout} alt="Logout" />
-            </div>
-          </article>
-        </section>
       </section>
 
       {/* SIDEBAR - EXPANDED */}
@@ -276,24 +259,6 @@ function LeftSidebar() {
           </section>
         </section>
 
-        {/* BOTTOM OF NAVBAR */}
-        <section className="text-[#344054] btm-nav">
-          {/* Help */}
-          <article className="s1a-c flex items-center gap-3 py-3 px-2">
-            <div>
-              <Image src={help2} alt="Help" />
-            </div>
-            <h6 className="text-[14px] leading-[145%]">Help</h6>
-          </article>
-
-          {/* Logout */}
-          <article className="s1a-c flex items-center gap-3 py-3 px-2">
-            <div>
-              <Image src={signout} alt="Logout" />
-            </div>
-            <h6 className="text-[14px] leading-[145%]">Log Out</h6>
-          </article>
-        </section>
       </section>
 
       {/* MOBILE */}
