@@ -58,7 +58,7 @@ function LeftSidebar() {
     // }
 
     const searchModule2 = "/module-";
-    if (pathname.startsWith(searchModule)) {
+    if (pathname.startsWith(searchModule2) || pathname == "/saved-assets") {
       document.getElementById("Home").style.display = "hidden";
       document.getElementById("Modules").style.display = "grid";
       document.getElementById("saved-assets").style.display = "hidden";
@@ -95,15 +95,18 @@ function LeftSidebar() {
 
   // REVEAL RGHT SIDE BAR
   const displaySavedandDrop = () => {
-    document.getElementById("savedanddrop").classList.toggle("active")
-  }
+    document.getElementById("savedanddrop").classList.toggle("active");
+  };
 
   return (
     <>
       {/* DESKTOP */}
 
       {/* SIDEBAR - collapsed */}
-      <section id="sidebar-col" className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
+      <section
+        id="sidebar-col"
+        className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed"
+      >
         {/* TOP OF NAVBAR */}
         <section className="whitespace-nowrap inline-flex flex-col gap-3">
           {/* EXPAND ICON */}
@@ -160,7 +163,10 @@ function LeftSidebar() {
       </section>
 
       {/* SIDEBAR - EXPANDED */}
-      <section id="sidebar-exp" className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed">
+      <section
+        id="sidebar-exp"
+        className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed"
+      >
         {/* TOP OF NAVBAR */}
         <section className="top-nav inline-flex flex-col gap-3 whitespace-nowrap">
           {/* NAV TEXT + EXPAND ICON */}
@@ -321,12 +327,14 @@ function LeftSidebar() {
             {/* MODULES - REVEALED UNDER */}
             <section className="module-cont overflow-hidden inline-flex flex-col gap-1 py-2 cmo">
               {/* ACTIVE */}
-              <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
-                <h5 className="text-[16px] leading-[145%]">Module 01</h5>
-                <div className="shrink-0 invisible">
-                  <Image src={down2} alt="dropdown" />
-                </div>
-              </article>
+              <Link href="/module-1/step-1">
+                <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] active text-[#101928] bg-[#f0f2f5] font-semibold">
+                  <h5 className="text-[16px] leading-[145%]">Module 01</h5>
+                  <div className="shrink-0 invisible">
+                    <Image src={down2} alt="dropdown" />
+                  </div>
+                </article>
+              </Link>
 
               {/* INACTIVE */}
               <article className="module-item flex gap-20 items-center py-3 px-4 justify-between rounded-[4px] text-[#667185]">
@@ -380,20 +388,20 @@ function LeftSidebar() {
 
           {/* ASSETS */}
           <Link
-              href="/saved-assets"
-              className="pt-2 block modhov mt-4 border-t border-[#F0F2F5]"
-            >
-              <article className="s1a-c flex items-center gap-3 py-3 px-2 saved rounded-[4px]">
-                <div>
-                  {pathname == "/saved-assets" ? (
-                    <Image src={heart8} alt="Your Assets" />
-                  ) : (
-                    <Image src={heart} alt="Your Assets" />
-                  )}
-                </div>
-                <h6 className="text-[18px] leading-[100%]">Saved Assets</h6>
-              </article>
-            </Link>
+            href="/saved-assets"
+            className="pt-2 block modhov mt-4 border-t border-[#F0F2F5]"
+          >
+            <article className="s1a-c flex items-center gap-3 py-3 px-2 saved rounded-[4px]">
+              <div>
+                {pathname == "/saved-assets" ? (
+                  <Image src={heart8} alt="Your Assets" />
+                ) : (
+                  <Image src={heart} alt="Your Assets" />
+                )}
+              </div>
+              <h6 className="text-[18px] leading-[100%]">Saved Assets</h6>
+            </article>
+          </Link>
         </div>
       </section>
 
@@ -420,7 +428,8 @@ function LeftSidebar() {
             <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
           </Link>
           <Link
-            onClick={() => displaySavedandDrop()} href="#"
+            onClick={() => displaySavedandDrop()}
+            href="#"
             className="flex justify-center items-center"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">
@@ -448,7 +457,8 @@ function LeftSidebar() {
             <p className="text-[16px] text-[#F2F4F7]">Modules</p>
           </Link>
           <Link
-            onClick={() => displaySavedandDrop()} href="#"
+            onClick={() => displaySavedandDrop()}
+            href="#"
             className="flex justify-center items-center px-4"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">
@@ -476,7 +486,8 @@ function LeftSidebar() {
           </Link>
           {/* Your Assets - active */}
           <Link
-            onClick={() => displaySavedandDrop()} href="#"
+            onClick={() => displaySavedandDrop()}
+            href="#"
             className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
           >
             <Image src={heartF} alt="" />
@@ -487,7 +498,10 @@ function LeftSidebar() {
 
       {/* Right SIDE BAR */}
       {/* add overlay for mobile */}
-      <div id="savedanddrop" className="z-[20] hidden lg:relative lg:z-0 lg:hidden lg:bg-transparent fixed top-0 left-0 right-0 bottom-0 justify-end bg-[rgba(0,0,0,.25)]">
+      <div
+        id="savedanddrop"
+        className="z-[20] hidden lg:relative lg:z-0 lg:hidden lg:bg-transparent fixed top-0 left-0 right-0 bottom-0 justify-end bg-[rgba(0,0,0,.25)]"
+      >
         <section className="lg:w-[350px] z-[50] fixed scrollabr overflow-auto top-[77px] right-0 left-[40px] lg:left-auto lg:right-auto bottom-0 w-auto lg:top-[72px] lg:inline-flex side12 pt-6 lg:pb-6 pb-40 px-4 lg:h-[calc(100vh_-_72px)] h-full flex flex-col lg:sticky bg-white">
           <section className="">
             {/* YOUR ASSETS */}
@@ -495,7 +509,10 @@ function LeftSidebar() {
               <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
                 YOUR ASSETS
               </h5>
-              <div onClick={() => displaySavedandDrop()} className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
+              <div
+                onClick={() => displaySavedandDrop()}
+                className="nav-item-bg xgrey-trans p-2 rounded-[8px]"
+              >
                 <Image src={expand2} alt="Hamburger Menu" />
               </div>
             </article>
