@@ -51,11 +51,11 @@ function LeftSidebar() {
 
     // MOBILE
     // SET ACTIVE STATE OF 'YOUR ASSET' BASED ON NAVIGATION
-    if (pathname == "/saved-assets") {
-      document.getElementById("Home").style.display = "hidden";
-      document.getElementById("Modules").style.display = "hidden";
-      document.getElementById("saved-assets").style.display = "grid";
-    }
+    // if (pathname == "/saved-assets") {
+    //   document.getElementById("Home").style.display = "hidden";
+    //   document.getElementById("Modules").style.display = "hidden";
+    //   document.getElementById("saved-assets").style.display = "grid";
+    // }
 
     const searchModule2 = "/module-";
     if (pathname.startsWith(searchModule)) {
@@ -377,6 +377,23 @@ function LeftSidebar() {
               </article>
             </section>
           </section>
+
+          {/* ASSETS */}
+          <Link
+              href="/saved-assets"
+              className="pt-2 block modhov mt-4 border-t border-[#F0F2F5]"
+            >
+              <article className="s1a-c flex items-center gap-3 py-3 px-2 saved rounded-[4px]">
+                <div>
+                  {pathname == "/saved-assets" ? (
+                    <Image src={heart8} alt="Your Assets" />
+                  ) : (
+                    <Image src={heart} alt="Your Assets" />
+                  )}
+                </div>
+                <h6 className="text-[18px] leading-[100%]">Your Assets</h6>
+              </article>
+            </Link>
         </div>
       </section>
 
@@ -415,7 +432,7 @@ function LeftSidebar() {
         {/* MODULES -active */}
         <nav
           id="Modules"
-          className="hidden grid-cols-[1fr_138px_1fr] p-1 gap-1"
+          className="hidden grid-cols-[1fr_138px_max-content] p-1 gap-1"
         >
           {/* HOME */}
           <Link href="#" className="flex justify-center items-center">
