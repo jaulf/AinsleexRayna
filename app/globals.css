@@ -159,3 +159,7 @@
   display: flex;
 }
 
+.side2-active {
+  background: #f0f2f5 !important;
+  border-radius: 4px;
+}
