@@ -26,7 +26,9 @@ function LeftSidebar() {
   // Only for sidebar - when introducing redux sidebar collapse and
   // and expansion will be handled on redux for consistency on multiple
   // pages for now it is just useEffect
+
   useEffect(() => {
+    // DESKTOP EFFECTS
     // SET ACTIVE STATE OF 'YOUR ASSET' BASED ON NAVIGATION
     if (pathname == "/saved-assets") {
       document.querySelectorAll(".saved").forEach((itme) => {
@@ -40,8 +42,22 @@ function LeftSidebar() {
         itme.classList.add("side2-active");
       });
     }
-
     document.querySelector(".collapsed").style.display = "none";
+
+    // MOBILE
+    // SET ACTIVE STATE OF 'YOUR ASSET' BASED ON NAVIGATION
+    if (pathname == "/saved-assets") {
+      document.getElementById("Home").style.display = 'hidden';
+      document.getElementById("Modules").style.display = 'hidden';
+      document.getElementById("saved-assets").style.display = 'grid';
+    }
+
+    const searchModule2 = "/module-";
+    if (pathname.startsWith(searchModule)) {
+      document.getElementById("Home").style.display = 'hidden';
+      document.getElementById("Modules").style.display = 'grid';
+      document.getElementById("saved-assets").style.display = 'hidden';
+    }
   }, []);
 
   // hiding sidebar
@@ -258,7 +274,6 @@ function LeftSidebar() {
             </Link>
           </section>
         </section>
-
       </section>
 
       {/* MOBILE */}
@@ -356,7 +371,10 @@ function LeftSidebar() {
       </section>
 
       {/* STICKY BOTTOM NAV */}
-      <section id="bottom-nav" className="left-6 right-6 bottom-8 fixed bg-[#000B33] rounded-[16px] lg:hidden">
+      <section
+        id="bottom-nav"
+        className="left-6 right-6 bottom-8 fixed bg-[#000B33] rounded-[16px] lg:hidden"
+      >
         {/* HOME - active */}
         <nav id="Home" className="hidden grid-cols-[112px_1fr_1fr] p-1 gap-1">
           {/* HOME -active */}
@@ -369,13 +387,15 @@ function LeftSidebar() {
           </Link>
           {/* modules */}
           <Link
-            onClick={() => modulesMobileExpand()}
-            href="#"
+            href="/module-1/step-1"
             className="flex justify-center items-center"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
           </Link>
-          <Link href="#" className="flex justify-center items-center">
+          <Link
+            href="/saved-assets"
+            className="flex justify-center items-center"
+          >
             <p className="text-[16px] text-center text-[#F2F4F7]">
               Saved Assets
             </p>
@@ -385,7 +405,7 @@ function LeftSidebar() {
         {/* MODULES -active */}
         <nav
           id="Modules"
-          className="grid grid-cols-[1fr_138px_max-content] p-1 gap-1"
+          className="hidden grid-cols-[1fr_138px_max-content] p-1 gap-1"
         >
           {/* HOME */}
           <Link href="#" className="flex justify-center items-center">
@@ -400,7 +420,10 @@ function LeftSidebar() {
             <Image src={modulesF} alt="" />
             <p className="text-[16px] text-[#F2F4F7]">Modules</p>
           </Link>
-          <Link href="#" className="flex justify-center items-center px-4">
+          <Link
+            href="/saved-assets"
+            className="flex justify-center items-center px-4"
+          >
             <p className="text-[16px] text-center text-[#F2F4F7]">
               Saved Assets
             </p>
@@ -419,15 +442,14 @@ function LeftSidebar() {
 
           {/* modules */}
           <Link
-            onClick={() => modulesMobileExpand()}
-            href="#"
+            href="/module-1/step-1"
             className="flex justify-center items-center"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
           </Link>
           {/* SAVED ASSETS - active */}
           <Link
-            href="#"
+            href="/saved-assets"
             className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
           >
             <Image src={heartF} alt="" />
