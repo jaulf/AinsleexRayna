@@ -216,6 +216,8 @@ function Navbar() {
           </div>
         </div>
       </header>
+
+    {/* Right mobile Popup */}
     </>
   );
 }

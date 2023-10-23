@@ -17,6 +17,11 @@ import close6 from "@/public/Images/svg/close-600.svg";
 import homeF from "@/public/Images/svg/home-filled.svg";
 import modulesF from "@/public/Images/svg/modules-filled.svg";
 import heartF from "@/public/Images/svg/heart-filled.svg";
+import expand2 from "@/public/Images/svg/expand2.svg";
+import search2 from "@/public/Images/svg/search2.svg";
+import filter from "@/public/Images/svg/filter.svg";
+import emptystate from "@/public/Images/svg/empty-state.svg";
+import SidebarModuleListSaved from "@/components/moduleList/saved-asset-module-list";
 import { usePathname } from "next/navigation";
 
 function LeftSidebar() {
@@ -47,16 +52,16 @@ function LeftSidebar() {
     // MOBILE
     // SET ACTIVE STATE OF 'YOUR ASSET' BASED ON NAVIGATION
     if (pathname == "/saved-assets") {
-      document.getElementById("Home").style.display = 'hidden';
-      document.getElementById("Modules").style.display = 'hidden';
-      document.getElementById("saved-assets").style.display = 'grid';
+      document.getElementById("Home").style.display = "hidden";
+      document.getElementById("Modules").style.display = "hidden";
+      document.getElementById("saved-assets").style.display = "grid";
     }
 
     const searchModule2 = "/module-";
     if (pathname.startsWith(searchModule)) {
-      document.getElementById("Home").style.display = 'hidden';
-      document.getElementById("Modules").style.display = 'grid';
-      document.getElementById("saved-assets").style.display = 'hidden';
+      document.getElementById("Home").style.display = "hidden";
+      document.getElementById("Modules").style.display = "grid";
+      document.getElementById("saved-assets").style.display = "hidden";
     }
   }, []);
 
@@ -88,12 +93,17 @@ function LeftSidebar() {
     document.getElementById("modules-popup").classList.toggle("active");
   };
 
+  // REVEAL RGHT SIDE BAR
+  const displaySavedandDrop = () => {
+    document.getElementById("savedanddrop").classList.toggle("active")
+  }
+
   return (
     <>
       {/* DESKTOP */}
 
       {/* SIDEBAR - collapsed */}
-      <section className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
+      <section id="sidebar-col" className="scrollabr hidden lg:inline-flex side12 overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed collapsed">
         {/* TOP OF NAVBAR */}
         <section className="whitespace-nowrap inline-flex flex-col gap-3">
           {/* EXPAND ICON */}
@@ -150,7 +160,7 @@ function LeftSidebar() {
       </section>
 
       {/* SIDEBAR - EXPANDED */}
-      <section className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed">
+      <section id="sidebar-exp" className="scrollabr hidden lg:inline-flex side-expanded side12  overflow-auto top-[72px] gap-40 py-6 px-3 justify-between h-[calc(100vh_-_72px)] bg-white z-[5] flex-col fixed">
         {/* TOP OF NAVBAR */}
         <section className="top-nav inline-flex flex-col gap-3 whitespace-nowrap">
           {/* NAV TEXT + EXPAND ICON */}
@@ -393,11 +403,11 @@ function LeftSidebar() {
             <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
           </Link>
           <Link
-            href="/saved-assets"
+            onClick={() => displaySavedandDrop()} href="#"
             className="flex justify-center items-center"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">
-              Saved Assets
+              Your Assets
             </p>
           </Link>
         </nav>
@@ -405,7 +415,7 @@ function LeftSidebar() {
         {/* MODULES -active */}
         <nav
           id="Modules"
-          className="hidden grid-cols-[1fr_138px_max-content] p-1 gap-1"
+          className="hidden grid-cols-[1fr_138px_1fr] p-1 gap-1"
         >
           {/* HOME */}
           <Link href="#" className="flex justify-center items-center">
@@ -421,11 +431,11 @@ function LeftSidebar() {
             <p className="text-[16px] text-[#F2F4F7]">Modules</p>
           </Link>
           <Link
-            href="/saved-assets"
+            onClick={() => displaySavedandDrop()} href="#"
             className="flex justify-center items-center px-4"
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">
-              Saved Assets
+              Your Assets
             </p>
           </Link>
         </nav>
@@ -447,16 +457,91 @@ function LeftSidebar() {
           >
             <p className="text-[16px] text-center text-[#F2F4F7]">Modules</p>
           </Link>
-          {/* SAVED ASSETS - active */}
+          {/* Your Assets - active */}
           <Link
-            href="/saved-assets"
+            onClick={() => displaySavedandDrop()} href="#"
             className="flex justify-center gap-2 items-center active - bg-[rgba(255,255,255,0.10)] py-4 rounded-[12px]"
           >
             <Image src={heartF} alt="" />
-            <p className="text-[16px] text-[#F2F4F7]">Saved Assets</p>
+            <p className="text-[16px] text-[#F2F4F7]">Your Assets</p>
           </Link>
         </nav>
       </section>
+
+      {/* Right SIDE BAR */}
+      {/* add overlay for mobile */}
+      <div id="savedanddrop" className="z-[20] hidden lg:relative lg:z-0 lg:hidden lg:bg-transparent fixed top-0 left-0 right-0 bottom-0 justify-end bg-[rgba(0,0,0,.25)]">
+        <section className="lg:w-[350px] z-[50] fixed scrollabr overflow-auto top-[77px] right-0 left-[40px] lg:left-auto lg:right-auto bottom-0 w-auto lg:top-[72px] lg:inline-flex side12 pt-6 lg:pb-6 pb-40 px-4 lg:h-[calc(100vh_-_72px)] h-full flex flex-col lg:sticky bg-white">
+          <section className="">
+            {/* YOUR ASSETS */}
+            <article className="flex justify-between items-center">
+              <h5 className=" nav-item-header font-medium text-[12px] uppercase tracking-[0.6px] text-[#4F4D55]">
+                YOUR ASSETS
+              </h5>
+              <div onClick={() => displaySavedandDrop()} className="nav-item-bg xgrey-trans p-2 rounded-[8px]">
+                <Image src={expand2} alt="Hamburger Menu" />
+              </div>
+            </article>
+
+            {/* Drag & Drop + Saved */}
+            <article className="in-and-out w-full grid grid-cols-2 text-center">
+              <h5 className="py-4 font-semibold border-b text-[14px] border-[#e4e7ec] text-[#344054]">
+                Drag & Drop
+              </h5>
+              <h5 className="py-4 font-semibold border-b text-[14px] active border-[#F29408] text-[#F29408]">
+                Saved
+              </h5>
+            </article>
+
+            {/* Search bar and filter */}
+            <article className="search-and-filter grid grid-cols-[1fr_max-content] items-center justify-center gap-x-3 overflow-auto">
+              <div className="search-bar my-3 w-full rounded-md border bg-[#f9fafb] border-[#f0f2f5] flex p-[10px] items-center gap-1">
+                <div>
+                  <Image src={search2} alt="search" />
+                </div>
+                <input
+                  className="ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
+                  type="text"
+                  placeholder="Search Ideas..."
+                />
+              </div>
+              <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">
+                <Image src={filter} alt="filter" />
+              </div>
+            </article>
+
+            {/* Active and Inactive Saved Ideas */}
+            <section>
+              {/* Inactive Saved Ideas */}
+              <article className="hidden relative">
+                <div>
+                  <Image src={emptystate} alt="No saved Idea" />
+                </div>
+                <div className="mt-[-28px]">
+                  <h4>No assets available for this tool yet</h4>
+                  <p className="max-w-[272px]">
+                    <span>
+                      Create assets in Profitable Product Generator first
+                    </span>
+                  </p>
+                  <Link href="#">Learn more</Link>
+                </div>
+              </article>
+
+              {/* Active Saved Ideas */}
+              <section>
+                {/* Divider */}
+                <div className="divider3 block w-full h-auto">
+                  <div className="bg-[#ECECED] w-full h-[1px]"></div>
+                </div>
+
+                {/* Container for saved Asset */}
+                <SidebarModuleListSaved />
+              </section>
+            </section>
+          </section>
+        </section>
+      </div>
     </>
   );
 }
