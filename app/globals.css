@@ -108,6 +108,10 @@
   transform: rotate(180deg);
 }
 
+.roshash0 {
+  transform: rotate(0);
+}
+
 .rotate-effect {
   transition: transform 0.4s ease;
 }
@@ -163,3 +167,7 @@
   background: #f0f2f5 !important;
   border-radius: 4px;
 }
+
+.module2-drop.active > nav {
+  display: none
+} 
