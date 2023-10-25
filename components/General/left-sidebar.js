@@ -64,7 +64,6 @@ function LeftSidebar() {
       document.getElementById("saved-assets").style.display = "hidden";
     }
 
-    
     if (pathname == "/") {
       document.getElementById("Home").style.display = "grid";
       document.getElementById("Modules").style.display = "hidden";
@@ -196,7 +195,9 @@ function LeftSidebar() {
                 <div>
                   <Image src={home2} alt="Dashboard" />
                 </div>
-                <h6 className="text-[14px] leading-[145%]">Dashboard</h6>
+                <h6 className="text-[14px] text-[#344054] leading-[145%]">
+                  Dashboard
+                </h6>
               </article>
 
               {/* MODULES */}
@@ -292,7 +293,13 @@ function LeftSidebar() {
                     <Image src={heart} alt="Your Assets" />
                   )}
                 </div>
-                <h6 className="text-[14px] leading-[145%]">Your Assets</h6>
+                {pathname == "/saved-assets" ? (
+                  <h6 className="text-[14px] leading-[145%]">Your Assets</h6>
+                ) : (
+                  <h6 className="text-[14px] text-[#344054] leading-[145%]">
+                    Your Assets
+                  </h6>
+                )}
               </article>
             </Link>
           </section>
@@ -543,7 +550,7 @@ function LeftSidebar() {
                 <input
                   className="ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
                   type="text"
-                  placeholder="Search Ideas..."
+                  placeholder="Search saved items..."
                 />
               </div>
               <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">

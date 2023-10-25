@@ -615,7 +615,7 @@ function LeftSidebar() {
                 <input
                   className="ring-0 focus:ring-0 p-0 m-0 border-none bg-transparent outline-none text-[14px] leading-5"
                   type="text"
-                  placeholder="Search Ideas..."
+                  placeholder="Search saved items..."
                 />
               </div>
               <div className="nav-item-bg2 xgrey-50 p-[10px] rounded-[8px] border border-[#f0f2f5] bg-[#f9fafb]">

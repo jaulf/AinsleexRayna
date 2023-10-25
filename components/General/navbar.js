@@ -43,7 +43,7 @@ function Navbar() {
             {/* Image */}
             <div className="shrink-0 w-full h-auto max-w-[112px]">
               <Image
-                class="w-full h-auto"
+                className="w-full h-auto"
                 src={logo}
                 alt="Full main logo dark"
               />
@@ -146,7 +146,7 @@ function Navbar() {
           <div className="flex gap-6 items-center">
             <div className="shrink-0 w-full h-auto max-w-[97px] lg:max-w-[120px]">
               <Image
-                class="w-full h-auto"
+                className="w-full h-auto"
                 src={logo}
                 alt="Full main logo dark"
               />
