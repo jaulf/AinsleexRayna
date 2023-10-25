@@ -85,7 +85,7 @@ export default function Home() {
                   <span className="text-[#d42620] font-semibold">*</span>
                 </h6>
                 <div className="select-cont bg-[#f9fafb] rounded-md outline-none ">
-                  <select className="focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border border-[#e4e7ec] focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className="disabled:text-[#98A2B3] focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border border-[#e4e7ec] focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Choose an option
                     </option>
@@ -417,7 +417,7 @@ export default function Home() {
                   </span>
                 </p>
                 <div className="select-cont rounded-md  outline-none ">
-                  <select className="focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border-[#e4e7ec] border focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
+                  <select className=" disabled:placeholder:text-[#98A2B3] focus:ring-0 ring-0 focus:border-0 focus:border-transparent bg-[#f9fafb] border-[#e4e7ec] border focus:outline-[#fa9874] outline-none rounded-md w-full py-[10px] px-3 text-[15px]">
                     <option disabled selected>
                       Select options
                     </option>

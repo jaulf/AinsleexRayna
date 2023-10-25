@@ -88,7 +88,7 @@ export default function Home() {
                 </button>
               </article>
               <article className="lg:p-6 flex justify-center">
-                <button className="items-center shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FFECE5]">
+                <button className="items-center shadow-[0px_2px_4px_-1px_rgba(16,25,40,0.02),_0px_5px_13px_-5px_rgba(16,25,40,0.05)] py-[14px] px-4 inline-flex gap-2 text-[#F29408] text-[14px] lg:text-[16px] leading-[145%] font-semibold rounded-[6px] border-[1.5px] border-[#FCD2C2] bg-[#FEF7EB]">
                   <Image src={generate500} alt="Generate more ideas" />
                   <p>Generate more ideas</p>
                 </button>
